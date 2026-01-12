@@ -5,7 +5,7 @@ title: "Informes"
 
 ::: {.report-card}
 
-### Informe de Heladas
+### Heladas
 
 Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.
 
@@ -15,7 +15,7 @@ Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluy
 
 ::: {.report-card}
 
-### Informe ENSO (Niño / Niña)
+### ENSO (Niño / Niña)
 
 Análisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.
 

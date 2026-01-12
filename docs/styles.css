@@ -1,5 +1,47 @@
 /* css styles */
 
+.footer-logos{
+  justify-content: right;
+  opacity: 0.85;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.brand-logos{
+  display: flex;
+  gap: 14px;
+  align-items: right;
+  margin: 0 0 16px 0;
+  flex-wrap: wrap;
+}
+
+.brand-logos img{
+  height: 44px;
+  width: auto;
+}
+
+
+/* Tarjetas informes */
+.report-card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 20px 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  margin: 12px 0;
+}
+
+.report-card h3{
+  margin-top: 0;
+}
+
+.report-card a{
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
 /* Tarjetas equipo */
 .team-card{
   background: rgba(255,255,255,0.04);
@@ -21,22 +63,4 @@
   object-fit: cover;
 }
 
-.footer-logos{
-  justify-content: right;
-  opacity: 0.85;
-  margin-top: 40px;
-  padding-bottom: 20px;
-}
 
-.brand-logos{
-  display: flex;
-  gap: 14px;
-  align-items: right;
-  margin: 0 0 16px 0;
-  flex-wrap: wrap;
-}
-
-.brand-logos img{
-  height: 44px;
-  width: auto;
-}
