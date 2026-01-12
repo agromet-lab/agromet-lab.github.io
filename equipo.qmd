@@ -1,0 +1,13 @@
+---
+title: "Equipo"
+---
+
+## Integrantes
+
+-   **Nombre Apellido** — Rol / especialidad
+-   **Nombre Apellido** — Rol / especialidad
+-   **Nombre Apellido** — Rol / especialidad
+
+## Colaboraciones
+
+-   INTA / Universidades / empresas / redes (agregar según corresponda).

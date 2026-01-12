@@ -1,0 +1,22 @@
+---
+title: "Informes"
+---
+
+Colocá aquí los informes del laboratorio (PDF), presentaciones y documentos técnicos.\
+Para que se descarguen, subí los archivos a la carpeta `files/`.
+
+## Informes
+
+-   [Informe de Heladas (PDF)](files/Heladas.pdf)
+-   [Informe de Balance Hídrico (PDF)](files/BalanceHidrico.pdf)
+-   [Informe de GEI / Campaña (PDF)](files/GEI_Campana.pdf)
+
+## Documentos técnicos
+
+-   [Protocolo de medición de GEI (PDF)](files/Protocolo_GEI.pdf)
+-   [Ficha técnica estación meteorológica (PDF)](files/Ficha_Estacion.pdf)
+
+::: callout-tip
+**Tip:** podés organizar por año, por tema o por proyecto.\
+Ej.: “2025”, “2024”, “Balance hídrico”, “Heladas”, “GEI”.
+:::

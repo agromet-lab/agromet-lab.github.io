@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Laboratorio de Agrometeorología"
+  site-url: "https://agromet-lab.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: lineas.qmd
+        text: Líneas de trabajo
+      - href: informes.qmd
+        text: Informes
+      - href: multimedia.qmd
+        text: Fotos & Videos
+      - href: equipo.qmd
+        text: Equipo
+      - href: contacto.qmd
+        text: Contacto
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+editor: visual
+

@@ -1,0 +1,32 @@
+---
+title: "Laboratorio de Agrometeorología – INTA Balcarce"
+---
+
+## Qué hacemos
+
+Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaciones meteorológicas, balance de agua en cultivos y mediciones de gases de efecto invernadero (GEI) para generar información y herramientas para la gestión productiva y la evaluación ambiental de sistemas agropecuarios.
+
+::: callout-note
+**Áreas principales:** balance hídrico y riesgo agroclimático · monitoreo ambiental · GEI (N₂O, CH₄, CO₂) · análisis de datos y desarrollo de herramientas.
+:::
+
+## Accesos rápidos
+
+-   **Líneas de trabajo:** [Ver líneas](lineas.qmd)\
+-   **Informes y documentos:** [Ver informes](informes.qmd)\
+-   **Fotos y videos:** [Ver multimedia](multimedia.qmd)
+
+## Novedades (opcional)
+
+-   Publicación de informes (heladas, balance hídrico, campañas).
+-   Actualizaciones de plataformas y tableros.
+-   Actividades del laboratorio y colaboraciones.
+
+## Contacto
+
+📍 INTA Balcarce, Buenos Aires, Argentina\
+✉️ (agregá aquí el correo institucional)
+
+```{r}
+1 + 1
+```
