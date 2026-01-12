@@ -1,13 +1,28 @@
----
-title: "Equipo"
----
 
 ## Integrantes
 
--   **Nombre Apellido** — Rol / especialidad
--   **Nombre Apellido** — Rol / especialidad
--   **Nombre Apellido** — Rol / especialidad
+:::::: grid
+::: {.g-col-4 .text-center .team-card}
+![](echarte.jpg){.avatar width="70%"}
 
-## Colaboraciones
+**Dra. Laura Echarte**
 
--   INTA / Universidades / empresas / redes (agregar según corresponda).
+[📄 Ver CV (PDF)](CV_echarte.pdf)
+:::
+
+::: {.g-col-4 .text-center .team-card}
+![](nuria.jpg){.avatar width="70%"}
+
+**Dra. Nuria Lewczuk**
+
+[📄 Ver CV (PDF)](CV_Lewczuk.pdf)
+
+[🔗 LinkedIn](https://www.linkedin.com/in/nurialewczuk)
+:::
+
+::: {.g-col-4 .text-center .team-card}
+![](sebastian.jpg){.avatar width="70%"}
+
+**Sebastián Muñoz**
+:::
+::::::

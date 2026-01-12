@@ -11,12 +11,21 @@ website:
         text: Inicio
       - href: lineas.qmd
         text: Líneas de trabajo
+      - href: proyectos.qmd
+        text: Proyectos de investigación
       - href: informes.qmd
         text: Informes
+      - href: publicaciones.qmd
+        text: Publicaciones
       - href: equipo.qmd
         text: Equipo
       - href: contacto.qmd
         text: Contacto
+  page-footer:
+    left: |
+      <div class="brand-logos footer-logos">
+        <img src="inta_logo2.png" alt="INTA" />
+      </div>
 
 format:
   html:
@@ -25,7 +34,7 @@ format:
       - darkly
     css: styles.css
     respect-user-color-scheme: true
-    toc: true
+    toc: false
 
 
 editor: visual

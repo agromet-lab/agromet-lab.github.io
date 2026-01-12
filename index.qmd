@@ -10,12 +10,6 @@ Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaci
 **Áreas principales:** balance hídrico y riesgo agroclimático · monitoreo ambiental · GEI (N₂O, CH₄, CO₂) · análisis de datos y desarrollo de herramientas.
 :::
 
-## Accesos rápidos
-
--   **Líneas de trabajo:** [Ver líneas](lineas.qmd)\
--   **Informes y documentos:** [Ver informes](informes.qmd)\
--   **Fotos y videos:** [Ver multimedia](multimedia.qmd)
-
 ## Novedades (opcional)
 
 -   Publicación de informes (heladas, balance hídrico, campañas).
@@ -29,3 +23,4 @@ Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaci
 
 \
 \
+
