@@ -3,15 +3,22 @@ title: "Informes"
 ---
 
 
-<a href="Heladas.pdf" target="_blank">📄 Informe de Heladas (PDF)</a>
-<a href="ENSO.pdf" target="_blank">📄 Informe de NIÑO/NIÑA (PDF)</a>
+::: {.report-card}
 
+### Informe de Heladas
 
-## Documentos técnicos
+Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.
 
+<a href="Heladas.pdf" target="_blank">📄 Descargar PDF</a>
 
+:::
 
-::: callout-tip
-**Tip:** podés organizar por año, por tema o por proyecto.\
-Ej.: “2025”, “2024”, “Balance hídrico”, “Heladas”, “GEI”.
+::: {.report-card}
+
+### Informe ENSO (Niño / Niña)
+
+Análisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.
+
+<a href="ENSO.pdf" target="_blank">📄 Descargar PDF</a>
+
 :::
