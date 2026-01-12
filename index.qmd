@@ -25,11 +25,7 @@ Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaci
 ## Contacto
 
 📍 INTA Balcarce, Buenos Aires, Argentina\
-✉️ (agregá aquí el correo institucional)
-
-```{r}
-1 + 1
-```
+✉️ (agregá aquí el correo institucional
 
 \
 \
