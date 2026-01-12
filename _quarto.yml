@@ -9,7 +9,6 @@ website:
     left:
       - href: index.qmd
         text: Inicio
-      - about.qmd
       - href: lineas.qmd
         text: Líneas de trabajo
       - href: informes.qmd
@@ -23,7 +22,7 @@ format:
   html:
     theme:
       - flatly
-      - brand
+      - darkly
     css: styles.css
     respect-user-color-scheme: true
     toc: true
