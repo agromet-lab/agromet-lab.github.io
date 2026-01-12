@@ -30,3 +30,6 @@ Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaci
 ```{r}
 1 + 1
 ```
+
+\
+\
