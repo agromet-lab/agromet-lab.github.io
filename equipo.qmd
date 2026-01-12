@@ -6,7 +6,7 @@
 
 **Dra. Laura Echarte**
 
-[📄 Ver CV (PDF)](CV_echarte.pdf)
+<a href="CV_echarte.pdf" target="_blank">📄 Ver CV (PDF)</a>
 :::
 
 ::: {.g-col-4 .text-center .team-card}
@@ -14,9 +14,9 @@
 
 **Dra. Nuria Lewczuk**
 
-[📄 Ver CV (PDF)](CV_Lewczuk.pdf)
+<a href="CV_Lewczuk.pdf" target="_blank">📄 Ver CV (PDF)</a>
 
-[🔗 LinkedIn](https://www.linkedin.com/in/nurialewczuk)
+<a href="https://www.linkedin.com/in/nurialewczuk" target="_blank">🔗 LinkedIn</a>
 :::
 
 ::: {.g-col-4 .text-center .team-card}

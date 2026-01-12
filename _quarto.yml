@@ -8,7 +8,6 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Inicio
       - href: lineas.qmd
         text: Líneas de trabajo
       - href: proyectos.qmd
@@ -25,6 +24,7 @@ website:
     left: |
       <div class="brand-logos footer-logos">
         <img src="inta_logo2.png" alt="INTA" />
+        <img src="IPADS.png" alt="INTA" />
       </div>
 
 format:
