@@ -12,8 +12,6 @@ website:
         text: Líneas de trabajo
       - href: informes.qmd
         text: Informes
-      - href: multimedia.qmd
-        text: Fotos & Videos
       - href: equipo.qmd
         text: Equipo
       - href: contacto.qmd
