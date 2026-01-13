@@ -32,8 +32,9 @@ website:
 format:
   html:
     theme:
-      - flatly
+      - Flatly
       - darkly
+    
     css: styles.css
     respect-user-color-scheme: true
     toc: false

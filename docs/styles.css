@@ -1,5 +1,22 @@
   /* css styles */
   
+  /* Color de la barra de navegación */
+.navbar {
+  background-color: #2E6F6B !important;   /* verde petróleo */
+}
+
+/* Color del texto */
+.navbar a, 
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Color al pasar el mouse */
+.navbar a:hover {
+  color: #A8E6CF !important;
+}
+
+
   .footer-logos{
     justify-content: center;
     opacity: 0.85;
