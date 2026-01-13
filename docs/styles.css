@@ -1,24 +1,25 @@
-/* css styles */
-
-.footer-logos{
-  justify-content: right;
-  opacity: 0.85;
-  margin-top: 40px;
-  padding-bottom: 20px;
-}
-
-.brand-logos{
+  /* css styles */
+  
+  .footer-logos{
+    justify-content: center;
+    opacity: 0.85;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .brand-logos{
   display: flex;
   gap: 14px;
-  align-items: right;
+  align-items: center;
+  justify-content: center;   
   margin: 0 0 16px 0;
   flex-wrap: wrap;
 }
-
-.brand-logos img{
-  height: 44px;
-  width: auto;
-}
+  
+  .brand-logos img{
+    height: 44px;
+    width: auto;
+  }
 
 
 /* Tarjetas informes */
