@@ -19,14 +19,20 @@ website:
         text: Publicaciones
       - href: equipo.qmd
         text: Equipo
-      - href: contacto.qmd
-        text: Contacto
+
         
   page-footer:
-    left: |
-      <div class="brand-logos footer-logos">
-        <img src="inta_logo2.png" alt="INTA" />
-        <img src="IPADS.png" alt="INTA" />
+    center: |
+      <hr class="footer-line">
+      <div class="footer-bottom">
+        © <span id="year"></span> Laboratorio de Agrometeorología, INTA Balcarce. 
+        Todos los derechos reservados. 
+        Web diseñada por Nuria Lewczuk
+        <a href="https://github.com/Nuria1982" 
+           target="_blank" 
+           class="footer-github">
+          <img src="github.png" alt="github" />
+        </a>
       </div>
 
 format:
@@ -36,6 +42,7 @@ format:
       - darkly
     
     css: styles.css
+    include-after-body: footer-scripts.html
     respect-user-color-scheme: true
     toc: false
 

@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nosotros",
-    "section": "",
-    "text": "Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaciones meteorológicas, balance de agua en cultivos y mediciones de gases de efecto invernadero (GEI) para generar información y herramientas para la gestión productiva y la evaluación ambiental de sistemas agropecuarios.\n\n\n\n\n\n\nNote\n\n\n\nÁreas principales: balance hídrico y riesgo agroclimático · monitoreo ambiental · GEI (N₂O, CH₄, CO₂) · análisis de datos y desarrollo de herramientas."
-  },
-  {
-    "objectID": "index.html#qué-hacemos",
-    "href": "index.html#qué-hacemos",
-    "title": "Laboratorio de Agrometeorología",
-    "section": "Qué hacemos",
-    "text": "Qué hacemos\nSomos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaciones meteorológicas, balance de agua en cultivos y mediciones de gases de efecto invernadero (GEI) para generar información y herramientas para la gestión productiva y la evaluación ambiental de sistemas agropecuarios."
-  },
-  {
-    "objectID": "index.html#accesos-rápidos",
-    "href": "index.html#accesos-rápidos",
-    "title": "Laboratorio de Agrometeorología – INTA Balcarce",
-    "section": "Accesos rápidos",
-    "text": "Accesos rápidos\n\nLíneas de trabajo: Ver líneas\n\nInformes y documentos: Ver informes\n\nFotos y videos: Ver multimedia"
-  },
-  {
-    "objectID": "index.html#novedades-opcional",
-    "href": "index.html#novedades-opcional",
-    "title": "Laboratorio de Agrometeorología",
-    "section": "Novedades (opcional)",
-    "text": "Novedades (opcional)\n\nPublicación de informes (heladas, balance hídrico, campañas).\nActualizaciones de plataformas y tableros.\nActividades del laboratorio y colaboraciones."
-  },
-  {
-    "objectID": "index.html#contacto",
-    "href": "index.html#contacto",
-    "title": "Laboratorio de Agrometeorología",
-    "section": "Contacto",
-    "text": "Contacto\n📍 INTA Balcarce, Buenos Aires, Argentina\n✉️ (agregá aquí el correo institucional"
-  },
-  {
     "objectID": "lineas.html",
     "href": "lineas.html",
     "title": "Líneas de trabajo",
@@ -70,6 +35,27 @@
     "text": "Datos y herramientas\n\nIntegración de datos de campo con análisis estadístico y visualización.\nDesarrollo de productos y tableros (Quarto / R / Shiny) para uso interno y público."
   },
   {
+    "objectID": "index.html#qué-hacemos",
+    "href": "index.html#qué-hacemos",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Qué hacemos",
+    "text": "Qué hacemos\nSomos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaciones meteorológicas, balance de agua en cultivos y mediciones de gases de efecto invernadero (GEI) para generar información y herramientas para la gestión productiva y la evaluación ambiental de sistemas agropecuarios."
+  },
+  {
+    "objectID": "contacto.html",
+    "href": "contacto.html",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "",
+    "text": "📍 EEA INTA Balcarce — Buenos Aires, Argentina\n🌐 Plataformas:\n📸 Instagram – @agromet_inta.balcarce\n🌱 Plataforma Agromet"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "equipo.html",
     "href": "equipo.html",
     "title": "Laboratorio de Agrometeorología",
@@ -84,52 +70,10 @@
     "text": "Dra. Laura Echarte\n📧 echarte.laura@inta.gob.ar\n📄 CV (PDF)\n\n\n\nDra. Nuria Lewczuk\n📧 lewczuk.nuria@inta.gob.ar\n📄 CV (PDF)\n🔗 LinkedIn\n\n\n\nSebastián Muñoz"
   },
   {
-    "objectID": "equipo.html#colaboraciones",
-    "href": "equipo.html#colaboraciones",
-    "title": "Equipo",
-    "section": "Colaboraciones",
-    "text": "Colaboraciones\n\nINTA / Universidades / empresas / redes (agregar según corresponda)."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "contacto.html",
-    "href": "contacto.html",
-    "title": "Laboratorio de Agrometeorología",
-    "section": "",
-    "text": "📍 EEA INTA Balcarce — Buenos Aires, Argentina\n🌐 Plataformas:\n📸 Instagram – @agromet_inta.balcarce\n🌱 Plataforma Agromet"
-  },
-  {
-    "objectID": "contacto.html#cómo-llegar-opcional",
-    "href": "contacto.html#cómo-llegar-opcional",
-    "title": "Cntacto",
-    "section": "Cómo llegar (opcional)",
-    "text": "Cómo llegar (opcional)\nPodés insertar un mapa con un link: - Abrir en Google Maps"
-  },
-  {
     "objectID": "informes.html",
     "href": "informes.html",
     "title": "Informes",
     "section": "",
     "text": "Heladas\nCaracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.\n📄 Descargar PDF\n\n\nENSO (Niño / Niña)\nAnálisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.\n📄 Descargar PDF"
-  },
-  {
-    "objectID": "informes.html#informes",
-    "href": "informes.html#informes",
-    "title": "Informes",
-    "section": "Informes",
-    "text": "Informes\n\nInforme de Heladas (PDF)\nInforme de Balance Hídrico (PDF)"
-  },
-  {
-    "objectID": "informes.html#documentos-técnicos",
-    "href": "informes.html#documentos-técnicos",
-    "title": "Informes",
-    "section": "Documentos técnicos",
-    "text": "Documentos técnicos\n\n\n\n\n\n\nTip\n\n\n\nTip: podés organizar por año, por tema o por proyecto.\nEj.: “2025”, “2024”, “Balance hídrico”, “Heladas”, “GEI”."
   }
 ]
