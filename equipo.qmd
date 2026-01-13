@@ -6,6 +6,8 @@
 
 **Dra. Laura Echarte**
 
+*Agrometeorología y Uso eficiente del agua en sistemas agrícolas*
+
 📧 **echarte.laura\@inta.gob.ar**
 
 <a href="CV_echarte.pdf" target="_blank">📄 CV (PDF)</a>
@@ -15,6 +17,8 @@
 ![](nuria.jpg){.avatar width="70%"}
 
 **Dra. Nuria Lewczuk**
+
+*Emisiones de GEI y balance de carbono en agrecosistemas.*
 
 📧 **lewczuk.nuria\@inta.gob.ar**
 
@@ -27,5 +31,7 @@
 ![](sebastian.jpg){.avatar width="70%"}
 
 **Sebastián Muñoz**
+
+*Observador Meteorológico Ofical del Servicio Meteorológico Nacional*
 :::
 ::::::

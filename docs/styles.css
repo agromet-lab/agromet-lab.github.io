@@ -92,11 +92,32 @@
   object-fit: cover;
 }
 
+/*Seccion que hacemos */
 
-/* Ocultar los iconos de "más opciones" (6 puntitos) en el footer */
-.page-footer .dropdown,
-.page-footer .dropdown-toggle,
-.page-footer .quarto-actions,
-.page-footer .btn {
-  display: none !important;
+.lineas-card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 18px 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  margin: 8px 0;
+}
+
+.lineas-card .lineas {
+  background: #1f2933;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  height: 100%;
+}
+
+.card-title {
+  display: block;
+  background: #ffffff;
+  color: #555555;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }

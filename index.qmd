@@ -11,6 +11,39 @@ title: ""
 Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaciones meteorológicas, balance de agua en cultivos y mediciones de gases de efecto invernadero (GEI) para generar información y herramientas para la gestión productiva y la evaluación ambiental de sistemas agropecuarios.
 
 
+:::::: grid
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Balance de agua en cultivos</span>
+
+- Seguimiento de **precipitación, evapotranspiración, almacenamiento de agua en el suelo** y demanda atmosférica.  
+- Evaluación de **períodos críticos** y apoyo a decisiones (siembra, manejo, fertilización, riego).  
+- Comparación interanual e histórica.
+:::
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Gases de efecto invernadero (GEI)</span>
+
+- Medición de emisiones de **N₂O, CH₄ y CO₂** en sistemas productivos.  
+- Evaluación de prácticas de manejo y condiciones ambientales.  
+- Integración con datos meteorológicos y de suelo.
+:::
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Monitoreo agroclimático</span>
+
+- Caracterización de eventos extremos (heladas, olas de calor, déficits/excesos hídricos).  
+- Indicadores agroclimáticos para extensión y toma de decisiones.
+:::
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Datos y herramientas</span>
+
+- Integración de datos de campo con análisis estadístico y visualización.  
+- Desarrollo de productos y tableros (Quarto / R / Shiny).
+:::
+
+::::::
 
 \
 \

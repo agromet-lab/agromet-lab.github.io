@@ -9,14 +9,16 @@ website:
     logo: logo_labo.png
     left:
       - href: index.qmd
-      - href: lineas.qmd
-        text: Líneas de trabajo
+      - href: servicios.qmd
+        text: Servicios
       - href: proyectos.qmd
         text: Proyectos de investigación
       - href: informes.qmd
         text: Informes
       - href: publicaciones.qmd
         text: Publicaciones
+      - href: capacitaciones.qmd
+        text: Capacitaciones
       - href: equipo.qmd
         text: Equipo
 

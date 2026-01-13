@@ -75,5 +75,47 @@
     "title": "Informes",
     "section": "",
     "text": "Heladas\nCaracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.\n📄 Descargar PDF\n\n\nENSO (Niño / Niña)\nAnálisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.\n📄 Descargar PDF"
+  },
+  {
+    "objectID": "index.html#balance-de-agua-en-cultivos",
+    "href": "index.html#balance-de-agua-en-cultivos",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Balance de agua en cultivos",
+    "text": "Balance de agua en cultivos\n\nSeguimiento de precipitación, evapotranspiración, almacenamiento de agua en el suelo y demanda atmosférica.\n\nEvaluación de períodos críticos y apoyo a decisiones (siembra, manejo, fertilización, riego).\n\nComparación interanual e histórica."
+  },
+  {
+    "objectID": "index.html#monitoreo-agroclimático-y-riesgo",
+    "href": "index.html#monitoreo-agroclimático-y-riesgo",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Monitoreo agroclimático y riesgo",
+    "text": "Monitoreo agroclimático y riesgo\n\nCaracterización de eventos extremos (heladas, olas de calor, déficits/excesos hídricos).\n\nIndicadores agroclimáticos para extensión y toma de decisiones."
+  },
+  {
+    "objectID": "index.html#gases-de-efecto-invernadero-gei",
+    "href": "index.html#gases-de-efecto-invernadero-gei",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Gases de efecto invernadero (GEI)",
+    "text": "Gases de efecto invernadero (GEI)\n\nMedición de emisiones de N₂O, CH₄ y CO₂ en sistemas productivos.\n\nEvaluación de prácticas de manejo y condiciones ambientales.\n\nIntegración con datos meteorológicos y de suelo."
+  },
+  {
+    "objectID": "index.html#datos-y-herramientas",
+    "href": "index.html#datos-y-herramientas",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Datos y herramientas",
+    "text": "Datos y herramientas\n\nIntegración de datos de campo con análisis estadístico y visualización.\n\nDesarrollo de productos y tableros (Quarto / R / Shiny)."
+  },
+  {
+    "objectID": "publicaciones.html",
+    "href": "publicaciones.html",
+    "title": "Publicaciones",
+    "section": "",
+    "text": "/* google scholar */"
+  },
+  {
+    "objectID": "index.html#monitoreo-agroclimático",
+    "href": "index.html#monitoreo-agroclimático",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Monitoreo agroclimático",
+    "text": "Monitoreo agroclimático\n\nCaracterización de eventos extremos (heladas, olas de calor, déficits/excesos hídricos).\n\nIndicadores agroclimáticos para extensión y toma de decisiones."
   }
 ]
