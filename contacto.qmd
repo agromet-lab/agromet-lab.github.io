@@ -1,15 +1,15 @@
 ---
-title: "Contacto"
+title: ""
 ---
 
-📍 **INTA Balcarce** — Buenos Aires, Argentina  
+📍 **INTA Balcarce** — Buenos Aires, Argentina
 
 🌐 **Plataformas:**
 
-📸 [Instagram – @agromet_inta.balcarce](https://www.instagram.com/agromet_inta.balcarce/) 
+📸 [Instagram – \@agromet_inta.balcarce](https://www.instagram.com/agromet_inta.balcarce/)
 
-🌱 [Plataforma Agromet](https://intabalcarce.shinyapps.io/Agromet/)  
+🌱 [Plataforma Agromet](https://intabalcarce.shinyapps.io/Agromet/)
 
-📧 **agrometeorologia@inta.gob.ar**
+📧 **agrometeorologia\@inta.gob.ar**
 
 🗺️ [Cómo llegar (Google Maps)](https://www.google.com/maps)
