@@ -14,12 +14,12 @@ title: ""
 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=heladas" target="_blank">Heladas</a>
 
 -	**Cambio climático** 
-👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=clima" target="_blank">Análisis</a>
+👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=cambio_climatico" target="_blank">Análisis</a>
 
 
 
 -	**Descarga de datos meteorológicos.**
-👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=datos" target="_blank">Datos</a>
+👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=descarga" target="_blank">Datos</a>
 
 
 <div class="volver-inicio">
