@@ -3,6 +3,8 @@ title: ""
 bibliography:
   - publicaciones/echarte.bib
   - publicaciones/lewczuk.bib
+nocite: |
+  @*
 ---
 
 ## Informes técnicos
