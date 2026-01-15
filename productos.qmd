@@ -1,0 +1,22 @@
+---
+title: ""
+---
+
+## Para la zona de influencia de la EEA INTA Balcarce
+
+-	Ambiente para el cultivo de maíz y de soja, interactivo con fechas de siembra —LINK a shinny
+
+-	Heladas, probabilidad de ocurrencia en diferentes fechas---LINK a shinny
+
+-	Balance de agua para el cultivo de maíz y de soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo ---Link a shinny.
+
+-	Cambio climático ---Link a Shinny
+
+-	Pronósticos ---Link a shinny.
+
+-	Descarga de datos meteorológicos ---Link a shinny
+
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>

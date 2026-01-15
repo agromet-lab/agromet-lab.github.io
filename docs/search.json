@@ -46,7 +46,7 @@
     "href": "contacto.html",
     "title": "Laboratorio de Agrometeorología",
     "section": "",
-    "text": "📍 EEA INTA Balcarce — Buenos Aires, Argentina\n🌐 Plataformas:\n📸 Instagram – @agromet_inta.balcarce\n🌱 Plataforma Agromet"
+    "text": "📧 echarte.laura@inta.gob.ar\n📧 lewczuk.nuria@inta.gob.ar"
   },
   {
     "objectID": "about.html",
@@ -60,14 +60,14 @@
     "href": "equipo.html",
     "title": "Laboratorio de Agrometeorología",
     "section": "",
-    "text": "Dra. Laura Echarte\n📧 echarte.laura@inta.gob.ar\n📄 CV (PDF)\n\n\n\nDra. Nuria Lewczuk\n📧 lewczuk.nuria@inta.gob.ar\n📄 CV (PDF)\n🔗 LinkedIn\n\n\n\nSebastián Muñoz"
+    "text": "Dra. Laura Echarte\nManejo de agua y cultivos Caracterización agroclimática y meteorológica.\n📧 echarte.laura@inta.gob.ar\n📄 CV (PDF)\n\n\n\nDra. Nuria Lewczuk\nEmisiones de GEI y balance de carbono en agrecosistemas. Caracterización agroclimática y meteorológica.\n📧 lewczuk.nuria@inta.gob.ar\n📄 CV (PDF)\n🔗 LinkedIn\n\n\n\nSebastián Muñoz\nObservador Meteorológico Ofical del Servicio Meteorológico Nacional\n\n\n\n⬆ Volver al inicio"
   },
   {
     "objectID": "equipo.html#integrantes",
     "href": "equipo.html#integrantes",
     "title": "Laboratorio de Agrometeorología",
     "section": "",
-    "text": "Dra. Laura Echarte\n📧 echarte.laura@inta.gob.ar\n📄 CV (PDF)\n\n\n\nDra. Nuria Lewczuk\n📧 lewczuk.nuria@inta.gob.ar\n📄 CV (PDF)\n🔗 LinkedIn\n\n\n\nSebastián Muñoz"
+    "text": "Dra. Laura Echarte\nManejo de agua y cultivos Caracterización agroclimática y meteorológica.\n📧 echarte.laura@inta.gob.ar\n📄 CV (PDF)\n\n\n\nDra. Nuria Lewczuk\nEmisiones de GEI y balance de carbono en agrecosistemas. Caracterización agroclimática y meteorológica.\n📧 lewczuk.nuria@inta.gob.ar\n📄 CV (PDF)\n🔗 LinkedIn\n\n\n\nSebastián Muñoz\nObservador Meteorológico Ofical del Servicio Meteorológico Nacional\n\n\n\n⬆ Volver al inicio"
   },
   {
     "objectID": "informes.html",
@@ -107,9 +107,9 @@
   {
     "objectID": "publicaciones.html",
     "href": "publicaciones.html",
-    "title": "Publicaciones",
+    "title": "Laboratorio de Agrometeorología",
     "section": "",
-    "text": "/* google scholar */"
+    "text": "Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.\n📄 Descargar PDF\n\n\n\nAnálisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.\n📄 Descargar PDF"
   },
   {
     "objectID": "index.html#monitoreo-agroclimático",
@@ -117,5 +117,166 @@
     "title": "Laboratorio de Agrometeorología",
     "section": "Monitoreo agroclimático",
     "text": "Monitoreo agroclimático\n\nCaracterización de eventos extremos (heladas, olas de calor, déficits/excesos hídricos).\n\nIndicadores agroclimáticos para extensión y toma de decisiones."
+  },
+  {
+    "objectID": "publicaciones.html#dra.-laura-echarte",
+    "href": "publicaciones.html#dra.-laura-echarte",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Dra. Laura Echarte",
+    "text": "Dra. Laura Echarte"
+  },
+  {
+    "objectID": "publicaciones.html#dra.-nuria-lewczuk",
+    "href": "publicaciones.html#dra.-nuria-lewczuk",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Dra. Nuria Lewczuk",
+    "text": "Dra. Nuria Lewczuk\n\n\n\n\n⬆ Volver al inicio"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "",
+    "text": "Laboratorio de Agrometeorología\n\n\n(IPADS; EEA INTA Balcarce – CONICET)\n\n\nAgrometeorología aplicada al manejo del agua en cultivos y a las emisiones de gases con efecto invernadero (GEI).\n\n\nLíneas de trabajo Productos Servicios Novedades Publicaciones Equipo Contacto\n\n\n:::\n:::"
+  },
+  {
+    "objectID": "que_hacemos.html",
+    "href": "que_hacemos.html",
+    "title": "Líneas de trabajo",
+    "section": "",
+    "text": "Nos especializamos en comprender cómo el manejo afecta al consumo y la eficiencia en el uso del agua en los cultivos, en ambientes contrastantes en disponibilidad de agua. Nuestra aproximación es mediante experimentación a campo, a nivel de cultivo y de plantas individuales.\n\n\n\n\nMedición de emisiones de N₂O, CH₄ y CO₂ en sistemas productivos.\n\nEvaluación de prácticas de manejo y condiciones ambientales.\n\nIntegración con datos meteorológicos y de suelo.\n\n\n\n\nCaracterizamos el ambiente meteorológico y climático de la región mediante el análisis de variables de interés agronómico registradas en la estación meteorológica de la EEA INTA Balcarce, como base para la interpretación de procesos productivos y el desarrollo de herramientas de decisión.\n\n\n\n\nIntegración de datos de campo con análisis estadístico y visualización.\n\nDesarrollo de productos y tableros (Quarto / R / Shiny)."
+  },
+  {
+    "objectID": "que_hacemos.html#que-hacemos",
+    "href": "que_hacemos.html#que-hacemos",
+    "title": "Que hacemos",
+    "section": "",
+    "text": "Somos el Laboratorio de Agrometeorología de INTA Balcarce. Integramos observaciones meteorológicas, balance de agua en cultivos y mediciones de gases de efecto invernadero (GEI) para generar información y herramientas para la gestión productiva y la evaluación ambiental de sistemas agropecuarios."
+  },
+  {
+    "objectID": "que_hacemos.html#balance-de-agua-en-cultivos",
+    "href": "que_hacemos.html#balance-de-agua-en-cultivos",
+    "title": "Que hacemos",
+    "section": "Balance de agua en cultivos",
+    "text": "Balance de agua en cultivos\n\nSeguimiento de precipitación, evapotranspiración, almacenamiento de agua en el suelo y demanda atmosférica.\n\nEvaluación de períodos críticos y apoyo a decisiones (siembra, manejo, fertilización, riego).\n\nComparación interanual e histórica."
+  },
+  {
+    "objectID": "que_hacemos.html#gases-de-efecto-invernadero-gei",
+    "href": "que_hacemos.html#gases-de-efecto-invernadero-gei",
+    "title": "Líneas de trabajo",
+    "section": "",
+    "text": "Medición de emisiones de N₂O, CH₄ y CO₂ en sistemas productivos.\n\nEvaluación de prácticas de manejo y condiciones ambientales.\n\nIntegración con datos meteorológicos y de suelo."
+  },
+  {
+    "objectID": "que_hacemos.html#monitoreo-agroclimático",
+    "href": "que_hacemos.html#monitoreo-agroclimático",
+    "title": "Que hacemos",
+    "section": "Monitoreo agroclimático",
+    "text": "Monitoreo agroclimático\n\nCaracterización de eventos extremos (heladas, olas de calor, déficits/excesos hídricos).\n\nIndicadores agroclimáticos para extensión y toma de decisiones."
+  },
+  {
+    "objectID": "que_hacemos.html#datos-y-herramientas",
+    "href": "que_hacemos.html#datos-y-herramientas",
+    "title": "Líneas de trabajo",
+    "section": "",
+    "text": "Integración de datos de campo con análisis estadístico y visualización.\n\nDesarrollo de productos y tableros (Quarto / R / Shiny)."
+  },
+  {
+    "objectID": "index.html#bienvenidos",
+    "href": "index.html#bienvenidos",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Bienvenidos",
+    "text": "Bienvenidos"
+  },
+  {
+    "objectID": "que_hacemos.html#agua-y-cultivos",
+    "href": "que_hacemos.html#agua-y-cultivos",
+    "title": "Líneas de trabajo",
+    "section": "",
+    "text": "Nos especializamos en comprender cómo el manejo afecta al consumo y la eficiencia en el uso del agua en los cultivos, en ambientes contrastantes en disponibilidad de agua. Nuestra aproximación es mediante experimentación a campo, a nivel de cultivo y de plantas individuales."
+  },
+  {
+    "objectID": "que_hacemos.html#agrometeorología-y-climatología",
+    "href": "que_hacemos.html#agrometeorología-y-climatología",
+    "title": "Líneas de trabajo",
+    "section": "",
+    "text": "Caracterizamos el ambiente meteorológico y climático de la región mediante el análisis de variables de interés agronómico registradas en la estación meteorológica de la EEA INTA Balcarce, como base para la interpretación de procesos productivos y el desarrollo de herramientas de decisión."
+  },
+  {
+    "objectID": "que_hacemos.html#proyectos-más-recientes",
+    "href": "que_hacemos.html#proyectos-más-recientes",
+    "title": "Líneas de trabajo",
+    "section": "Proyectos más recientes",
+    "text": "Proyectos más recientes\n\nAdaptación del cultivo de maíz a deficiencias de agua en el suelo y reducción de emisiones de N2O, mediante el uso de hongos micorrícicos arbusculares (Lewczuk, N., Responsable).\nTecnologías para la valorización de residuos agropecuarios y agroindustriales. PIETR-2025 (Echarte, L., Coordinadora).\nBases ecofisiológicas de la respuesta de la eficiencia en el uso del agua en maíz ante variaciones en la densidad de plantas y cobertura del suelo. ANPCYT, PICT-2019 1444. (Echarte, L., Responsable).\nYara (Lewczuk, N., Responsable).\nAlethia (Lewczuk, N., Responsable)."
+  },
+  {
+    "objectID": "productos.html",
+    "href": "productos.html",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "",
+    "text": "Ambiente para el cultivo de maíz y de soja, interactivo con fechas de siembra —LINK a shinny\nHeladas, probabilidad de ocurrencia en diferentes fechas—LINK a shinny\nBalance de agua para el cultivo de maíz y de soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo —Link a shinny.\nCambio climático —Link a Shinny\nPronósticos —Link a shinny.\nDescarga de datos meteorológicos —Link a shinny\n\n\n⬆ Volver al inicio"
+  },
+  {
+    "objectID": "productos.html#para-la-zona-de-influencia-de-la-eea-inta-balcarce",
+    "href": "productos.html#para-la-zona-de-influencia-de-la-eea-inta-balcarce",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "",
+    "text": "Ambiente para el cultivo de maíz y de soja, interactivo con fechas de siembra —LINK a shinny\nHeladas, probabilidad de ocurrencia en diferentes fechas—LINK a shinny\nBalance de agua para el cultivo de maíz y de soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo —Link a shinny.\nCambio climático —Link a Shinny\nPronósticos —Link a shinny.\nDescarga de datos meteorológicos —Link a shinny\n\n\n⬆ Volver al inicio"
+  },
+  {
+    "objectID": "servicios.html",
+    "href": "servicios.html",
+    "title": "Servicios",
+    "section": "",
+    "text": "Caracterización agroclimática y agrometeorológica.\nSeguimiento de agua en cultivos mediante balances hídricos.\nCuál otro?\n\n\n⬆ Volver al inicio"
+  },
+  {
+    "objectID": "servicios.html#servicios",
+    "href": "servicios.html#servicios",
+    "title": "Servicios",
+    "section": "",
+    "text": "Caracterización agroclimática y agrometeorológica.\nSeguimiento de agua en cultivos mediante balances hídricos.\nCuál otro?"
+  },
+  {
+    "objectID": "novedades.html",
+    "href": "novedades.html",
+    "title": "Novedades",
+    "section": "",
+    "text": "¡Muy pronto! Curso sobre agrometeorología aplicada al manejo del agua y las emisiones de GEI.\nOportunidad de aplicación a becas para capacitarte con nosotros (contactanos)\n\n⬆ Volver al inicio"
+  },
+  {
+    "objectID": "contacto.html#donde-estamos",
+    "href": "contacto.html#donde-estamos",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Donde estamos",
+    "text": "Donde estamos\n📍 INTA Balcarce — Buenos Aires, Argentina\n\n\n\n\n\n⬆ Volver al inicio"
+  },
+  {
+    "objectID": "contacto.html#cómo-llegar",
+    "href": "contacto.html#cómo-llegar",
+    "title": "Contacto",
+    "section": "Cómo llegar",
+    "text": "Cómo llegar"
+  },
+  {
+    "objectID": "contacto.html#ante-cualquier-consulta-podes-ecribirnos",
+    "href": "contacto.html#ante-cualquier-consulta-podes-ecribirnos",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "",
+    "text": "📧 echarte.laura@inta.gob.ar\n📧 lewczuk.nuria@inta.gob.ar"
+  },
+  {
+    "objectID": "publicaciones.html#informes-técnicos",
+    "href": "publicaciones.html#informes-técnicos",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "",
+    "text": "Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.\n📄 Descargar PDF\n\n\n\nAnálisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.\n📄 Descargar PDF"
+  },
+  {
+    "objectID": "publicaciones.html#publicaciones-científicas",
+    "href": "publicaciones.html#publicaciones-científicas",
+    "title": "Laboratorio de Agrometeorología",
+    "section": "Publicaciones científicas",
+    "text": "Publicaciones científicas\n\nDra. Laura Echarte\n\n\n\n\n\nDra. Nuria Lewczuk\n\n\n\n\n⬆ Volver al inicio"
   }
 ]

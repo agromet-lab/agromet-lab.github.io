@@ -1,0 +1,13 @@
+---
+title: "Novedades"
+---
+
+<span class="destacado">¡Muy pronto!</span>
+Curso sobre agrometeorología aplicada al manejo del agua y las emisiones de GEI.
+
+Oportunidad de aplicación a becas para capacitarte con nosotros (contactanos)
+
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>

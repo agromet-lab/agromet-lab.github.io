@@ -6,7 +6,8 @@
 
 **Dra. Laura Echarte**
 
-*Agrometeorología y Uso eficiente del agua en sistemas agrícolas*
+*Manejo de agua y cultivos*
+*Caracterización agroclimática y meteorológica.*
 
 📧 **echarte.laura\@inta.gob.ar**
 
@@ -19,6 +20,7 @@
 **Dra. Nuria Lewczuk**
 
 *Emisiones de GEI y balance de carbono en agrecosistemas.*
+*Caracterización agroclimática y meteorológica.*
 
 📧 **lewczuk.nuria\@inta.gob.ar**
 
@@ -33,5 +35,10 @@
 **Sebastián Muñoz**
 
 *Observador Meteorológico Ofical del Servicio Meteorológico Nacional*
+
 :::
 ::::::
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>

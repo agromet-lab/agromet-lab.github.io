@@ -1,5 +1,45 @@
 ---
-title: "Publicaciones"
+title: ""
+bibliography:
+  - publicaciones/echarte.bib
+  - publicaciones/lewczuk.bib
 ---
 
-/\* google scholar \*/
+## Informes técnicos
+::: {.report-card}
+
+### Heladas
+
+Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.
+
+<a href="Heladas.pdf" target="_blank">📄 Descargar PDF</a>
+
+:::
+
+::: {.report-card}
+
+### ENSO (Niño / Niña)
+
+Análisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.
+
+<a href="ENSO.pdf" target="_blank">📄 Descargar PDF</a>
+
+:::
+
+## Publicaciones científicas
+
+### Dra. Laura Echarte
+
+::: {#refs keyword=echarte}
+:::
+
+### Dra. Nuria Lewczuk
+
+::: {#refs keyword=lewczuk}
+:::
+
+
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>

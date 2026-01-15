@@ -93,19 +93,23 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Qué hacemos</span></a>
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lineas.html"> 
+    <a class="nav-link" href="./que_hacemos.html"> 
 <span class="menu-text">Líneas de trabajo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proyectos.html"> 
-<span class="menu-text">Proyectos de investigación</span></a>
+    <a class="nav-link" href="./productos.html"> 
+<span class="menu-text">Productos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./informes.html"> 
-<span class="menu-text">Informes</span></a>
+    <a class="nav-link" href="./servicios.html"> 
+<span class="menu-text">Servicios</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./novedades.html"> 
+<span class="menu-text">Novedades</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publicaciones.html"> 
@@ -137,14 +141,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>📍 <strong>EEA INTA Balcarce</strong> — Buenos Aires, Argentina</p>
-<p>🌐 <strong>Plataformas:</strong></p>
-<p>📸 <a href="https://www.instagram.com/agromet_inta.balcarce/">Instagram – @agromet_inta.balcarce</a></p>
-<p>🌱 <a href="https://intabalcarce.shinyapps.io/Agromet/">Plataforma Agromet</a></p>
+<section id="ante-cualquier-consulta-podes-ecribirnos" class="level2">
+<h2 class="anchored" data-anchor-id="ante-cualquier-consulta-podes-ecribirnos">Ante cualquier consulta podes ecribirnos</h2>
+<p>📧 echarte.laura@inta.gob.ar</p>
+<p>📧 lewczuk.nuria@inta.gob.ar</p>
+</section>
+<section id="donde-estamos" class="level2">
+<h2 class="anchored" data-anchor-id="donde-estamos">Donde estamos</h2>
+<p>📍 <strong>INTA Balcarce</strong> — Buenos Aires, Argentina</p>
+<div class="{=html}">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50461.95240342558!2d-58.28547565742188!3d-37.76959881231908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aa6b4b9fc09cf%3A0x1f401d560ad92922!2sE.E.A.%20Balcarce!5e0!3m2!1ses!2sar!4v1768485546116!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+<div class="volver-inicio">
+<p><a href="index.html" class="volver-btn">⬆ Volver al inicio</a></p>
+</div>
 
-
+</section>
 
 </main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const el = document.getElementById("year");
+
+  if (el) el.textContent = new Date().getFullYear();
+
+});
+
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -566,13 +593,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<div class="brand-logos footer-logos">
-<p><img src="inta_logo2.png" alt="INTA"> <img src="IPADS.png" alt="INTA"></p>
-</div>
-</div>   
-    <div class="nav-footer-center">
       &nbsp;
-    </div>
+    </div>   
+    <div class="nav-footer-center">
+<hr class="footer-line">
+<div class="footer-bottom">
+<p>© <span id="year"></span> Laboratorio de Agrometeorología, INTA Balcarce. Todos los derechos reservados. Web diseñada por Nuria Lewczuk <a href="https://github.com/Nuria1982" target="_blank" class="footer-github"> <img src="github.png" alt="github"> </a></p>
+</div>
+<p>:::</p>
+<p>:::</p>
+
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

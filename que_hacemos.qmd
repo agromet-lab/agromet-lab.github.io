@@ -1,0 +1,57 @@
+---
+title: "Líneas de trabajo"
+---
+
+
+
+::: {.grid}
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Agua y cultivos</span>
+
+Nos especializamos en comprender cómo el manejo afecta al consumo y la eficiencia en el uso del agua en los cultivos, en ambientes contrastantes en disponibilidad de agua. Nuestra aproximación es mediante experimentación a campo, a nivel de cultivo y de plantas individuales.
+:::
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Gases de efecto invernadero (GEI)</span>
+
+- Medición de emisiones de **N₂O, CH₄ y CO₂** en sistemas productivos.  
+- Evaluación de prácticas de manejo y condiciones ambientales.  
+- Integración con datos meteorológicos y de suelo.
+:::
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Agrometeorología y climatología</span>
+
+Caracterizamos el ambiente meteorológico y climático de la región mediante el análisis de variables de interés agronómico registradas en la estación meteorológica de la EEA INTA Balcarce, como base para la interpretación de procesos productivos y el desarrollo de herramientas de decisión.
+:::
+
+::: {.g-col-6 .text-center .lineas-card .lineas}
+## <span class="card-title">Datos y herramientas</span>
+
+- Integración de datos de campo con análisis estadístico y visualización.  
+- Desarrollo de productos y tableros (Quarto / R / Shiny).
+:::
+
+:::
+
+
+
+# Proyectos más recientes
+
+- Adaptación del cultivo de maíz a deficiencias de agua en el suelo y reducción de emisiones de N2O, mediante el uso de hongos micorrícicos arbusculares (Lewczuk, N., Responsable).
+
+- Tecnologías para la valorización de residuos agropecuarios y agroindustriales. PIETR-2025 (Echarte, L., Coordinadora).
+
+- Bases ecofisiológicas de la respuesta de la eficiencia en el uso del agua en maíz ante variaciones en la densidad de plantas y cobertura del suelo. ANPCYT, PICT-2019 1444. (Echarte, L., Responsable).
+
+- Yara (Lewczuk, N., Responsable).
+
+- Alethia (Lewczuk, N., Responsable).
+
+
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>
+
