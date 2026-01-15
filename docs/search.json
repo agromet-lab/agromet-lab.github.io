@@ -144,7 +144,7 @@
     "href": "que_hacemos.html",
     "title": "Líneas de trabajo",
     "section": "",
-    "text": "Nos especializamos en comprender cómo el manejo afecta al consumo y la eficiencia en el uso del agua en los cultivos, en ambientes contrastantes en disponibilidad de agua. Nuestra aproximación es mediante experimentación a campo, a nivel de cultivo y de plantas individuales.\n\n\n\n\nMedición de emisiones de N₂O, CH₄ y CO₂ en sistemas productivos.\n\nEvaluación de prácticas de manejo y condiciones ambientales.\n\nIntegración con datos meteorológicos y de suelo.\n\n\n\n\nCaracterizamos el ambiente meteorológico y climático de la región mediante el análisis de variables de interés agronómico registradas en la estación meteorológica de la EEA INTA Balcarce, como base para la interpretación de procesos productivos y el desarrollo de herramientas de decisión.\n\n\n\n\nIntegración de datos de campo con análisis estadístico y visualización.\n\nDesarrollo de productos y tableros (Quarto / R / Shiny)."
+    "text": "Nos especializamos en comprender cómo el manejo afecta al consumo y la eficiencia en el uso del agua en los cultivos, en ambientes contrastantes en disponibilidad de agua. Nuestra aproximación es mediante experimentación a campo, a nivel de cultivo y de plantas individuales.\n\n\n\nNos enfocamos en la medición y análisis de las emisiones de óxido nitroso (N₂O), metano (CH₄) y dióxido de carbono (CO₂) en sistemas productivos agrícolas. Evaluamos cómo las prácticas de manejo, las condiciones ambientales y las características del suelo influyen en la dinámica de estos gases, integrando información meteorológica y edáfica para comprender los procesos que regulan las emisiones y contribuir al desarrollo de estrategias de mitigación.\n\n\n\nCaracterizamos el ambiente meteorológico y climático de la región mediante el análisis de variables de interés agronómico registradas en la estación meteorológica de la EEA INTA Balcarce, como base para la interpretación de procesos productivos y el desarrollo de herramientas de decisión.\n\n\n\nDesarrollamos herramientas basadas en la integración de datos de campo, información meteorológica y análisis estadístico para apoyar la toma de decisiones en sistemas productivos. A través de plataformas interactivas y tableros digitales implementados en R, Quarto y Shiny, facilitamos la visualización, interpretación y uso de la información agroambiental para investigadores, técnicos y productores."
   },
   {
     "objectID": "que_hacemos.html#que-hacemos",
@@ -165,7 +165,7 @@
     "href": "que_hacemos.html#gases-de-efecto-invernadero-gei",
     "title": "Líneas de trabajo",
     "section": "",
-    "text": "Medición de emisiones de N₂O, CH₄ y CO₂ en sistemas productivos.\n\nEvaluación de prácticas de manejo y condiciones ambientales.\n\nIntegración con datos meteorológicos y de suelo."
+    "text": "Nos enfocamos en la medición y análisis de las emisiones de óxido nitroso (N₂O), metano (CH₄) y dióxido de carbono (CO₂) en sistemas productivos agrícolas. Evaluamos cómo las prácticas de manejo, las condiciones ambientales y las características del suelo influyen en la dinámica de estos gases, integrando información meteorológica y edáfica para comprender los procesos que regulan las emisiones y contribuir al desarrollo de estrategias de mitigación."
   },
   {
     "objectID": "que_hacemos.html#monitoreo-agroclimático",
@@ -179,7 +179,7 @@
     "href": "que_hacemos.html#datos-y-herramientas",
     "title": "Líneas de trabajo",
     "section": "",
-    "text": "Integración de datos de campo con análisis estadístico y visualización.\n\nDesarrollo de productos y tableros (Quarto / R / Shiny)."
+    "text": "Desarrollamos herramientas basadas en la integración de datos de campo, información meteorológica y análisis estadístico para apoyar la toma de decisiones en sistemas productivos. A través de plataformas interactivas y tableros digitales implementados en R, Quarto y Shiny, facilitamos la visualización, interpretación y uso de la información agroambiental para investigadores, técnicos y productores."
   },
   {
     "objectID": "index.html#bienvenidos",
