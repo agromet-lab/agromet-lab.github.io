@@ -3,10 +3,39 @@ title: "Servicios"
 ---
 
 
+::: {.servicios-grid}
 
-- Caracterización agroclimática y agrometeorológica.
+::: {.servicio-card}
+### Monitoreo y análisis del uso del agua en cultivos
 
-- Seguimiento de agua en cultivos mediante balances hídricos. 
+Evaluación de consumo hídrico, eficiencia en el uso del agua y respuesta de los cultivos bajo diferentes condiciones ambientales y de manejo.
+:::
+
+::: {.servicio-card}
+### Cuantificación de emisiones de gases de efecto invernadero (GEI)
+
+Análisis de las emisiones de N₂O, CH₄ y CO₂ en sistemas productivos, evaluando el impacto de las prácticas de manejo sobre la mitigación de gases de efecto invernadero.
+:::
+
+::: {.servicio-card}
+### Análisis agrometeorológico y climático
+
+Caracterización de condiciones meteorológicas, riesgos de heladas, variabilidad climática y tendencias de cambio climático para la toma de decisiones productivas.
+:::
+
+::: {.servicio-card}
+### Capacitación técnica
+
+Cursos y talleres sobre agrometeorología, balance de agua, emisiones de GEI y análisis de datos ambientales.
+:::
+
+::: {.servicio-card}
+### Desarrollo de herramientas digitales interactivas
+
+Creación de aplicaciones y tableros en R, Quarto y Shiny para visualización, análisis y comunicación de información agroambiental.
+:::
+
+:::
 
 
 
