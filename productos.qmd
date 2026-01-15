@@ -4,17 +4,22 @@ title: ""
 
 ## Para la zona de influencia de la EEA INTA Balcarce
 
--	Ambiente para el cultivo de maíz y de soja, interactivo con fechas de siembra —LINK a shinny
+-	**Balance de agua** para el cultivo de maíz y de soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo.
+👉 [Abrir Balance de agua](https://intabalcarce.shinyapps.io/Agromet/?tabs=balance)
 
--	Heladas, probabilidad de ocurrencia en diferentes fechas---LINK a shinny
+-	**Ambiente** para el cultivo de maíz y de soja, interactivo con fechas de siembra.
+👉 [Abrir herramienta](https://intabalcarce.shinyapps.io/Agromet/?tabs=ambiente)
 
--	Balance de agua para el cultivo de maíz y de soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo ---Link a shinny.
+-	**Heladas**, probabilidad de ocurrencia en diferentes fechas
+👉 [Ver módulo Heladas](https://intabalcarce.shinyapps.io/Agromet/?tabs=heladas)
 
--	Cambio climático ---Link a Shinny
+-	**Cambio climático** 
+👉 [Ver análisis](https://intabalcarce.shinyapps.io/Agromet/?tabs=clima)
 
--	Pronósticos ---Link a shinny.
 
--	Descarga de datos meteorológicos ---Link a shinny
+
+-	**Descarga de datos meteorológicos.**
+👉 [Descargar datos](https://intabalcarce.shinyapps.io/Agromet/?tabs=datos)
 
 
 <div class="volver-inicio">
