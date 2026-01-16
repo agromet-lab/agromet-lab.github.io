@@ -8,7 +8,8 @@ title: "Servicios"
 ::: {.servicio-card}
 ### Monitoreo y análisis del uso del agua en cultivos
 
-Evaluación de consumo hídrico, eficiencia en el uso del agua y respuesta de los cultivos bajo diferentes condiciones ambientales y de manejo.
+Seguimiento del agua en cultivos mediante balances hídricos. 
+Programación de riego.
 :::
 
 ::: {.servicio-card}

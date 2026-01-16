@@ -4,7 +4,7 @@ title: "Líneas de trabajo"
 
 
 
-::: {.grid}
+::: {.lineas-grid}
 
 ::: {.g-col-6 .text-center .lineas-card .lineas}
 ## <span class="card-title">Agua y cultivos</span>

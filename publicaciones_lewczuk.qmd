@@ -1,0 +1,16 @@
+---
+title: "Publicaciones - Nuria Lewczuk (últimos 5 años)"
+bibliography: publicaciones/lewczuk_ult5.bib
+nocite: |
+  @*
+---
+::: {#refs}
+:::
+
+<div class="volver-inicio">
+<a href="publicaciones.html" class="volver-btn">⬆ Volver a publicaciones</a>
+</div>
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>

@@ -12,7 +12,9 @@ title: ""
 
 ## Donde estamos
 
-📍 **INTA Balcarce** — Buenos Aires, Argentina  
+📍 **EEA - INTA Balcarce**
+
+Ruta 226, km 73.5 — Buenos Aires, Argentina  
 
 ::: {=html}
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50461.95240342558!2d-58.28547565742188!3d-37.76959881231908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aa6b4b9fc09cf%3A0x1f401d560ad92922!2sE.E.A.%20Balcarce!5e0!3m2!1ses!2sar!4v1768485546116!5m2!1ses!2sar" width="600" 

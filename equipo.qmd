@@ -1,6 +1,6 @@
 ## Integrantes
 
-:::::: grid
+::: {.equipo-grid}
 ::: {.g-col-4 .text-center .team-card}
 ![](echarte.jpg){.avatar width="70%"}
 
@@ -37,7 +37,7 @@
 *Observador Meteorológico Ofical del Servicio Meteorológico Nacional*
 
 :::
-::::::
+:::
 
 <div class="volver-inicio">
 <a href="index.html" class="volver-btn">⬆ Volver al inicio</a>

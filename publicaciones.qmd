@@ -1,10 +1,5 @@
 ---
 title: ""
-bibliography:
-  - publicaciones/echarte.bib
-  - publicaciones/lewczuk.bib
-nocite: |
-  @*
 ---
 
 ## Informes técnicos
@@ -30,16 +25,10 @@ Análisis de la influencia de El Niño y La Niña sobre las precipitaciones, tem
 
 ## Publicaciones científicas
 
-### Dra. Laura Echarte
 
-::: {#refs keyword=echarte}
-:::
+- [Dra. Laura Echarte (últimos 5 años)](publicaciones_echarte.html)
 
-### Dra. Nuria Lewczuk
-
-::: {#refs keyword=lewczuk}
-:::
-
+- [Dra. Nuria Lewczuk (últimos 5 años)](publicaciones_lewczuk.html)
 
 
 <div class="volver-inicio">
