@@ -12,8 +12,10 @@ title: ""
 <div class="hero__content">
 <h2>Laboratorio de Agrometeorología</h2>
 <h3>(IPADS; EEA INTA Balcarce – CONICET)</h3>
+
 <div class="hero-logos">
 <img src="IPADS.png" alt="IPADS" />
+
 </div>
     
 <p>Agrometeorología aplicada al manejo del agua en cultivos y a las emisiones de gases con efecto invernadero (GEI).</p>
@@ -28,6 +30,8 @@ title: ""
 <a href="equipo.html" class="hero-btn">Equipo</a>
 <a href="contacto.html" class="hero-btn">Contacto</a>
 </div>
+</div>
 </section>
-
+:::
+:::
 
