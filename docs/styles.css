@@ -114,6 +114,20 @@
   opacity: 0.96;
 }
 
+.hero-logos{
+  margin: 18px 0 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hero-logos img{
+  height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .hero__buttons{
   margin-top: 18px;
   display: flex;
