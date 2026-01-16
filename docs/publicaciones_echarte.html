@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>productos – Laboratorio de Agrometeorología</title>
+<title>Publicaciones - Laura Echarte (últimos 5 años) – Laboratorio de Agrometeorología</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -67,6 +87,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -97,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Líneas de trabajo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./productos.html" aria-current="page"> 
+    <a class="nav-link" href="./productos.html"> 
 <span class="menu-text">Productos</span></a>
   </li>  
   <li class="nav-item">
@@ -133,25 +182,105 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publicaciones - Laura Echarte (últimos 5 años)</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="para-la-zona-de-influencia-de-la-eea-inta-balcarce" class="level2">
-<h2 class="anchored" data-anchor-id="para-la-zona-de-influencia-de-la-eea-inta-balcarce">Para la zona de influencia de la EEA INTA Balcarce</h2>
-<ul>
-<li><p><strong>Balance de agua</strong> para el cultivo de maíz y de soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo. 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=balance" target="_blank">Balance hídrico</a></p></li>
-<li><p><strong>Ambiente</strong> para el cultivo de maíz y de soja, interactivo con fechas de siembra. 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=ambiente" target="_blank">Ambiente</a></p></li>
-<li><p><strong>Heladas</strong>, probabilidad de ocurrencia en diferentes fechas 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=heladas" target="_blank">Heladas</a></p></li>
-<li><p><strong>Cambio climático</strong> 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=cambio_climatico" target="_blank">Análisis</a></p></li>
-<li><p><strong>Descarga de datos meteorológicos.</strong> 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=descarga" target="_blank">Datos</a></p></li>
-</ul>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-alfonso2020water" class="csl-entry" role="listitem">
+Alfonso, C, Pablo Andres Barbieri, Mariano Daniel Hernandez, NA Lewczuk, Juan Pablo Martínez, Maria Mercedes Echarte, and Laura Echarte. 2020. <span>“Water Productivity in Soybean Following a Cover Crop in a Humid Environment.”</span> <em>Agricultural Water Management</em> 232: 106045.
+</div>
+<div id="ref-andrade2024factors" class="csl-entry" role="listitem">
+Andrade, Fernando H, Alfredo G Cirilo, and Laura Echarte. 2024. <span>“Factors Affecting Kernel Number in Maize.”</span> In <em>Physiological Bases for Maize Improvement</em>, 59–74. CRC Press.
+</div>
+<div id="ref-boscarino2024efectos" class="csl-entry" role="listitem">
+Boscarino, S, N Neiff, Y Namtz, FD Nalli Sonzogni, BA Kettler, and L Echarte. 2024. <span>“EFECTOS DEL ESTR<span>É</span>s COMBINADO DE ALTA TEMPERATURA y DEFICIENCIA DE AGUA EN LA FLORACI<span>Ó</span>n FEMENINA, MASCULINA y EL n<span>Ú</span>MERO DE GRANOS EN MA<span>Í</span>z.”</span> <em>Nexo Agropecuario</em>, no. Edici<span>ó</span>n Especial: 7–12.
+</div>
+<div id="ref-cafaro2024emisiones" class="csl-entry" role="listitem">
+Cafaro la Menza, Francisco, Nuria Lewczuk, Laura Echarte, Pablo Andres Barbieri, and Walter Daniel Carciochi. 2024. <span>“Emisiones de N2o Durante La Secuencia Vicia/Ma<span>ı́</span>z En El Sudeste Bonaerense.”</span> Asociaci<span>ó</span>n Argentina de la Ciencia del Suelo.
+</div>
+<div id="ref-cerrudo2020kernel" class="csl-entry" role="listitem">
+Cerrudo, Diego, Mariano Hernández, Matthijs Tollenaar, Claudia RC Vega, and Laura Echarte. 2020. <span>“Kernel Number Response to Plant Density in Tropical, Temperate, and Tropical<span class="math inline">\(\times\)</span> Temperate Maize Hybrids.”</span> <em>Crop Science</em> 60 (1): 381–90.
+</div>
+<div id="ref-decima2024edicion" class="csl-entry" role="listitem">
+Décima Oneto, Cecilia Andrea, Gabriela Alejandra Massa, Laura Echarte, Matías Nicolás Gonzalez, Carla Susana Alfonso, María Florencia Rey, María Paula Laserna, Natalia Sigrid Norero, Silvina Andrea Divito, and Sergio Feingold. 2024. <span>“Edici<span>ó</span>n g<span>é</span>nica de La Prote<span>ı́</span>na Cap-Binding 80 (CBP80) Para Mejorar La Productividad h<span>ı́</span>drica En Papa Cultivada (Solanum Tuberosum Cv. Spunta).”</span> Asociaci<span>ó</span>n de Laboratorios Agropecuarios Privados.
+</div>
+<div id="ref-della2022novel" class="csl-entry" role="listitem">
+Della Chiesa, Tomas, Stephen J Del Grosso, Melannie D Hartman, William J Parton, Laura Echarte, Laura Yahdjian, and Gervasio Piñeiro. 2022. <span>“A Novel Mechanism to Simulate Intercropping and Relay Cropping Using the DayCent Model.”</span> <em>Ecological Modelling</em> 465: 109869.
+</div>
+<div id="ref-echarte2023influence" class="csl-entry" role="listitem">
+Echarte, Laura, Carla S Alfonso, Hugo González, Mariano D Hernández, Nuria A Lewczuk, Luján Nagore, and María M Echarte. 2023. <span>“Influence of Management Practices on Water-Related Grain Yield Determinants.”</span> <em>Journal of Experimental Botany</em> 74 (16): 4825–46.
+</div>
+<div id="ref-echarte2020sunflower" class="csl-entry" role="listitem">
+Echarte, Laura, Maria Mercedes Echarte, Diego Cerrudo, VH Gonzalez, C Alfonso, M Cambareri, MD Hernandez, Maria Luján Nagore, and A Della Maggiora. 2020. <span>“Sunflower Evapotranspiration and Water Use Efficiency in Response to Plant Density.”</span> <em>Crop Science</em> 60 (1): 357–66.
+</div>
+<div id="ref-echarte2023maize" class="csl-entry" role="listitem">
+Echarte, Laura, Thomas R Sinclair, and Nahid Jafarikouhini. 2023. <span>“Maize Leaf Rolling and Its Response to Drying Soil and Evaporative Demand.”</span> <em>Crop Science</em> 63 (4): 2450–57.
+</div>
+<div id="ref-erbetta2021stover" class="csl-entry" role="listitem">
+Erbetta, Elisa, Laura Echarte, Consuelo Rodriguez Elizagaray, Gustavo Jesus Depetris, Nadia Gabbanelli, and Maria Mercedes Echarte. 2021. <span>“Stover Biogas Potential of Corn Crops Grown Under Contrasting Water Availability and Nitrogen Supply.”</span> <em>Biomass and Bioenergy</em> 145: 105943.
+</div>
+<div id="ref-erbetta2024sorghum" class="csl-entry" role="listitem">
+Erbetta, Elisa, Laura Echarte, María Eugenia Sanz Smachetti, Nadia Gabbanelli, and María Mercedes Echarte. 2024. <span>“Sorghum Biomass Yield and Allocation as Affected by the Combination of Photoperiod Sensitivity, Sweet-Stalk and Brown Midrib Traits.”</span> <em>Field Crops Research</em> 305: 109186.
+</div>
+<div id="ref-erbetta2021produccion" class="csl-entry" role="listitem">
+Erbetta, Elisa, Nadia Gabbanelli, Laura Echarte, Carla Alfonso, and María Mercedes Echarte. 2021. <span>“Producci<span>ó</span>n de Biog<span>á</span>s de h<span>ı́</span>bridos de Sorgo Forrajeros Fotosensitivos y Sileros Que Difieren En La Presencia de Mutaciones Bmr.”</span> <em>Revista RedBioLAC</em> 5 (1): 77–81.
+</div>
+<div id="ref-gonzalez2025radiation" class="csl-entry" role="listitem">
+Gonzalez Abba, Hugo, Lucas Bonelli, Carla Alfonso, Mercedes Echarte, Nuria Lewczuk, Thomas R Sinclair, and Laura Echarte. 2025. <span>“Radiation Use Efficiency Is Largely Unaffected by Plant Density in Maize (Zea Mays l.): A Review.”</span> <em>Crop Science</em> 65 (4): e70146.
+</div>
+<div id="ref-hernandez2020eco" class="csl-entry" role="listitem">
+Hernandez, Mariano Daniel, C Alfonso, A Cerrudo, Matias Cambareri, Aida Della Maggiora, Pablo Barbieri, Maria Mercedes Echarte, and Laura Echarte. 2020. <span>“Eco-Physiological Processes Underlying Maize Water Use Efficiency Response to Plant Density Under Contrasting Water Regimes.”</span> <em>Field Crops Research</em> 254: 107844.
+</div>
+<div id="ref-hernandez2021maize" class="csl-entry" role="listitem">
+Hernandez, Mariano Daniel, Cecilia Alfonso, Maria Mercedes Echarte, A Cerrudo, and Laura Echarte. 2021. <span>“Maize Transpiration Efficiency Increases with n Supply or Higher Plant Densities.”</span> <em>Agricultural Water Management</em> 250: 106816.
+</div>
+<div id="ref-la2025nitrous" class="csl-entry" role="listitem">
+La Menza, Francisco Cafaro, Nuria Lewczuk, Laura Echarte, Pablo A Barbieri, and Walter D Carciochi. 2025. <span>“Nitrous Oxide Emissions and Emission Factors in Hairy Vetch-Maize Sequences: The Role of Vetch Termination Timing on Nitrogen Synchronization.”</span> <em>Agriculture, Ecosystems &amp; Environment</em> 394: 109868.
+</div>
+<div id="ref-la2025new" class="csl-entry" role="listitem">
+La Menza, Francisco Cafaro, Fernando Salvagiotti, Nicolas E Maltese, Roxana P Eclesia, Mirian Barraco, Laura Echarte, Pablo A Barbieri, and Walter D Carciochi. 2025. <span>“New Insights to Understand the Influence of Hairy Vetch on Maize Yield and Its Response to Nitrogen Application.”</span> <em>European Journal of Agronomy</em> 162: 127434.
+</div>
+<div id="ref-lewczuk2024soil" class="csl-entry" role="listitem">
+Lewczuk, NA, Liliana Picone, Maria Mercedes Echarte, Cecilia Alfonso, Roberto Rizzalli, and Laura Echarte. 2024. <span>“Soil Respiration Response to Reductions in Maize Plant Density and Increased Row Spacing (Southeast Pampas, Argentina).”</span> <em>Geoderma Regional</em> 38: e00828.
+</div>
+<div id="ref-martinez2026maximizing" class="csl-entry" role="listitem">
+Martínez, Roberto Dionisio, Pablo Andres Barbieri, Beatriz Masiero, Fernando Mrozek, Facundo Javier Ferraguti, Gastón Alejandro Darwich, and Laura Echarte. 2026. <span>“Maximizing Maize Grain Yield Stability Through Integrated Management of Plant Density and Hybrid Reproductive Plasticity.”</span> <em>Field Crops Research</em> 335: 110199.
+</div>
+<div id="ref-massigoge2022contribution" class="csl-entry" role="listitem">
+Massigoge, Ignacio, Fernando Ross, Javier A Fernández, Laura Echarte, Ignacio A Ciampitti, and Anibal Cerrudo. 2022. <span>“Contribution of Tillers to Maize Yield Stability at Low Plant Density.”</span> <em>Crop Science</em> 62 (6): 2451–61.
+</div>
+<div id="ref-menza2025new" class="csl-entry" role="listitem">
+Menza, La, Francisco Cafaro, Fernando Salvagiotti, Nicolas E Maltese, Roxana P Eclesia, Mirian Barraco, Laura Echarte, Pablo A Barbieri, and Walter D Carciochi. 2025. <span>“New Insights to Understand the Influence of Hairy Vetch on Maize Yield and Its Response to Nitrogen Application (Vol 162, 127434, 2025).”</span> <em>EUROPEAN JOURNAL OF AGRONOMY</em> 167.
+</div>
+<div id="ref-oelbermann2022elevated" class="csl-entry" role="listitem">
+Oelbermann, Maren, Svenja Morgan, and Laura Echarte. 2022. <span>“Elevated Carbon Dioxide and Temperature Effects on Soil Properties from Sole Crops and Intercrops.”</span> <em>Soil Use and Management</em> 38 (1): 435–47.
+</div>
+</div>
+<div class="volver-inicio">
+<p><a href="publicaciones.html" class="volver-btn">⬆ Volver a publicaciones</a></p>
+</div>
 <div class="volver-inicio">
 <p><a href="index.html" class="volver-btn">⬆ Volver al inicio</a></p>
 </div>
 
-</section>
 
 </main> <!-- /main -->
 <script>
