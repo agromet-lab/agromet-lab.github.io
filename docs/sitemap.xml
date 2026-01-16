@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://agromet-lab.github.io/publicaciones.html</loc>
-    <lastmod>2026-01-15T15:11:47.284Z</lastmod>
+    <lastmod>2026-01-15T17:50:26.261Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/lineas.html</loc>
@@ -10,11 +10,11 @@
   </url>
   <url>
     <loc>https://agromet-lab.github.io/index.html</loc>
-    <lastmod>2026-01-15T16:13:59.082Z</lastmod>
+    <lastmod>2026-01-16T10:52:08.149Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/contacto.html</loc>
-    <lastmod>2026-01-15T14:49:13.870Z</lastmod>
+    <lastmod>2026-01-15T16:17:47.366Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/about.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://agromet-lab.github.io/equipo.html</loc>
-    <lastmod>2026-01-15T14:49:16.570Z</lastmod>
+    <lastmod>2026-01-16T10:52:00.181Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/informes.html</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://agromet-lab.github.io/servicios.html</loc>
-    <lastmod>2026-01-15T16:09:46.868Z</lastmod>
+    <lastmod>2026-01-15T17:02:03.341Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/capacitaciones.html</loc>
@@ -42,14 +42,22 @@
   </url>
   <url>
     <loc>https://agromet-lab.github.io/que_hacemos.html</loc>
-    <lastmod>2026-01-15T15:59:51.398Z</lastmod>
+    <lastmod>2026-01-16T10:50:02.180Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/productos.html</loc>
-    <lastmod>2026-01-15T15:51:07.759Z</lastmod>
+    <lastmod>2026-01-15T16:13:49.850Z</lastmod>
   </url>
   <url>
     <loc>https://agromet-lab.github.io/novedades.html</loc>
     <lastmod>2026-01-15T14:58:16.755Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agromet-lab.github.io/publicaciones_echarte.html</loc>
+    <lastmod>2026-01-15T17:50:18.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agromet-lab.github.io/publicaciones_lewczuk.html</loc>
+    <lastmod>2026-01-15T17:50:21.077Z</lastmod>
   </url>
 </urlset>

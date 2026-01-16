@@ -159,24 +159,41 @@
   background: #1f524c;
 }
 
-/* Tarjetas informes */
-.report-card{
+/*Seccion que hacemos */
+
+.lineas-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.lineas-card{
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.10);
   border-radius: 14px;
-  padding: 20px 18px;
+  padding: 18px 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  margin: 12px 0;
+  margin: 8px 0;
 }
 
-.report-card h3{
-  margin-top: 0;
+.lineas-card .lineas {
+  background: #1f2933;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  height: 100%;
 }
 
-.report-card a{
-  display: inline-block;
-  margin-top: 10px;
+.card-title {
+  display: block;
+  background: #ffffff;
+  color: #555555;
+  padding: 10px 14px;
+  border-radius: 8px;
   font-weight: 600;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 /*Servicios*/
@@ -226,7 +243,36 @@
 }
 
 
+/* Tarjetas informes */
+.report-card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 20px 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  margin: 12px 0;
+}
+
+.report-card h3{
+  margin-top: 0;
+}
+
+.report-card a{
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
 /* Tarjetas equipo */
+
+.equipo-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
 .team-card{
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.10);
@@ -247,32 +293,3 @@
   object-fit: cover;
 }
 
-/*Seccion que hacemos */
-
-.lineas-card{
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: 14px;
-  padding: 18px 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  margin: 8px 0;
-}
-
-.lineas-card .lineas {
-  background: #1f2933;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  height: 100%;
-}
-
-.card-title {
-  display: block;
-  background: #ffffff;
-  color: #555555;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
