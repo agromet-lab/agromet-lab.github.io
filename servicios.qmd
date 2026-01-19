@@ -9,7 +9,7 @@ title: "Servicios"
 ### Monitoreo y análisis del uso del agua en cultivos
 
 Seguimiento del agua del suelo y estimación del consumo de agua en cultivos mediante mediciones a campo y balances hídricos.
-Evaluación de productividad del agua.
+Evaluación de la productividad del agua: eficiencia de captación del agua y eficiencia en el uso del agua.
 :::
 
 ::: {.servicio-card}

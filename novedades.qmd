@@ -3,7 +3,7 @@ title: "Novedades"
 ---
 
 <span class="destacado">¡Muy pronto!</span>
-Taller sobre manejo y seguimiento del agua en los cultivos.
+Taller práctico sobre medición y seguimiento del agua en los cultivos.
 
 Curso sobre agrometeorología aplicada al manejo del agua y las emisiones de GEI.
 
