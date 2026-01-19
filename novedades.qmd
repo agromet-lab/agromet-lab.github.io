@@ -4,8 +4,26 @@ title: "Novedades"
 
 <div class="evento-destacado">
   <p>
-    <strong>Taller práctico sobre medición y seguimiento del agua en los cultivos.</strong><br>
-    <strong>Fecha:</strong> 11/03/2026<br><br>
+    <strong>Taller práctico sobre medición y seguimiento del agua en los cultivos</strong><br>
+    <strong>Fecha:</strong> 11/03/2026 · IPADS (EEA INTA Balcarce)<br>
+    <strong>Horario:</strong> 9 a 12 h · Modalidad presencial<br><br>
+
+    El seguimiento del agua del suelo a lo largo del ciclo del cultivo es clave para comprender 
+    cómo el cultivo capta y utiliza el recurso hídrico, así como para identificar momentos de 
+    déficit hídrico. Esta información es fundamental para evaluar la eficiencia en la captación 
+    y en el uso del agua, y para definir estrategias de manejo que permitan maximizar la producción. 
+    <br><br>
+
+    <strong>¿Qué vas a aprender?</strong><br>
+    ✔ Medir el agua en el suelo<br>
+    ✔ Usar planillas de cálculo para el seguimiento hídrico<br>
+    ✔ Detectar déficit hídrico<br>
+    ✔ Calcular el consumo de agua del cultivo<br>
+    ✔ Tomar mejores decisiones de manejo<br><br>
+
+    <strong>Destinatarios:</strong> Productores, ingenieros agrónomos y estudiantes avanzados.<br>
+    <strong>Costo:</strong> $50.000 (estudiantes sin costo)<br><br>
+
 
     <a href="https://forms.gle/NEsYPgj4ZVrDLTVD8" 
        target="_blank" 
