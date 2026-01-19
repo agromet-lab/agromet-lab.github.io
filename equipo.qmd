@@ -30,7 +30,7 @@
 :::
 
 ::: {.g-col-4 .text-center .team-card}
-![](sebastian.jpg){.avatar width="70%"}
+![](sebastian2.jpeg){.avatar width="70%"}
 
 **Sebastián Muñoz**
 
