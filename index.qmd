@@ -18,7 +18,7 @@ title: ""
 
 </div>
     
-<p>Agrometeorología aplicada al manejo del agua en cultivos y a las emisiones de gases con efecto invernadero (GEI).</p>
+<p>Agrometeorología aplicada al manejo del agua en cultivos y a las emisiones de gases con efecto invernadero.</p>
 
 
 <div class="hero__buttons">

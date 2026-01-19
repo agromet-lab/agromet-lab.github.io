@@ -15,13 +15,14 @@ Evaluación de productividad del agua.
 ::: {.servicio-card}
 ### Cuantificación de emisiones de gases de efecto invernadero (GEI)
 
-Análisis de las emisiones de N₂O, CH₄ y CO₂ en sistemas productivos, evaluando el impacto de las prácticas de manejo sobre la mitigación de gases de efecto invernadero.
+Medición de emisiones de N₂O, CH₄ y CO₂ en sistemas productivos, mediante la técnica de cámaras estáticas.
+Cálculo de balance de carbono.
 :::
 
 ::: {.servicio-card}
 ### Análisis agrometeorológico y climático
 
-Caracterización de condiciones meteorológicas, riesgos de heladas, variabilidad climática y tendencias de cambio climático para la toma de decisiones productivas.
+Caracterización de condiciones meteorológicas, riesgo de heladas, variabilidad climática y tendencias de cambio climático para la toma de decisiones productivas.
 :::
 
 ::: {.servicio-card}
