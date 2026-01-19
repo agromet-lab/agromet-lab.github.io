@@ -7,7 +7,7 @@ title: ""
 
 ### Heladas
 
-Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas medias, frecuencia, intensidad y su impacto en los sistemas productivos.
+Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluyendo fechas, frecuencia, intensidad y su impacto en los sistemas productivos.
 
 <a href="Heladas.pdf" target="_blank">📄 Descargar PDF</a>
 

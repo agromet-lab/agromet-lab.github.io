@@ -41,7 +41,7 @@ Desarrollamos herramientas basadas en la integración de datos de campo, informa
 
 - Cuantificación de emisiones de N₂O en cebada bajo distintas fuentes de fertilizantes nitrogenados, con y sin inhibidores de la nitrificación. (Lewczuk, N., Responsable).
 
-- Análisis de flujos de CO₂ y CH₄ medidos mediante eddy covariance e identificación de índices espectrales para caracterizar la dinámica productiva y ambiental de los cultivos. (Lewczuk, N., Responsable).
+- Integración de mediciones de flujos de CO₂ y CH₄ por eddy covariance con índices espectrales para la caracterización de la dinámica productiva y ambiental de los cultivos. (Lewczuk, N., Responsable).
 
 
 
