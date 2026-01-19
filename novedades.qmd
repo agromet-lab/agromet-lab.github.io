@@ -2,12 +2,27 @@
 title: "Novedades"
 ---
 
-<span class="destacado">¡Muy pronto!</span>
-Taller práctico sobre medición y seguimiento del agua en los cultivos.
+<div class="evento-destacado">
+  <p>
+    <strong>Taller práctico sobre medición y seguimiento del agua en los cultivos.</strong><br>
+    <strong>Fecha:</strong> 11/03/2026<br><br>
 
-Curso sobre agrometeorología aplicada al manejo del agua y las emisiones de GEI.
+    <a href="https://forms.gle/NEsYPgj4ZVrDLTVD8" 
+       target="_blank" 
+       class="boton-formulario">
+      Pre-Inscripción
+    </a>
+  </p>
+</div>
 
-Oportunidad de aplicación a becas para capacitarte con nosotros (contactanos)
+<br><br>
+
+<div class="evento-proximo">
+  <span class="destacado">Próximamente</span><br>
+  Curso sobre agrometeorología aplicada al manejo del agua y las emisiones de GEI.<br><br>
+
+  Oportunidad de aplicación a becas para capacitarte con nosotros (contactanos)
+</div>
 
 
 <div class="volver-inicio">
