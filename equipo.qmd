@@ -39,6 +39,44 @@
 :::
 :::
 
+
+## Tesistas
+
+::: {.equipo-grid}
+::: {.g-col-4 .text-center .team-card}
+![](carla.jpeg){.avatar width="70%"}
+
+**Ing. Carla Alfonso**
+
+*Doctorado en Ciencias Agrarias, FCA-UNMdP. 
+Bases ecofisiológicas de la respuesta de la eficiencia del uso del agua a la densidad de plantas y cobertura del suelo. *
+
+
+
+:::
+
+::: {.g-col-4 .text-center .team-card}
+![](mariano.jpeg){.avatar width="70%"}
+
+**Ing. Mariano Hernandez**
+
+*Doctorado en Ciencias Agrarias, FCA-UNMdP. 
+Evapotranspiración y eficiencia en el uso del agua ante diferentes prácticas de manejo en el cultivo de maíz.* 
+
+
+:::
+
+::: {.g-col-4 .text-center .team-card}
+![](bautista.jpeg){.avatar width="70%"}
+
+**Bautista Beherán**
+
+*Tesis de grado FCA-UNMdP. 
+Desarrollo de un modelo de predicción del peso de grano máximo en el cultivo de maíz.*
+
+:::
+:::
+
 <div class="volver-inicio">
 <a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
 </div>
