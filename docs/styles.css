@@ -267,18 +267,25 @@
 
 /*Novedades*/
 .evento-destacado {
-  background-color: #2E6F6B;
+  background-color: rgba(46, 111, 107, 0.85);
   color: white;
-  padding: 24px;
+  padding: 20px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-  max-width: 700px;
+  max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;       
+  box-sizing: border-box;
 }
 
-.evento-destacado strong {
-  font-size: 20px;
+.evento-destacado img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .evento-proximo {
