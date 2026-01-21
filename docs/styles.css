@@ -288,6 +288,24 @@
   display: block;
 }
 
+.info-taller {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  font-size: 15px;
+  color: #6F5E53;
+}
+
+.info-taller summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6F5E53;
+}
+
 .evento-proximo {
   opacity: 0.6;
   text-align: center;

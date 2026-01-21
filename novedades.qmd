@@ -7,6 +7,20 @@ title: "Novedades"
 
 <img src="taller.jpg" alt="taller_agua" />
 
+<details class="info-taller">
+  <summary>Más info sobre el taller</summary>
+  <br>
+  
+  <p><strong>Contenidos:</strong></p>
+  <ul>
+    <li><strong>Déficit hídrico:</strong> Conceptos básicos y métodos sencillos para detectar deficiencia de agua en el suelo.</li>
+    <li><strong>Método gravimétrico:</strong> Procedimiento, instrumental, profundidad de muestreo y cálculos para estimar humedad del suelo en mm y % de agua disponible.</li>
+    <li><strong>Seguimiento con planillas:</strong> Uso del balance hídrico del grupo de trabajo (<a href="https://agromet-lab.github.io/productos.html" target="_blank">Herramientas</a>), información necesaria y análisis de distintos escenarios.</li>
+  </ul>
+</details>
+
+
+
   <p>
     <a href="https://forms.gle/NEsYPgj4ZVrDLTVD8" 
        target="_blank" 
