@@ -2,7 +2,7 @@
 
 ::: {.equipo-grid}
 ::: {.g-col-4 .text-center .team-card}
-![](echarte.jpg){.avatar width="70%"}
+![]docs/echarte2.jpegg){.avatar width="70%"}
 
 **Dra. Laura Echarte**
 
