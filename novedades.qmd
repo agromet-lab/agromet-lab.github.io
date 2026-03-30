@@ -29,10 +29,10 @@ title: "Novedades"
 <h3>Galería de imágenes</h3>
 
 <div class="galeria-taller">
-  <div class="foto-item"><img src="taller4.JPG" alt="Vista general de los participantes del taller"></div>
-  <div class="foto-item"><img src="taller3.JPG" alt="Trabajo práctico con computadora durante el taller"></div>
+  <div class="foto-item"><img src="taller4.JPG" alt="Explicación práctica durante la jornada"></div>
+  <div class="foto-item"><img src="taller3.JPG" alt="Interacción con participantes durante el taller"></div>
   <div class="foto-item"><img src="taller2.JPG" alt="Explicación práctica durante la jornada"></div>
-  <div class="foto-item"><img src="taller1.JPG" alt="Interacción con participantes durante el taller"></div>
+  <div class="foto-item"><img src="taller1.JPG" alt="Vista general de los participantes del taller"></div>
 </div>
 
 :::
