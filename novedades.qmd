@@ -5,7 +5,7 @@ title: "Novedades"
 ::::: {.nota-taller}
 ::: {.hero-taller}
         
-<img src="taller1.jpg" alt="Taller práctico sobre medición y seguimiento del agua en los cultivos" class="hero-img">
+<img src="taller1.JPG" alt="Taller práctico sobre medición y seguimiento del agua en los cultivos" class="hero-img">
 
 <div class="hero-overlay">
   <h1>Taller práctico sobre medición y seguimiento del agua en los cultivos</h1>
@@ -29,10 +29,10 @@ title: "Novedades"
 <h3>Galería de imágenes</h3>
 
 <div class="galeria-taller">
-  <div class="foto-item"><img src="taller4.jpg" alt="Vista general de los participantes del taller"></div>
-  <div class="foto-item"><img src="taller3.jpg" alt="Trabajo práctico con computadora durante el taller"></div>
-  <div class="foto-item"><img src="taller2.jpg" alt="Explicación práctica durante la jornada"></div>
-  <div class="foto-item"><img src="taller1.jpg" alt="Interacción con participantes durante el taller"></div>
+  <div class="foto-item"><img src="taller4.JPG" alt="Vista general de los participantes del taller"></div>
+  <div class="foto-item"><img src="taller3.JPG" alt="Trabajo práctico con computadora durante el taller"></div>
+  <div class="foto-item"><img src="taller2.JPG" alt="Explicación práctica durante la jornada"></div>
+  <div class="foto-item"><img src="taller1.JPG" alt="Interacción con participantes durante el taller"></div>
 </div>
 
 :::
