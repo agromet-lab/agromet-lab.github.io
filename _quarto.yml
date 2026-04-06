@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Laboratorio de Agrometeorología"
+  title: "Lab. de Agrometeorología"
   site-url: "https://agromet-lab.github.io"
   navbar:
     
