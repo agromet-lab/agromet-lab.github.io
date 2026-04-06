@@ -12,6 +12,8 @@ website:
         text: Inicio
       - href: que_hacemos.qmd
         text: Líneas de trabajo
+      - href: ciencia_campo.qmd
+        text: Ciencia en el campo
       - href: productos.qmd
         text: Productos
       - href: servicios.qmd

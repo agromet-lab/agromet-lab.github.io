@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Densidad y espaciamiento en maíz: efectos sobre la respiración del suelo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #1c2018;
+      color: #e8e4dc;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #252a20;
+      border-radius: 12px;
+      padding: 2.5rem 2.5rem 3rem;
+      border: 0.5px solid #3a4033;
+    }
+
+    /* HEADER */
+    .header {
+      border-top: 3px solid #8aaf5e;
+      padding-top: 1.5rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .tag-institucional {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8aaf5e;
+      margin-bottom: 0.7rem;
+    }
+
+    .titulo-principal {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.1rem;
+      line-height: 1.18;
+      color: #f0ece2;
+      max-width: 700px;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    .subtitulo {
+      font-size: 0.97rem;
+      color: #a8a398;
+      font-weight: 300;
+      max-width: 640px;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .autores {
+      font-size: 12px;
+      color: #6b6760;
+      font-style: italic;
+    }
+
+    /* SECCIONES */
+    .seccion { margin-bottom: 2.5rem; }
+
+    .seccion-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #3a4033;
+    }
+
+    .num-seccion {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #8aaf5e;
+      color: #1c2018;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .seccion-titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #f0ece2;
+      letter-spacing: 0.01em;
+    }
+
+    .texto {
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: #b8b4ac;
+    }
+
+    /* HIGHLIGHT */
+    .highlight-box {
+      border-left: 3px solid #c8873a;
+      background: #2e2a1e;
+      padding: 0.85rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #d4c9b0;
+      line-height: 1.65;
+    }
+
+    .highlight-box strong { color: #c8873a; font-weight: 500; }
+
+    /* CARDS MÉTODO */
+    .cards-metodo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .card-metodo {
+      background: #1e2319;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid #8aaf5e;
+    }
+
+    .card-metodo-icon { font-size: 18px; margin-bottom: 6px; }
+
+    .card-metodo-titulo {
+      font-size: 11px;
+      font-weight: 500;
+      color: #d4d0c8;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    .card-metodo-desc {
+      font-size: 12px;
+      color: #7a7870;
+      line-height: 1.45;
+    }
+
+    /* TRATAMIENTOS COMPARADOS */
+    .tratamientos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 1rem 0;
+    }
+
+    .trat-card {
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+      border: 0.5px solid #3a4033;
+    }
+
+    .trat-card.alta {
+      background: #1e2a1a;
+      border-color: #4a6a30;
+    }
+
+    .trat-card.baja {
+      background: #2a2419;
+      border-color: #6a4a20;
+    }
+
+    .trat-sigla {
+      font-size: 1.6rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .trat-card.alta .trat-sigla { color: #8aaf5e; }
+    .trat-card.baja .trat-sigla { color: #c8873a; }
+
+    .trat-nombre {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 8px;
+    }
+
+    .trat-card.alta .trat-nombre { color: #6a9040; }
+    .trat-card.baja .trat-nombre { color: #a86a28; }
+
+    .trat-dato {
+      font-size: 12px;
+      color: #7a7870;
+      line-height: 1.5;
+    }
+
+    /* HALLAZGOS */
+    .conclusiones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 1rem;
+    }
+
+    .conclusion-card {
+      background: #1e2319;
+      border: 0.5px solid #3a4033;
+      border-radius: 12px;
+      padding: 1.1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .conclusion-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+
+    .conclusion-card.verde::before { background: #8aaf5e; }
+    .conclusion-card.naranja::before { background: #c8873a; }
+    .conclusion-card.rojo::before { background: #b04a40; }
+    .conclusion-card.gris::before { background: #6a7060; }
+
+    .conclusion-num {
+      font-size: 2.2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .conclusion-card.verde .conclusion-num { color: #8aaf5e; }
+    .conclusion-card.naranja .conclusion-num { color: #c8873a; }
+    .conclusion-card.rojo .conclusion-num { color: #b04a40; }
+    .conclusion-card.gris .conclusion-num { color: #8a9080; }
+
+    .conclusion-titulo {
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #c8c4bc;
+      margin-bottom: 6px;
+    }
+
+    .conclusion-texto {
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: #7a7870;
+    }
+
+    /* DIAGRAMA CONCEPTUAL */
+    .diagrama-wrapper {
+      background: #1e2319;
+      border-radius: 12px;
+      border: 0.5px solid #3a4033;
+      padding: 1.2rem 1.4rem 1rem;
+      margin: 1.2rem 0;
+    }
+
+    .diagrama-titulo {
+      font-size: 11px;
+      font-weight: 500;
+      color: #6a7060;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    .flujo {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .flujo-fila {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 6px;
+    }
+
+    .flujo-nodo {
+      border-radius: 6px;
+      padding: 0.5rem 0.8rem;
+      font-size: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .nodo-causa {
+      background: #2a3424;
+      color: #8aaf5e;
+      border: 0.5px solid #4a6a30;
+    }
+
+    .nodo-intermedio {
+      background: #2a2e24;
+      color: #a8b498;
+      border: 0.5px solid #3a4433;
+      font-size: 11px;
+      font-weight: 400;
+    }
+
+    .nodo-efecto-pos {
+      background: #2a2014;
+      color: #c8873a;
+      border: 0.5px solid #6a4a20;
+    }
+
+    .nodo-efecto-neg {
+      background: #2a1a18;
+      color: #b04a40;
+      border: 0.5px solid #6a2a24;
+    }
+
+    .nodo-resultado {
+      background: #1a1e14;
+      color: #6a9040;
+      border: 0.5px solid #3a5028;
+      font-size: 11px;
+    }
+
+    .flecha {
+      font-size: 14px;
+      color: #4a5040;
+      padding: 0 6px;
+      flex-shrink: 0;
+    }
+
+    .flujo-rama {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .flujo-sub {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* IMPLICANCIAS */
+    .implicancias {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .implicancia-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #1e2319;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      border: 0.5px solid #2e3428;
+    }
+
+    .impl-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+
+    .impl-titulo {
+      font-size: 0.87rem;
+      font-weight: 500;
+      color: #d4d0c8;
+      margin-bottom: 3px;
+    }
+
+    .impl-desc {
+      font-size: 0.83rem;
+      color: #7a7870;
+      line-height: 1.55;
+    }
+
+    /* FOOTER */
+    .footer-banda {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #3a4033;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-texto {
+      font-size: 11px;
+      color: #4a4a44;
+      font-style: italic;
+    }
+
+    .pill-destacada {
+      display: inline-block;
+      background: #8aaf5e18;
+      color: #8aaf5e;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 10px;
+      margin: 2px 2px;
+      border: 0.5px solid #8aaf5e30;
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 1.5rem 1.2rem 2rem; }
+      .conclusiones-grid { grid-template-columns: 1fr; }
+      .tratamientos { grid-template-columns: 1fr; }
+      .titulo-principal { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="tag-institucional">IPADS · INTA Balcarce · CONICET · UNMdP &nbsp;|&nbsp; Geoderma Regional, 2024</div>
+    <div class="titulo-principal">Menor densidad y mayor distanciamiento entre surcos en maíz: ¿qué pasa con la respiración del suelo?</div>
+    <div class="subtitulo">Ensayos a campo en el sudeste de Buenos Aires muestran que reducir la densidad y ampliar el espaciado aumenta la humedad superficial del suelo y con ello los flujos de CO₂, pero sin afectar las emisiones acumuladas durante la temporada.</div>
+    <div class="autores">Lewczuk, N.A. · Picone, L. · Echarte, M.M. · Alfonso, C. · Rizzalli, R. · Echarte, L.</div>
+  </div>
+
+  <!-- SECCIÓN 1 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">1</div>
+      <div class="seccion-titulo">El problema</div>
+    </div>
+    <p class="texto">
+      La respiración del suelo es la principal vía por la que el carbono fijado por las plantas vuelve a la atmósfera como CO₂. Su intensidad depende de la temperatura y la humedad del suelo, así como de la biomasa de raíces. Dado que el manejo del cultivo —densidad de plantas y distanciamiento entre surcos— modifica el canopeo, la captación de agua por las raíces y el microclima del suelo, es esperable que también afecte la respiración.
+    </p>
+    <div class="highlight-box">
+      Sin embargo, <strong>nadie había estudiado sistemáticamente</strong> cómo estos cambios en el arreglo espacial del maíz afectan la respiración del suelo ni cuáles son las variables que explican esa respuesta. Eso es exactamente lo que buscó responder este trabajo.
+    </div>
+    <p class="texto">
+      La pregunta tiene relevancia práctica creciente: en zonas con limitaciones hídricas se propone reducir la densidad y ampliar el distanciamiento entre surcos para estabilizar el rendimiento. Pero esta práctica podría tener consecuencias no deseadas sobre las emisiones de carbono del sistema.
+    </p>
+  </div>
+
+  <!-- SECCIÓN 2 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">2</div>
+      <div class="seccion-titulo">Cómo se estudió · Ensayos a campo</div>
+    </div>
+    <p class="texto">
+      Experimento conducido durante dos campañas consecutivas en el sudeste de Buenos Aires, bajo siembra directa y condiciones de secano, como parte del proyecto internacional "Global Maize Project".
+    </p>
+
+    <div class="tratamientos">
+      <div class="trat-card alta">
+        <div class="trat-sigla">ADN</div>
+        <div class="trat-nombre">Alta densidad · surcos angostos</div>
+        <div class="trat-dato">≈8 plantas m⁻² · 0,52 m entre surcos · Híbrido estable y alto rendimiento (DK670MG)</div>
+      </div>
+      <div class="trat-card baja">
+        <div class="trat-sigla">BDA</div>
+        <div class="trat-nombre">Baja densidad · surcos anchos</div>
+        <div class="trat-dato">≈6,5 plantas m⁻² · 0,70 m entre surcos · Híbrido de menor estabilidad (KWS KM 3601 RR2)</div>
+      </div>
+    </div>
+
+    <div class="cards-metodo">
+      <div class="card-metodo">
+        <div class="card-metodo-icon">📍</div>
+        <div class="card-metodo-titulo">Sitio</div>
+        <div class="card-metodo-desc">Balcarce, Buenos Aires · Campañas 2011/12 y 2012/13 · Suelo Argiudoll · Siembra directa</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">💨</div>
+        <div class="card-metodo-titulo">Respiración del suelo</div>
+        <div class="card-metodo-desc">Flujos de CO₂ con cámaras estáticas de PVC · Mediciones semanales a lo largo de la temporada · Cromatografía gaseosa</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">💧</div>
+        <div class="card-metodo-titulo">Humedad y temperatura</div>
+        <div class="card-metodo-desc">Porcentaje de poros llenos de agua (WFPS) en los 10 cm superficiales · Temperatura del suelo con termómetro digital</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">🌿</div>
+        <div class="card-metodo-titulo">Índice de área foliar</div>
+        <div class="card-metodo-desc">Estimado mediante el modelo CERES-Maize (DSSAT) · Validado previamente para las condiciones de Balcarce</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">3</div>
+      <div class="seccion-titulo">Principales hallazgos</div>
+    </div>
+
+    <!-- Diagrama conceptual de la cadena de efectos -->
+    <div class="diagrama-wrapper">
+      <div class="diagrama-titulo">Cadena de efectos del arreglo espacial sobre la respiración del suelo</div>
+      <div style="overflow-x: auto;">
+        <div style="display: flex; align-items: center; gap: 0; min-width: 500px; flex-wrap: nowrap;">
+          <div class="flujo-nodo nodo-causa" style="border-radius:6px;">Menor densidad<br>+ surcos anchos</div>
+          <div class="flecha">→</div>
+          <div class="flujo-nodo nodo-intermedio">Menor índice<br>de área foliar</div>
+          <div class="flecha">→</div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <div style="display:flex; align-items:center;">
+              <div class="flujo-nodo nodo-efecto-pos" style="font-size:11px;">Menor absorción<br>de agua por raíces</div>
+              <div class="flecha">→</div>
+              <div class="flujo-nodo nodo-efecto-pos" style="font-size:11px;">Mayor humedad<br>superficial (WFPS ↑)</div>
+              <div class="flecha">→</div>
+              <div class="flujo-nodo nodo-efecto-pos" style="font-size:11px; font-weight:600;">Mayor CO₂<br>instantáneo ↑</div>
+            </div>
+            <div style="display:flex; align-items:center;">
+              <div class="flujo-nodo nodo-efecto-neg" style="font-size:11px;">Más radiación al<br>suelo (IAF bajo)</div>
+              <div class="flecha">→</div>
+              <div class="flujo-nodo nodo-intermedio" style="font-size:11px;">Mayor evaporación<br>(compensa parcialmente)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conclusiones-grid">
+      <div class="conclusion-card naranja">
+        <div class="conclusion-num">+30%</div>
+        <div class="conclusion-titulo">CO₂ instantáneo máximo</div>
+        <div class="conclusion-texto">Los flujos momentáneos de CO₂ aumentaron hasta un 30% con menor densidad y surcos más anchos, cuando la humedad superficial del suelo era 15% mayor en ese tratamiento.</div>
+      </div>
+      <div class="conclusion-card verde">
+        <div class="conclusion-num">IAF ≥ 3</div>
+        <div class="conclusion-titulo">Umbral clave de canopeo</div>
+        <div class="conclusion-texto">Cuando el índice de área foliar supera 3, el canopeo impide la evaporación del suelo y la menor densidad genera consistentemente mayor humedad superficial. Por debajo de ese umbral, el efecto es variable e inconsistente.</div>
+      </div>
+      <div class="conclusion-card gris">
+        <div class="conclusion-num">≈ igual</div>
+        <div class="conclusion-titulo">CO₂ acumulado en la temporada</div>
+        <div class="conclusion-texto">A pesar de los efectos instantáneos, las emisiones totales acumuladas de CO₂ durante la temporada no difirieron significativamente entre los dos tratamientos en ninguna de las dos campañas.</div>
+      </div>
+      <div class="conclusion-card rojo">
+        <div class="conclusion-num">+32%</div>
+        <div class="conclusion-titulo">CO₂ por tonelada de grano</div>
+        <div class="conclusion-texto">Las emisiones de CO₂ por unidad de rendimiento fueron significativamente mayores en el tratamiento de baja densidad y surcos anchos (293 vs 222 kg CO₂-C Mg⁻¹), producto del menor rendimiento y la menor estabilidad del híbrido utilizado.</div>
+      </div>
+    </div>
+
+    <div class="highlight-box" style="margin-top:1.2rem;">
+      <strong>Hallazgo clave:</strong> El efecto del arreglo espacial sobre la respiración del suelo depende de cuánto modifica la humedad superficial del suelo. A su vez, ese efecto sobre la humedad es consistente solo cuando el canopeo es suficientemente cerrado (IAF ≥ 3) para limitar la evaporación directa. La temperatura del suelo no fue el factor explicativo relevante en este estudio.
+    </div>
+  </div>
+
+  <!-- SECCIÓN 4 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">4</div>
+      <div class="seccion-titulo">Implicancias prácticas</div>
+    </div>
+
+    <div class="implicancias">
+      <div class="implicancia-item">
+        <div class="impl-icon">✅</div>
+        <div>
+          <div class="impl-titulo">Reducir densidad y ampliar surcos no aumenta las emisiones totales de CO₂ en la temporada</div>
+          <div class="impl-desc">Aunque los flujos instantáneos de CO₂ pueden ser mayores a lo largo del ciclo, las emisiones acumuladas en la temporada no se ven afectadas significativamente. Esta práctica no implica necesariamente un mayor costo ambiental en términos de carbono liberado al año.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">⚠️</div>
+        <div>
+          <div class="impl-titulo">El problema está en las emisiones por tonelada producida, no en las emisiones totales</div>
+          <div class="impl-desc">Si la práctica se combina con híbridos de menor potencial de rendimiento o baja estabilidad ante cambios en recursos, el rendimiento cae más que las emisiones. El resultado es una mayor huella de carbono por unidad de grano producido, lo que deteriora la eficiencia ambiental del sistema.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">💡</div>
+        <div>
+          <div class="impl-titulo">El híbrido elegido importa tanto como el manejo espacial</div>
+          <div class="impl-desc">Usar genotipos estables y de alto rendimiento en sistemas de alta densidad con surcos angostos reduce las emisiones de CO₂ por tonelada producida. La elección del híbrido no es solo una decisión productiva: también tiene consecuencias sobre la eficiencia del uso del carbono en el sistema.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">🌱</div>
+        <div>
+          <div class="impl-titulo">La humedad superficial del suelo es la clave para anticipar el impacto sobre la respiración</div>
+          <div class="impl-desc">Manejos que incrementen la humedad en los primeros centímetros del suelo (por menor absorción radicular o mayor cobertura del suelo) tienen más probabilidades de aumentar los flujos de CO₂. Este efecto es especialmente pronunciado cuando el canopeo ya es cerrado y limita la evaporación directa del suelo.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">🔑</div>
+        <div>
+          <div class="impl-titulo">En ambientes con limitación hídrica, la práctica puede ser necesaria pero tiene un costo</div>
+          <div class="impl-desc">Reducir densidad y ampliar surcos puede estabilizar el rendimiento en condiciones de déficit hídrico, pero también puede aumentar las emisiones de CO₂ relativas al grano producido. Esta compensación debe considerarse en la evaluación integral de la sustentabilidad del sistema productivo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-banda">
+    <div class="footer-texto">Lewczuk et al. (2024) · Geoderma Regional 38: e00828 · doi:10.1016/j.geodrs.2024.e00828</div>
+    <div>
+      <span class="pill-destacada">Maíz</span>
+      <span class="pill-destacada">Respiración del suelo</span>
+      <span class="pill-destacada">CO₂</span>
+      <span class="pill-destacada">Densidad de siembra</span>
+      <span class="pill-destacada">Balcarce</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -23,6 +23,7 @@ title: ""
 
 <div class="hero__buttons">
 <a href="que_hacemos.html" class="hero-btn">Líneas de trabajo</a>
+<a href="ciencia_campo.html" class="hero-btn">Ciencia en el campo</a>
 <a href="productos.html" class="hero-btn">Productos</a>
 <a href="servicios.html" class="hero-btn">Servicios</a>
 <a href="novedades.html" class="hero-btn">Novedades</a>
@@ -32,6 +33,7 @@ title: ""
 </div>
 </div>
 </section>
+
 :::
 :::
 

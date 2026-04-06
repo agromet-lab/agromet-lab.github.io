@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Densidad de plantas y eficiencia en el uso del agua en maíz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: #f7f6f2;
+      color: #1a1a1a;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2.5rem 2.5rem 3rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    }
+
+    /* HEADER */
+    .header {
+      border-top: 3px solid #2D6A4F;
+      padding-top: 1.5rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .tag-institucional {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2D6A4F;
+      margin-bottom: 0.6rem;
+    }
+
+    .titulo-principal {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.95rem;
+      line-height: 1.2;
+      color: #111;
+      max-width: 680px;
+      margin-bottom: 0.55rem;
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      color: #555;
+      font-weight: 300;
+      max-width: 620px;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+
+    .autores {
+      font-size: 12px;
+      color: #888;
+      font-style: italic;
+    }
+
+    /* SECCIONES */
+    .seccion { margin-bottom: 2.5rem; }
+
+    .seccion-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e0ddd5;
+    }
+
+    .num-seccion {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #2D6A4F;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .seccion-titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .texto {
+      font-size: 0.95rem;
+      line-height: 1.78;
+      color: #444;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      border-left: 3px solid #B45309;
+      background: #fdf6ee;
+      padding: 0.85rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #4a3b28;
+      line-height: 1.65;
+    }
+
+    .highlight-box strong { color: #B45309; font-weight: 600; }
+
+    /* CARDS MÉTODO */
+    .cards-metodo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .card-metodo {
+      background: #f4f3ee;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid #2D6A4F;
+    }
+
+    .card-metodo-icon { font-size: 18px; margin-bottom: 6px; }
+
+    .card-metodo-titulo {
+      font-size: 11px;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .card-metodo-desc {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* CONCLUSIONES */
+    .conclusiones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 1rem;
+    }
+
+    .conclusion-card {
+      background: #fff;
+      border: 0.5px solid #ddd;
+      border-radius: 12px;
+      padding: 1.1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .conclusion-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+
+    .conclusion-card.verde::before { background: #2D6A4F; }
+    .conclusion-card.naranja::before { background: #B45309; }
+    .conclusion-card.azul::before { background: #1D5FA5; }
+    .conclusion-card.rojo::before { background: #9E3030; }
+
+    .conclusion-num {
+      font-size: 2.4rem;
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .conclusion-card.verde .conclusion-num { color: #2D6A4F; }
+    .conclusion-card.naranja .conclusion-num { color: #B45309; }
+    .conclusion-card.azul .conclusion-num { color: #1D5FA5; }
+    .conclusion-card.rojo .conclusion-num { color: #9E3030; }
+
+    .conclusion-titulo {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    .conclusion-texto {
+      font-size: 0.87rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* IMPLICANCIAS */
+    .implicancias {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .implicancia-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #f4f3ee;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+    }
+
+    .impl-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+
+    .impl-titulo {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 3px;
+    }
+
+    .impl-desc {
+      font-size: 0.84rem;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    /* FOOTER */
+    .footer-banda {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e0ddd5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-texto {
+      font-size: 11px;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    .pill-destacada {
+      display: inline-block;
+      background: #2D6A4F1a;
+      color: #2D6A4F;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      margin: 2px 2px;
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 1.5rem 1.2rem 2rem; }
+      .conclusiones-grid { grid-template-columns: 1fr; }
+      .titulo-principal { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <div class="tag-institucional">INTA Balcarce · CONICET · UNMdP &nbsp;|&nbsp; Field Crops Research, 2020</div>
+      <div class="titulo-principal">Densidad de plantas y eficiencia en el uso del agua en maíz: ¿siempre conviene sembrar más denso?</div>
+      <div class="subtitulo">Resultados de ensayos a campo en el sudeste de Buenos Aires bajo riego y secano revelan cuándo y por qué la densidad mejora la eficiencia hídrica del cultivo.</div>
+      <div class="autores">Hernández, M.D. · Alfonso, C. · Cerrudo, A. · Cambareri, M. · Della Maggiora, A. · Barbieri, P. · Echarte, M.M. · Echarte, L.</div>
+    </div>
+
+    <!-- SECCIÓN 1 -->
+    <div class="seccion">
+      <div class="seccion-header">
+        <div class="num-seccion">1</div>
+        <div class="seccion-titulo">El problema</div>
+      </div>
+      <p class="texto">
+        La variabilidad interanual del rendimiento en maíz de secano está fuertemente asociada a la disponibilidad de agua durante el ciclo. Por ello, maximizar la <strong>eficiencia en el uso del agua para grano (EUA)</strong> —los kilogramos de grano producidos por milímetro de agua evapotranspirada— es clave para estabilizar los resultados productivos.
+      </p>
+      <div class="highlight-box">
+        Se sabe que densidades más altas pueden mejorar la EUA en condiciones sin estrés hídrico. Pero <strong>¿qué ocurre cuando el agua es el factor limitante?</strong> ¿Y por qué procesos fisiológicos ocurre la respuesta? Eso es lo que este trabajo investigó.
+      </div>
+      <p class="texto">
+        Dos mecanismos potenciales explican por qué la densidad podría mejorar la EUA: (i) una mayor proporción del agua evapotranspirada como transpiración productiva —en vez de evaporación del suelo— y (ii) una mayor tasa de crecimiento del cultivo durante el período crítico de fijación de granos (alrededor de floración), que es el determinante principal del número de granos por unidad de área.
+      </p>
+    </div>
+
+    <!-- SECCIÓN 2 -->
+    <div class="seccion">
+      <div class="seccion-header">
+        <div class="num-seccion">2</div>
+        <div class="seccion-titulo">Cómo se estudió · Ensayos a campo</div>
+      </div>
+      <p class="texto">
+        Experimentos conducidos durante dos campañas consecutivas en el sudeste de Buenos Aires, con mediciones detalladas sobre el cultivo y el suelo a lo largo de todo el ciclo.
+      </p>
+      <div class="cards-metodo">
+        <div class="card-metodo">
+          <div class="card-metodo-icon">📍</div>
+          <div class="card-metodo-titulo">Sitio</div>
+          <div class="card-metodo-desc">Balcarce, Buenos Aires · Dos campañas: 2015/16 y 2016/17 · Suelo Argiudoll · Labranza convencional</div>
+        </div>
+        <div class="card-metodo">
+          <div class="card-metodo-icon">🌽</div>
+          <div class="card-metodo-titulo">Tratamientos</div>
+          <div class="card-metodo-desc">3 densidades de siembra: 4, 8 y 12 pl m⁻² · 2 regímenes hídricos: secano e irrigado · Diseño en parcelas divididas</div>
+        </div>
+        <div class="card-metodo">
+          <div class="card-metodo-icon">💧</div>
+          <div class="card-metodo-titulo">Agua en el suelo</div>
+          <div class="card-metodo-desc">Medición con sonda de neutrones a lo largo del perfil (0–190 cm) desde emergencia hasta madurez fisiológica</div>
+        </div>
+        <div class="card-metodo">
+          <div class="card-metodo-icon">☀️</div>
+          <div class="card-metodo-titulo">Radiación y biomasa</div>
+          <div class="card-metodo-desc">Intercepción de radiación (iPAR) cada 7–10 días · Biomasa aérea en floración y madurez · Rendimiento en grano</div>
+        </div>
+        <div class="card-metodo">
+          <div class="card-metodo-icon">🔬</div>
+          <div class="card-metodo-titulo">Evaporación del suelo</div>
+          <div class="card-metodo-desc">Medición con microlisímetros en entrefilas · Estimación de ET por balance hídrico del suelo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 3 -->
+    <div class="seccion">
+      <div class="seccion-header">
+        <div class="num-seccion">3</div>
+        <div class="seccion-titulo">Principales hallazgos</div>
+      </div>
+
+      <div class="conclusiones-grid">
+        <div class="conclusion-card verde">
+          <div class="conclusion-num">+23%</div>
+          <div class="conclusion-titulo">EUA bajo riego</div>
+          <div class="conclusion-texto">La eficiencia en el uso del agua para grano mejoró en promedio un 23% al pasar de 4 a 8 o 12 pl m⁻² en condiciones con agua no limitante, en ambas campañas.</div>
+        </div>
+        <div class="conclusion-card rojo">
+          <div class="conclusion-num">0%</div>
+          <div class="conclusion-titulo">EUA en secano seco</div>
+          <div class="conclusion-texto">En el ambiente más seco (secano campaña 1), ni el rendimiento ni la EUA respondieron al incremento de densidad. La planta no pudo aumentar el número de granos.</div>
+        </div>
+        <div class="conclusion-card azul">
+          <div class="conclusion-num">T/ET ↑</div>
+          <div class="conclusion-titulo">Mejor partición del agua</div>
+          <div class="conclusion-texto">Mayor densidad aumentó la fracción de agua transpirada (T/ET) al reducir la evaporación del suelo e incrementar la transpiración, en forma proporcional a la mayor intercepción de radiación.</div>
+        </div>
+        <div class="conclusion-card naranja">
+          <div class="conclusion-num">R²=0.96</div>
+          <div class="conclusion-titulo">La tasa de crecimiento lo explica todo</div>
+          <div class="conclusion-texto">La respuesta de la tasa de crecimiento durante el período crítico explicó el 96% de la variación en la respuesta de la EUA a la densidad, en todos los ambientes estudiados.</div>
+        </div>
+      </div>
+
+      <div class="highlight-box" style="margin-top: 1.2rem;">
+        <strong>Hallazgo clave:</strong> Aunque densidades más altas siempre mejoran la partición del agua evapotranspirada (más transpiración, menos evaporación del suelo), este beneficio no se traduce en mayor EUA cuando el agua es escasa durante el período crítico. El cuello de botella es la <strong>tasa de crecimiento del cultivo en floración</strong>, que determina cuántos granos se fijan.
+      </div>
+    </div>
+
+    <!-- SECCIÓN 4 -->
+    <div class="seccion">
+      <div class="seccion-header">
+        <div class="num-seccion">4</div>
+        <div class="seccion-titulo">Implicancias prácticas</div>
+      </div>
+
+      <div class="implicancias">
+        <div class="implicancia-item">
+          <div class="impl-icon">✅</div>
+          <div>
+            <div class="impl-titulo">En ambientes con buena disponibilidad hídrica, aumentar la densidad mejora la EUA</div>
+            <div class="impl-desc">Pasar de 4 a 8 o 12 pl m⁻² incrementa el rendimiento más que el consumo de agua, gracias a una mayor intercepción de radiación y tasa de crecimiento en floración. Bajo riego o en zonas con lluvias regulares, la densidad alta es una estrategia válida para ganar eficiencia productiva.</div>
+          </div>
+        </div>
+        <div class="implicancia-item">
+          <div class="impl-icon">⚠️</div>
+          <div>
+            <div class="impl-titulo">En ambientes con déficit hídrico durante floración, densidades altas no mejoran la EUA</div>
+            <div class="impl-desc">Cuando el suelo llega a floración con agua insuficiente, el cultivo no puede sostener la tasa de crecimiento mínima para fijar más granos, independientemente de la densidad. En esas condiciones, sembrar más denso solo aumenta el consumo de agua sin beneficio en rendimiento.</div>
+          </div>
+        </div>
+        <div class="implicancia-item">
+          <div class="impl-icon">💡</div>
+          <div>
+            <div class="impl-titulo">Las densidades altas consumen más agua en el período vegetativo, agotando reservas</div>
+            <div class="impl-desc">El mayor consumo de agua en la etapa vegetativa con alta densidad puede comprometer la disponibilidad hídrica durante el período crítico. En zonas donde el agua del perfil es el principal recurso hídrico, esto puede reducir las chances de respuesta en floración.</div>
+          </div>
+        </div>
+        <div class="implicancia-item">
+          <div class="impl-icon">🔑</div>
+          <div>
+            <div class="impl-titulo">La tasa de crecimiento en floración es el indicador integrador</div>
+            <div class="impl-desc">La respuesta de la EUA a la densidad puede predecirse a partir de la respuesta de la tasa de crecimiento durante el período crítico. Estrategias de manejo que garanticen alta disponibilidad de agua y radiación en floración serán las que permitan aprovechar mejor el potencial de densidades altas.</div>
+          </div>
+        </div>
+        <div class="implicancia-item">
+          <div class="impl-icon">🌱</div>
+          <div>
+            <div class="impl-titulo">Menor evaporación del suelo: un beneficio real pero insuficiente bajo estrés</div>
+            <div class="impl-desc">Mayor densidad de plantas siempre redujo la evaporación directa del suelo —agua "perdida"— y aumentó la transpiración productiva. Sin embargo, cuando falta agua, si el cultivo no puede crecer, no mejora su rendimiento por más que se haya reducido la evaporación.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-banda">
+      <div class="footer-texto">Hernández et al. (2020) · Field Crops Research 254: 107844 · doi:10.1016/j.fcr.2020.107844</div>
+      <div>
+        <span class="pill-destacada">Maíz</span>
+        <span class="pill-destacada">Densidad de siembra</span>
+        <span class="pill-destacada">Uso del agua</span>
+        <span class="pill-destacada">Período crítico</span>
+        <span class="pill-destacada">Balcarce</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+---
+title: ""
+---
+
+### Resultados de investigaciones científicas traducidos en mensajes claros, útiles y aplicados al manejo de cultivos y suelos.
+
+::::: {.science-grid}
+
+:::: {.science-card}
+
+::: {.science-card__meta}
+INTA Balcarce · CONICET · UNMdP | *Field Crops Research*, 2020
+:::
+### Densidad de plantas y eficiencia en el uso del agua en maíz: ¿siempre conviene sembrar más denso?
+
+::: {.science-card__authors}
+Hernández, M.D. · Alfonso, C. · Cerrudo, A. · Cambareri, M. · Della Maggiora, A. · Barbieri, P. · Echarte, M.M. · Echarte, L.
+:::
+
+::: {.science-card__summary}
+Aumentar la densidad puede mejorar la captura de recursos y el rendimiento, pero no siempre mejora el uso del agua. Este trabajo ayuda a entender en qué ambientes una mayor densidad favorece la eficiencia hídrica y cuándo puede transformarse en una desventaja para el cultivo.
+:::
+
+::: {.science-card__highlight}
+**La densidad óptima depende del ambiente y de la disponibilidad de agua.**
+:::
+
+<a href="ciencia/maiz_densidad_agua.html" class="science-btn">Ver infografía</a>
+::::
+
+
+
+:::: {.science-card}
+
+::: {.science-card__meta}
+IPADS · INTA Balcarce · CONICET · UNMdP | *Geoderma Regional*, 2024
+:::
+
+### Menor densidad y mayor distanciamiento entre surcos en maíz: ¿qué pasa con la respiración del suelo?
+
+::: {.science-card__authors}
+Lewczuk, N.A. · Picone, L. · Echarte, M.M. · Alfonso, C. · Rizzalli, R. · Echarte, L.
+:::
+
+::: {.science-card__summary}
+Modificar la arquitectura del cultivo también cambia el microambiente del suelo. En este estudio, una menor densidad y mayor espaciamiento entre hileras aumentaron la humedad superficial y los flujos de CO₂, aunque sin modificar las emisiones acumuladas a escala de campaña.
+:::
+
+::: {.science-card__highlight}
+**El diseño espacial del cultivo modifica el ambiente del suelo y su respiración.**
+:::
+
+<a href="ciencia/maiz_respiracion_suelo_densidad.html" class="science-btn">Ver infografía</a>
+::::
+
+
+:::: {.science-card}
+
+::: {.science-card__meta}
+INTA Balcarce · CONICET · UNMdP  |  *Field Crops Research*, 2015
+:::
+
+### Fertilización nitrogenada y eficiencia en el uso del agua en maíz: ¿sirve aplicar nitrógeno cuando falta agua?
+
+::: {.science-card__authors}
+Hernández, M. · Echarte, L. · Della Maggiora, A. · Cambareri, M. · Barbieri, P. · Cerrudo, D.
+:::
+
+::: {.science-card__summary}
+La respuesta al nitrógeno depende del ambiente. Este trabajo muestra que la fertilización mejora la eficiencia en el uso del agua cuando el cultivo no está fuertemente limitado por déficit hídrico, ayudando a entender cuándo la inversión en N tiene mayor retorno agronómico.
+:::
+
+::: {.science-card__highlight}
+**El nitrógeno mejora la eficiencia hídrica solo cuando el agua no es la principal limitante.**
+:::
+
+
+<a href="ciencia/maiz_nitrogeno_agua.html" class="science-btn">Ver infografía</a>
+::::
+
+:::::
+
+
+<div class="volver-inicio">
+<a href="index.html" class="volver-btn">⬆ Volver al inicio</a>
+</div>

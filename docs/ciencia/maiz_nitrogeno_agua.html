@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fertilización nitrogenada y eficiencia en el uso del agua en maíz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: #f7f6f2;
+      color: #1a1a1a;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2.5rem 2.5rem 3rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    }
+
+    .header {
+      border-top: 3px solid #1D5FA5;
+      padding-top: 1.5rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .tag-institucional {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1D5FA5;
+      margin-bottom: 0.6rem;
+    }
+
+    .titulo-principal {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.95rem;
+      line-height: 1.2;
+      color: #111;
+      max-width: 700px;
+      margin-bottom: 0.55rem;
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      color: #555;
+      font-weight: 300;
+      max-width: 640px;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+
+    .autores {
+      font-size: 12px;
+      color: #888;
+      font-style: italic;
+    }
+
+    .seccion { margin-bottom: 2.5rem; }
+
+    .seccion-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e0ddd5;
+    }
+
+    .num-seccion {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #1D5FA5;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .seccion-titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .texto {
+      font-size: 0.95rem;
+      line-height: 1.78;
+      color: #444;
+    }
+
+    .highlight-box {
+      border-left: 3px solid #B45309;
+      background: #fdf6ee;
+      padding: 0.85rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #4a3b28;
+      line-height: 1.65;
+    }
+
+    .highlight-box strong { color: #B45309; font-weight: 600; }
+
+    .cards-metodo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .card-metodo {
+      background: #f4f3ee;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid #1D5FA5;
+    }
+
+    .card-metodo-icon { font-size: 18px; margin-bottom: 6px; }
+
+    .card-metodo-titulo {
+      font-size: 11px;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .card-metodo-desc {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .conclusiones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 1rem;
+    }
+
+    .conclusion-card {
+      background: #fff;
+      border: 0.5px solid #ddd;
+      border-radius: 12px;
+      padding: 1.1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .conclusion-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+
+    .conclusion-card.azul::before { background: #1D5FA5; }
+    .conclusion-card.naranja::before { background: #B45309; }
+    .conclusion-card.verde::before { background: #2D6A4F; }
+    .conclusion-card.rojo::before { background: #9E3030; }
+
+    .conclusion-num {
+      font-size: 2.4rem;
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .conclusion-card.azul .conclusion-num { color: #1D5FA5; }
+    .conclusion-card.naranja .conclusion-num { color: #B45309; }
+    .conclusion-card.verde .conclusion-num { color: #2D6A4F; }
+    .conclusion-card.rojo .conclusion-num { color: #9E3030; }
+
+    .conclusion-titulo {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    .conclusion-texto {
+      font-size: 0.87rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Figura de dispersión */
+    .figura-wrapper {
+      background: #f9f8f5;
+      border-radius: 12px;
+      border: 0.5px solid #ddd;
+      padding: 1.2rem 1.4rem 1rem;
+      margin: 1.2rem 0;
+    }
+
+    .figura-titulo {
+      font-size: 12px;
+      font-weight: 600;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 4px;
+    }
+
+    .figura-subtitulo {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .leyenda-scatter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+      font-size: 11px;
+      color: #555;
+    }
+
+    .leyenda-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-hollow {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid;
+      flex-shrink: 0;
+      background: transparent;
+    }
+
+    /* Implicancias */
+    .implicancias {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .implicancia-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #f4f3ee;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+    }
+
+    .impl-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+
+    .impl-titulo {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 3px;
+    }
+
+    .impl-desc {
+      font-size: 0.84rem;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    .footer-banda {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e0ddd5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-texto {
+      font-size: 11px;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    .pill-destacada {
+      display: inline-block;
+      background: #1D5FA51a;
+      color: #1D5FA5;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      margin: 2px 2px;
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 1.5rem 1.2rem 2rem; }
+      .conclusiones-grid { grid-template-columns: 1fr; }
+      .titulo-principal { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="tag-institucional">INTA Balcarce · CONICET · UNMdP &nbsp;|&nbsp; Field Crops Research, 2015</div>
+    <div class="titulo-principal">Fertilización nitrogenada y eficiencia en el uso del agua en maíz: ¿sirve aplicar nitrógeno cuando falta agua?</div>
+    <div class="subtitulo">Ensayos a campo en el sudeste de Buenos Aires bajo riego y secano muestran que la fertilización con nitrógeno mejora la eficiencia hídrica solo cuando el agua no es el factor limitante.</div>
+    <div class="autores">Hernández, M. · Echarte, L. · Della Maggiora, A. · Cambareri, M. · Barbieri, P. · Cerrudo, D.</div>
+  </div>
+
+  <!-- SECCIÓN 1 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">1</div>
+      <div class="seccion-titulo">El problema</div>
+    </div>
+    <p class="texto">
+      El nitrógeno (N) es uno de los nutrientes que más influye sobre el rendimiento del maíz. En condiciones de buena disponibilidad hídrica, su efecto positivo sobre el crecimiento del cultivo y el rendimiento está bien documentado. Sin embargo, la información sobre cómo responde la <strong>eficiencia en el uso del agua para grano (EUA)</strong> a la fertilización nitrogenada cuando el agua es limitante es escasa y contradictoria.
+    </p>
+    <div class="highlight-box">
+      ¿Fertilizar con nitrógeno mejora la EUA del maíz incluso bajo déficit hídrico? ¿Y cómo responde la evapotranspiración total a la fertilización en distintas condiciones de agua en el suelo? Esas fueron las preguntas centrales de este trabajo.
+    </div>
+    <p class="texto">
+      El N afecta la EUA a través de dos vías: (i) al aumentar la intercepción de radiación fotosintéticamente activa (iPAR) por mayor área foliar, promueve mayor transpiración y menor evaporación del suelo —mejorando la fracción productiva del agua consumida— y (ii) al aumentar la eficiencia de uso de la radiación (EUR), incrementa la producción de biomasa por unidad de agua evapotranspirada. Pero cuando hay déficit hídrico, ambas vías pueden bloquearse.
+    </p>
+  </div>
+
+  <!-- SECCIÓN 2 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">2</div>
+      <div class="seccion-titulo">Cómo se estudió · Ensayos a campo</div>
+    </div>
+    <p class="texto">
+      Experimentos conducidos durante tres campañas consecutivas en el sudeste de Buenos Aires, generando una amplia variabilidad de condiciones hídricas que permitió comparar ambientes con y sin limitación de agua.
+    </p>
+    <div class="cards-metodo">
+      <div class="card-metodo">
+        <div class="card-metodo-icon">📍</div>
+        <div class="card-metodo-titulo">Sitio</div>
+        <div class="card-metodo-desc">Balcarce, Buenos Aires · Tres campañas: 2011/12, 2012/13 y 2013/14 · Suelo Argiudoll · Labranza convencional</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">🌽</div>
+        <div class="card-metodo-titulo">Tratamientos</div>
+        <div class="card-metodo-desc">2 dosis de N: sin fertilizar vs. 120 kg N ha⁻¹ · 2 regímenes hídricos: secano e irrigado · Diseño en parcelas divididas · 8 plantas m⁻²</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">💧</div>
+        <div class="card-metodo-titulo">Agua en el suelo</div>
+        <div class="card-metodo-desc">Medición con sonda de neutrones en todo el perfil (0–140 cm) desde emergencia hasta madurez fisiológica</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">☀️</div>
+        <div class="card-metodo-titulo">Radiación y biomasa</div>
+        <div class="card-metodo-desc">Intercepción de radiación (iPAR) cada 7–10 días · Biomasa aérea y rendimiento en madurez fisiológica</div>
+      </div>
+      <div class="card-metodo">
+        <div class="card-metodo-icon">🔬</div>
+        <div class="card-metodo-titulo">Evaporación del suelo</div>
+        <div class="card-metodo-desc">Medición con microlisímetros en entrefilas · ET calculada por balance hídrico del suelo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">3</div>
+      <div class="seccion-titulo">Principales hallazgos</div>
+    </div>
+
+    <div class="conclusiones-grid">
+      <div class="conclusion-card azul">
+        <div class="conclusion-num">+30%</div>
+        <div class="conclusion-titulo">EUA bajo riego o sin estrés</div>
+        <div class="conclusion-texto">La fertilización nitrogenada incrementó la EUA hasta un 30% en ambientes sin limitación hídrica. El rendimiento aumentó (38% en promedio) mucho más que la evapotranspiración (5%), explicando la mejora en EUA.</div>
+      </div>
+      <div class="conclusion-card rojo">
+        <div class="conclusion-num">0%</div>
+        <div class="conclusion-titulo">EUA bajo secano limitante</div>
+        <div class="conclusion-texto">En campañas con déficit hídrico marcado durante el ciclo (secano 2011/12 y 2013/14), el N no aumentó ni el rendimiento ni la EUA. El estrés hídrico bloqueó la respuesta al nutriente.</div>
+      </div>
+      <div class="conclusion-card naranja">
+        <div class="conclusion-num">+2–8%</div>
+        <div class="conclusion-titulo">ET siempre aumenta con N</div>
+        <div class="conclusion-texto">La evapotranspiración aumentó con la fertilización en todos los ambientes: 6% sin limitación hídrica y 2% con estrés. Este incremento fue consistente en las tres campañas, aunque la magnitud varió.</div>
+      </div>
+      <div class="conclusion-card verde">
+        <div class="conclusion-num">iPAR ↑</div>
+        <div class="conclusion-titulo">La radiación interceptada explica la ET</div>
+        <div class="conclusion-texto">En ambientes sin limitación hídrica, los incrementos en ET debidos al N estuvieron estrechamente asociados a incrementos en iPAR (mayor canopeo). En ambientes con estrés, la mayor iPAR no se tradujo en aumentos proporcionales de ET.</div>
+      </div>
+    </div>
+
+
+    <div class="highlight-box" style="margin-top: 1.2rem;">
+      <strong>Hallazgo clave:</strong> En ambientes con estrés hídrico, aunque el N aumentó la intercepción de radiación y, con ello, levemente la evapotranspiración, no mejoró la eficiencia de uso de la radiación para producir biomasa ni el índice de cosecha. Sin posibilidad de crecer más, el cultivo no convierte el N en más rendimiento, y la EUA no mejora.
+    </div>
+  </div>
+
+  <!-- SECCIÓN 4 -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="num-seccion">4</div>
+      <div class="seccion-titulo">Implicancias prácticas</div>
+    </div>
+
+    <div class="implicancias">
+      <div class="implicancia-item">
+        <div class="impl-icon">✅</div>
+        <div>
+          <div class="impl-titulo">Con buena disponibilidad hídrica, fertilizar con N mejora significativamente la EUA</div>
+          <div class="impl-desc">En ambientes sin limitación hídrica, la fertilización nitrogenada produce incrementos de rendimiento mucho mayores que los de la evapotranspiración. Esto se traduce en una EUA hasta un 30% superior. Bajo riego o en campañas con lluvias bien distribuidas, invertir en N es una estrategia eficiente tanto para el rendimiento como para el uso del agua.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">⚠️</div>
+        <div>
+          <div class="impl-titulo">Con déficit hídrico marcado, la fertilización nitrogenada no mejora la EUA</div>
+          <div class="impl-desc">Cuando el agua limita el crecimiento del cultivo, el N no puede expresar su potencial: no mejora la eficiencia de uso de la radiación, no aumenta el rendimiento y por lo tanto tampoco mejora la EUA. Esto no significa que el N sea inútil, pero su retorno es incierto en campañas con bajo aporte hídrico.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">💡</div>
+        <div>
+          <div class="impl-titulo">La fertilización nitrogenada aumenta levemente el consumo de agua en todos los ambientes</div>
+          <div class="impl-desc">La mayor intercepción de radiación que promueve el N siempre eleva algo la evapotranspiración (2–8%), independientemente de si hay o no limitación hídrica. En ambientes sin estrés, esto se compensa con creces por el mayor rendimiento. En ambientes con estrés, este pequeño incremento en el consumo de agua no se acompaña de mayor producción.</div>
+        </div>
+      </div>
+      <div class="implicancia-item">
+        <div class="impl-icon">🌱</div>
+        <div>
+          <div class="impl-titulo">Menor evaporación del suelo: un beneficio adicional de la fertilización en ambientes húmedos</div>
+          <div class="impl-desc">En condiciones con buen contenido de agua superficial, el mayor canopeo promovido por el N redujo la evaporación directa del suelo y aumentó la transpiración productiva. En ambientes con suelo superficial seco, la evaporación ya era baja por falta de agua y el N no pudo reducirla más.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-banda">
+    <div class="footer-texto">Hernández et al. (2015) · Field Crops Research 178: 8–15 · doi:10.1016/j.fcr.2015.03.017</div>
+    <div>
+      <span class="pill-destacada">Maíz</span>
+      <span class="pill-destacada">Nitrógeno</span>
+      <span class="pill-destacada">Uso del agua</span>
+      <span class="pill-destacada">Evapotranspiración</span>
+      <span class="pill-destacada">Balcarce</span>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+</body>
+</html>
