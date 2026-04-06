@@ -9,30 +9,6 @@ title: ""
 :::: {.science-card}
 
 ::: {.science-card__meta}
-INTA Balcarce · CONICET · UNMdP | *Field Crops Research*, 2020
-:::
-### Densidad de plantas y eficiencia en el uso del agua en maíz: ¿siempre conviene sembrar más denso?
-
-::: {.science-card__authors}
-Hernández, M.D. · Alfonso, C. · Cerrudo, A. · Cambareri, M. · Della Maggiora, A. · Barbieri, P. · Echarte, M.M. · Echarte, L.
-:::
-
-::: {.science-card__summary}
-Aumentar la densidad puede mejorar la captura de recursos y el rendimiento, pero no siempre mejora el uso del agua. Este trabajo ayuda a entender en qué ambientes una mayor densidad favorece la eficiencia hídrica y cuándo puede transformarse en una desventaja para el cultivo.
-:::
-
-::: {.science-card__highlight}
-**La densidad óptima depende del ambiente y de la disponibilidad de agua.**
-:::
-
-<a href="ciencia/maiz_densidad_agua.html" class="science-btn">Ver infografía</a>
-::::
-
-
-
-:::: {.science-card}
-
-::: {.science-card__meta}
 IPADS · INTA Balcarce · CONICET · UNMdP | *Geoderma Regional*, 2024
 :::
 
@@ -51,6 +27,28 @@ Modificar la arquitectura del cultivo también cambia el microambiente del suelo
 :::
 
 <a href="ciencia/maiz_respiracion_suelo_densidad.html" class="science-btn">Ver infografía</a>
+::::
+
+:::: {.science-card}
+
+::: {.science-card__meta}
+INTA Balcarce · CONICET · UNMdP | *Field Crops Research*, 2020
+:::
+### Densidad de plantas y eficiencia en el uso del agua en maíz: ¿siempre conviene sembrar más denso?
+
+::: {.science-card__authors}
+Hernández, M.D. · Alfonso, C. · Cerrudo, A. · Cambareri, M. · Della Maggiora, A. · Barbieri, P. · Echarte, M.M. · Echarte, L.
+:::
+
+::: {.science-card__summary}
+Aumentar la densidad puede mejorar la captura de recursos y el rendimiento, pero no siempre mejora el uso del agua. Este trabajo ayuda a entender en qué ambientes una mayor densidad favorece la eficiencia hídrica y cuándo puede transformarse en una desventaja para el cultivo.
+:::
+
+::: {.science-card__highlight}
+**La densidad óptima depende del ambiente y de la disponibilidad de agua.**
+:::
+
+<a href="ciencia/maiz_densidad_agua.html" class="science-btn">Ver infografía</a>
 ::::
 
 
