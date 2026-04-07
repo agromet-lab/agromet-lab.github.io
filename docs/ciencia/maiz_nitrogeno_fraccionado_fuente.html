@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fertilización nitrogenada en maíz: fuente y fraccionamiento</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde-oscuro: #2d5a27;
+    --verde-medio: #4a8c3f;
+    --verde-claro: #7dbf6e;
+    --verde-palido: #e8f5e3;
+    --tierra: #8b5e3c;
+    --tierra-claro: #f5ede4;
+    --amarillo-maiz: #f0c040;
+    --amarillo-suave: #fdf6e0;
+    --gris-texto: #2c2c2c;
+    --gris-suave: #f7f7f5;
+    --gris-borde: #ddd;
+    --rojo-alerta: #c0392b;
+    --azul-agua: #2980b9;
+    --sombra: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #fafaf8;
+    color: var(--gris-texto);
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--verde-oscuro);
+    color: white;
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+  }
+  .header .meta {
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .header h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.3;
+    max-width: 800px;
+    margin: 0 auto 1.2rem;
+  }
+  .header .bajada {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    max-width: 680px;
+    margin: 0 auto 1.2rem;
+    font-weight: 300;
+  }
+  .header .autores {
+    font-size: 0.88rem;
+    opacity: 0.75;
+    font-style: italic;
+  }
+
+  /* CONTENIDO PRINCIPAL */
+  .contenido {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  /* SECCIONES */
+  .seccion {
+    margin-bottom: 3rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    overflow: hidden;
+  }
+
+  .seccion-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 1.8rem;
+    border-bottom: 1px solid var(--gris-borde);
+  }
+  .seccion-num {
+    background: var(--verde-oscuro);
+    color: white;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .seccion-titulo {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--verde-oscuro);
+  }
+
+  .seccion-cuerpo {
+    padding: 1.6rem 1.8rem;
+  }
+
+  /* BLOQUE DE MÉTODOS */
+  .metodos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  .metodo-item {
+    background: var(--gris-suave);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--verde-medio);
+  }
+  .metodo-item .icono {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    display: block;
+  }
+  .metodo-item strong {
+    display: block;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--verde-oscuro);
+    margin-bottom: 0.3rem;
+  }
+  .metodo-item p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  /* HALLAZGOS - TARJETAS */
+  .hallazgos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .hallazgo-card {
+    border-radius: 8px;
+    padding: 1.3rem;
+    text-align: center;
+  }
+  .hallazgo-card.verde { background: var(--verde-palido); border-top: 4px solid var(--verde-medio); }
+  .hallazgo-card.amarillo { background: var(--amarillo-suave); border-top: 4px solid var(--amarillo-maiz); }
+  .hallazgo-card.tierra { background: var(--tierra-claro); border-top: 4px solid var(--tierra); }
+  .hallazgo-card.neutro { background: #eef3f8; border-top: 4px solid var(--azul-agua); }
+
+  .hallazgo-card .numero {
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--verde-oscuro);
+    margin-bottom: 0.2rem;
+  }
+  .hallazgo-card.amarillo .numero { color: #8a6a00; }
+  .hallazgo-card.tierra .numero { color: var(--tierra); }
+  .hallazgo-card.neutro .numero { color: var(--azul-agua); }
+
+  .hallazgo-card .label {
+    font-size: 0.93rem;
+    line-height: 1.4;
+  }
+
+  /* BLOQUE CLAVE */
+  .hallazgo-clave {
+    background: var(--verde-palido);
+    border-left: 5px solid var(--verde-oscuro);
+    border-radius: 0 8px 8px 0;
+    padding: 1.2rem 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .hallazgo-clave p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .hallazgo-clave strong {
+    color: var(--verde-oscuro);
+  }
+
+  /* DIAGRAMA FUENTES */
+  .fuentes-comparacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+    margin: 1.2rem 0;
+  }
+  .fuente-card {
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  .fuente-card.mejor { background: var(--verde-palido); border-color: var(--verde-medio); }
+  .fuente-card.intermedio { background: #eef3f8; border-color: var(--azul-agua); }
+  .fuente-card.peor { background: #fdecea; border-color: #e74c3c; }
+
+  .fuente-card .badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  .fuente-card.mejor .badge { background: var(--verde-medio); color: white; }
+  .fuente-card.intermedio .badge { background: var(--azul-agua); color: white; }
+  .fuente-card.peor .badge { background: #e74c3c; color: white; }
+
+  .fuente-card .nombre {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    color: var(--gris-texto);
+  }
+  .fuente-card .desc {
+    font-size: 0.87rem;
+    line-height: 1.45;
+  }
+
+  /* BARRA DE VOLATILIZACIÓN */
+  .barras-container {
+    margin: 1.2rem 0;
+  }
+  .barra-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+  .barra-label {
+    width: 180px;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    line-height: 1.3;
+  }
+  .barra-wrap {
+    flex: 1;
+    background: #eee;
+    border-radius: 4px;
+    height: 22px;
+    overflow: hidden;
+  }
+  .barra-fill {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    transition: width 0.5s ease;
+  }
+  .barra-fill.alto { background: #e74c3c; }
+  .barra-fill.medio { background: #e67e22; }
+  .barra-fill.bajo { background: var(--verde-medio); }
+  .barra-fill.muy-bajo { background: var(--verde-oscuro); }
+
+  /* IMPLICANCIAS PRÁCTICAS */
+  .implicancia {
+    display: flex;
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--gris-borde);
+  }
+  .implicancia:last-child { border-bottom: none; }
+  .implicancia .icono-wrap {
+    font-size: 1.8rem;
+    width: 2.6rem;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 0.1rem;
+  }
+  .implicancia .texto h4 {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--verde-oscuro);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+  }
+  .implicancia .texto p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* ALERTA ESPECIAL */
+  .alerta-costo {
+    background: var(--tierra-claro);
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin-top: 1.2rem;
+    border-left: 5px solid var(--tierra);
+  }
+  .alerta-costo h4 {
+    font-weight: 700;
+    color: var(--tierra);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .alerta-costo p { font-size: 0.93rem; line-height: 1.6; }
+
+  /* FOOTER */
+  .footer-ref {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid var(--gris-borde);
+    background: white;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+  }
+  .footer-ref .doi { font-style: italic; }
+  .tags {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  .tag {
+    background: var(--verde-palido);
+    color: var(--verde-oscuro);
+    font-size: 0.78rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+
+  p { margin-bottom: 0.8rem; }
+  p:last-child { margin-bottom: 0; }
+
+  @media (max-width: 600px) {
+    .header { padding: 2rem 1rem 1.5rem; }
+    .seccion-cuerpo { padding: 1.2rem 1.2rem; }
+    .barra-label { width: 140px; font-size: 0.82rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="meta">UNMdP · INTA Balcarce · CONICET · Profertil &nbsp;|&nbsp; Agriculture, Ecosystems and Environment, 2025</div>
+  <h1>Fraccionamiento del nitrógeno y tipo de fertilizante en maíz: ¿cómo reducir pérdidas gaseosas sin sacrificar rendimiento?</h1>
+  <p class="bajada">Ensayos a campo bajo riego y secano en Balcarce demuestran que la combinación de urea con inhibidor de ureasa más aplicación fraccionada reduce hasta un 80% la volatilización de amoníaco, sin afectar el rendimiento.</p>
+  <p class="autores">Iglesias, M.P. · Wyngaard, N. · Lewczuk, N. · Sainz Rozas, H.R. · Toribio, M. · García, F.O. · Reussi Calvo, N.I.</p>
+</div>
+
+<div class="contenido">
+
+  <!-- SECCIÓN 1: EL PROBLEMA -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="seccion-num">1</div>
+      <div class="seccion-titulo">El problema</div>
+    </div>
+    <div class="seccion-cuerpo">
+      <p>El nitrógeno (N) es el nutriente que más limita el rendimiento del maíz en los sistemas agrícolas pampeanos. Sin embargo, menos del 50% del N aplicado como fertilizante es recuperado por el cultivo durante la campaña. El resto se pierde por lixiviación, volatilización de amoníaco (NH₃) y emisión de óxido nitroso (N₂O), un potente gas de efecto invernadero.</p>
+      <p>Estas pérdidas tienen doble impacto: <strong>económico</strong>, porque reducen la eficiencia de la inversión en fertilizante, y <strong>ambiental</strong>, porque contribuyen a la acidificación del suelo, la eutrofización de cuerpos de agua y al cambio climático. Actualmente existe una necesidad concreta de identificar estrategias de manejo que reduzcan estas pérdidas sin comprometer la productividad del cultivo.</p>
+      <p>Las preguntas centrales de este trabajo fueron: ¿Qué fuente de N conviene usar? ¿Vale la pena fraccionar la fertilización? ¿Cuánto pesan estas decisiones en el costo ambiental real de la fertilización?</p>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2: CÓMO SE ESTUDIÓ -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="seccion-num">2</div>
+      <div class="seccion-titulo">Cómo se estudió · Ensayos a campo</div>
+    </div>
+    <div class="seccion-cuerpo">
+      <p>El estudio se realizó durante dos campañas consecutivas en Balcarce (Buenos Aires), con mediciones directas en el campo: pérdidas de gas, contenido de N en suelo y rendimiento en grano. Los tratamientos combinaron cuatro fuentes de N con dos estrategias de fertilización, bajo dos regímenes hídricos.</p>
+      <div class="metodos-grid">
+        <div class="metodo-item">
+          <span class="icono">📍</span>
+          <strong>Sitio y suelo</strong>
+          <p>Balcarce, Buenos Aires · Argiudoll · Siembra directa · Campañas 2022/23 y 2023/24</p>
+        </div>
+        <div class="metodo-item">
+          <span class="icono">🌽</span>
+          <strong>Fuentes de N evaluadas</strong>
+          <p>Urea · Urea-Limus (inhibidor de ureasa) · Urea-DMPP (inhibidor de nitrificación) · CAN (nitrato de calcio y amonio)</p>
+        </div>
+        <div class="metodo-item">
+          <span class="icono">⚗️</span>
+          <strong>Estrategias de aplicación</strong>
+          <p>Dosis única a V4 (200 kg N ha⁻¹) vs. fraccionado: 60% a V4 + 40% en floración (R1)</p>
+        </div>
+        <div class="metodo-item">
+          <span class="icono">💧</span>
+          <strong>Regímenes hídricos</strong>
+          <p>Bajo riego (841–807 mm totales) y secano (564–539 mm), con medición de balance hídrico</p>
+        </div>
+        <div class="metodo-item">
+          <span class="icono">🔬</span>
+          <strong>Volatilización de NH₃</strong>
+          <p>Medición diaria en campo con cámaras estáticas semi-abiertas durante todo el período post-fertilización</p>
+        </div>
+        <div class="metodo-item">
+          <span class="icono">🌫️</span>
+          <strong>Emisión de N₂O</strong>
+          <p>Cámaras estáticas ventiladas con cromatografía gaseosa · 14 momentos de muestreo por campaña</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3: PRINCIPALES HALLAZGOS -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="seccion-num">3</div>
+      <div class="seccion-titulo">Principales hallazgos</div>
+    </div>
+    <div class="seccion-cuerpo">
+
+      <div class="hallazgos-grid">
+        <div class="hallazgo-card verde">
+          <div class="numero">−80%</div>
+          <div class="label">Reducción de volatilización de NH₃ con <strong>Urea-Limus fraccionada</strong> respecto a urea completa</div>
+        </div>
+        <div class="hallazgo-card amarillo">
+          <div class="numero">8–19 t/ha</div>
+          <div class="label">Rango de rendimiento en grano según campaña, régimen hídrico y tratamiento</div>
+        </div>
+        <div class="hallazgo-card neutro">
+          <div class="numero">0,01–0,14%</div>
+          <div class="label">Factor de emisión de N₂O: muy por debajo del valor de referencia IPCC (1%)</div>
+        </div>
+        <div class="hallazgo-card tierra">
+          <div class="numero">1–109 U$S/ha</div>
+          <div class="label">Rango del costo ambiental de la fertilización, según fuente y estrategia</div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Lora',serif; color:var(--verde-oscuro); margin: 1.5rem 0 0.8rem; font-size:1.08rem;">Volatilización de NH₃: qué hace cada fuente y estrategia</h3>
+      <p style="font-size:0.93rem; color:#555; margin-bottom:0.8rem;">Pérdida acumulada neta de N-NH₃ (% del N aplicado) · promedio entre regímenes hídricos y campañas</p>
+
+      <div class="barras-container">
+        <div class="barra-item">
+          <div class="barra-label">Urea · dosis completa</div>
+          <div class="barra-wrap"><div class="barra-fill alto" style="width:100%">~23%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">Urea-DMPP · completa</div>
+          <div class="barra-wrap"><div class="barra-fill alto" style="width:96%">~22%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">Urea · fraccionada</div>
+          <div class="barra-wrap"><div class="barra-fill medio" style="width:65%">~15%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">Urea-DMPP · fraccionada</div>
+          <div class="barra-wrap"><div class="barra-fill medio" style="width:60%">~14%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">CAN · completa</div>
+          <div class="barra-wrap"><div class="barra-fill bajo" style="width:28%">~6%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">Urea-Limus · completa</div>
+          <div class="barra-wrap"><div class="barra-fill bajo" style="width:24%">~5–6%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">CAN · fraccionada</div>
+          <div class="barra-wrap"><div class="barra-fill muy-bajo" style="width:18%">~3–4%</div></div>
+        </div>
+        <div class="barra-item">
+          <div class="barra-label">Urea-Limus · fraccionada</div>
+          <div class="barra-wrap"><div class="barra-fill muy-bajo" style="width:10%">~2%</div></div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Lora',serif; color:var(--verde-oscuro); margin: 1.5rem 0 0.8rem; font-size:1.08rem;">Comparación de fuentes de nitrógeno</h3>
+      <div class="fuentes-comparacion">
+        <div class="fuente-card mejor">
+          <span class="badge">Menor pérdida</span>
+          <div class="nombre">Urea-Limus</div>
+          <div class="desc">Inhibidor de ureasa. Reduce la volatilización hasta un <strong>75%</strong> respecto a urea convencional. Las pérdidas de NH₃ son equivalentes al CAN. Máximo beneficio al fraccionar.</div>
+        </div>
+        <div class="fuente-card mejor">
+          <span class="badge">Menor pérdida</span>
+          <div class="nombre">CAN</div>
+          <div class="desc">Nitrato de amonio calcáreo. Baja volatilización porque no contiene urea. Sin embargo, al ser nítrico, podría tener mayor riesgo de lixiviación (no medida en este estudio).</div>
+        </div>
+        <div class="fuente-card intermedio">
+          <span class="badge">Intermedio</span>
+          <div class="nombre">Urea-DMPP</div>
+          <div class="desc">Inhibidor de nitrificación. No redujo significativamente la volatilización de NH₃ respecto a la urea convencional. El fraccionamiento sí reduce las pérdidas con esta fuente.</div>
+        </div>
+        <div class="fuente-card peor">
+          <span class="badge">Mayor pérdida</span>
+          <div class="nombre">Urea convencional</div>
+          <div class="desc">Las pérdidas más altas de NH₃, especialmente con aplicación completa a V4. El fraccionamiento reduce las pérdidas, pero no las elimina.</div>
+        </div>
+      </div>
+
+      <div class="hallazgo-clave">
+        <p><strong>El rendimiento no se vio afectado por la fuente de N ni por la estrategia de aplicación.</strong> Todos los tratamientos fertilizados produjeron entre 8 y 19 t ha⁻¹ según la campaña y el régimen hídrico, con respuestas al N de 2,4 a 4,7 t ha⁻¹. Esto confirma que es posible reducir las pérdidas gaseosas sin sacrificar productividad.</p>
+      </div>
+
+      <h3 style="font-family:'Lora',serif; color:var(--verde-oscuro); margin: 1.5rem 0 0.6rem; font-size:1.08rem;">Emisiones de N₂O: bajas y sin efecto de tratamientos</h3>
+      <p>Las emisiones de N₂O fueron muy bajas en ambas campañas (factores de emisión de 0,01 a 0,14% del N aplicado), muy por debajo del valor de referencia del IPCC (1%). Ningún tratamiento mostró diferencias significativas en las emisiones de N₂O, aunque el inhibidor de nitrificación (Urea-DMPP) mostró una tendencia hacia menores pérdidas (−8 a −55% respecto a urea) que no fue estadísticamente significativa. Las condiciones de humedad del suelo (%WFPS) fueron el principal factor controlando las emisiones de N₂O.</p>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 4: IMPLICANCIAS PRÁCTICAS -->
+  <div class="seccion">
+    <div class="seccion-header">
+      <div class="seccion-num">4</div>
+      <div class="seccion-titulo">Implicancias prácticas para el agrónomo de campo</div>
+    </div>
+    <div class="seccion-cuerpo">
+
+      <div class="implicancia">
+        <div class="icono-wrap">✅</div>
+        <div class="texto">
+          <h4>Fraccionar el N a V4 + floración reduce las pérdidas sin costos en rendimiento</h4>
+          <p>Aplicar el 60% del N a V4 y el 40% restante en floración (R1) redujo en promedio un 31–43% la volatilización de NH₃ en los tratamientos con urea. Este beneficio ambiental no tuvo ningún costo sobre el rendimiento en grano, que no difirió entre estrategias de fertilización. El fraccionamiento permite además ajustar la dosis a la situación del cultivo y el pronóstico climático de la campaña.</p>
+        </div>
+      </div>
+
+      <div class="implicancia">
+        <div class="icono-wrap">🌿</div>
+        <div class="texto">
+          <h4>La urea con inhibidor de ureasa (Urea-Limus) es la mejor opción para minimizar pérdidas gaseosas</h4>
+          <p>La combinación de Urea-Limus con fraccionamiento fue el tratamiento con menor volatilización en todas las campañas y regímenes hídricos (∼2% del N aplicado). Si la meta es reducir pérdidas gaseosas y el costo ambiental de la fertilización, esta combinación es la estrategia más efectiva. El inhibidor de nitrificación (DMPP) no mostró ventajas sobre la urea convencional en reducir la volatilización.</p>
+        </div>
+      </div>
+
+      <div class="implicancia">
+        <div class="icono-wrap">💰</div>
+        <div class="texto">
+          <h4>El costo ambiental de fertilizar puede reducirse más de 10 veces según la elección de fuente y estrategia</h4>
+          <p>Los costos ambientales variaron de 1,1 a 108,6 U$S ha⁻¹, siendo la volatilización de NH₃ la que explicó entre el 17 y el 99,5% de ese costo. La urea completa presentó los costos más altos, mientras que Urea-Limus fraccionada o CAN fraccionada mostraron los menores impactos económico-ambientales. En un contexto donde la presión regulatoria sobre las emisiones agrícolas aumenta, esta información tiene valor concreto para la toma de decisiones.</p>
+        </div>
+      </div>
+
+      <div class="implicancia">
+        <div class="icono-wrap">⚠️</div>
+        <div class="texto">
+          <h4>El CAN tiene baja volatilización, pero puede tener mayor riesgo de lixiviación</h4>
+          <p>El nitrato de amonio calcáreo (CAN) mostró pérdidas de NH₃ equivalentes a Urea-Limus, y costos ambientales similares en este estudio. Sin embargo, al ser una fuente predominantemente nítrica, tiene mayor potencial de lixiviación de nitratos, pérdida que <em>no fue medida</em> en este trabajo. Vale tener presente que el costo ambiental real del CAN podría ser mayor si se consideran las pérdidas por lavado, especialmente en situaciones con alta recarga hídrica.</p>
+        </div>
+      </div>
+
+      <div class="implicancia">
+        <div class="icono-wrap">🌧️</div>
+        <div class="texto">
+          <h4>Las emisiones de N₂O son bajas en la región y dependen principalmente de la humedad del suelo</h4>
+          <p>Los factores de emisión de N₂O registrados en Balcarce (0,01–0,14%) están muy por debajo del 1% asumido por el IPCC para la región, lo que sugiere una sobreestimación de los inventarios de gases de efecto invernadero para la Pampa. Las emisiones de N₂O dependieron más de la humedad del suelo (%WFPS) y la temperatura que de la fuente o estrategia de fertilización, por lo que el manejo del N tiene menor impacto relativo sobre este gas en comparación con la volatilización de NH₃.</p>
+        </div>
+      </div>
+
+      <div class="implicancia">
+        <div class="icono-wrap">🔄</div>
+        <div class="texto">
+          <h4>Fraccionar permite ajustar la dosis de N a la situación real del cultivo</h4>
+          <p>Más allá del beneficio ambiental directo, el fraccionamiento abre la posibilidad de ajustar la dosis de N del segundo momento (floración) según el estado real del cultivo, las lluvias acumuladas y el pronóstico climático. Estudios de simulación muestran que esta práctica puede mejorar la eficiencia de uso del N en distintos escenarios climáticos, sin comprometer el rendimiento ni en ambientes de alto potencial ni en años con déficit hídrico.</p>
+        </div>
+      </div>
+
+      <div class="alerta-costo">
+        <h4>⚡ La volatilización domina el costo ambiental: es donde hay mayor margen de mejora</h4>
+        <p>En este estudio, las pérdidas por NH₃ explicaron la gran mayoría del costo ambiental total de la fertilización en maíz. Esto ubica al manejo de la volatilización —a través del tipo de fuente y el fraccionamiento— como la palanca de mayor impacto para un productor o asesor que busca reducir la huella ambiental de la fertilización sin resignar rendimiento ni margen económico.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REFERENCIA -->
+  <div class="footer-ref">
+    <p>Iglesias et al. (2025) · <em>Agriculture, Ecosystems and Environment</em> 392: 109756</p>
+    <p class="doi">doi: 10.1016/j.agee.2025.109756</p>
+    <div class="tags">
+      <span class="tag">Maíz</span>
+      <span class="tag">Nitrógeno</span>
+      <span class="tag">Volatilización</span>
+      <span class="tag">N₂O</span>
+      <span class="tag">Inhibidores</span>
+      <span class="tag">Fraccionamiento</span>
+      <span class="tag">Balcarce</span>
+      <span class="tag">Costo ambiental</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

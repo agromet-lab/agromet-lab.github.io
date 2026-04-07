@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Densidad de plantas y eficiencia en el uso de la radiación en maíz</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde-campo: #2d5a27;
+    --verde-claro: #4a8c3f;
+    --verde-suave: #e8f2e6;
+    --amarillo-maiz: #e8c547;
+    --amarillo-suave: #fdf6d8;
+    --gris-texto: #2a2a2a;
+    --gris-suave: #f5f5f0;
+    --gris-medio: #888;
+    --blanco: #ffffff;
+    --acento: #c8402a;
+    --azul-dato: #1a4a7a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    color: var(--gris-texto);
+    background: var(--blanco);
+    line-height: 1.7;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: var(--verde-campo);
+    color: var(--blanco);
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: rgba(232,197,71,0.12);
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 30%;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-meta {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amarillo-maiz);
+    margin-bottom: 1rem;
+    opacity: 0.92;
+  }
+
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.7rem, 4vw, 2.6rem);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1.1rem;
+    max-width: 720px;
+  }
+
+  .header-bajada {
+    font-size: 1.05rem;
+    font-weight: 300;
+    opacity: 0.88;
+    max-width: 640px;
+    margin-bottom: 1.4rem;
+    line-height: 1.65;
+  }
+
+  .header-autores {
+    font-size: 0.82rem;
+    opacity: 0.75;
+    font-style: italic;
+  }
+
+  /* ── STRIP DESTACADO ── */
+  .strip-destacado {
+    background: var(--amarillo-maiz);
+    color: var(--verde-campo);
+    padding: 0.85rem 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    border-bottom: 3px solid var(--verde-campo);
+  }
+
+  /* ── LAYOUT PRINCIPAL ── */
+  .contenido {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  /* ── SECCIONES ── */
+  .seccion {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--verde-suave);
+  }
+
+  .seccion-numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--verde-campo);
+    color: var(--blanco);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+
+  .seccion-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--verde-campo);
+    margin-bottom: 1rem;
+    line-height: 1.25;
+  }
+
+  .seccion p {
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+    color: #333;
+  }
+
+  /* ── CONCEPTO CLAVE ── */
+  .concepto-clave {
+    background: var(--verde-suave);
+    border-left: 4px solid var(--verde-campo);
+    padding: 1rem 1.3rem;
+    margin: 1.4rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .concepto-clave p {
+    margin: 0;
+    font-size: 0.97rem;
+    color: var(--verde-campo);
+    font-weight: 600;
+  }
+
+  /* ── MÉTODOS: PILLS/CHIPS ── */
+  .metodos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .metodo-chip {
+    background: var(--gris-suave);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    border: 1px solid #e0e0d8;
+  }
+
+  .metodo-chip .emoji {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .metodo-chip .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gris-medio);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .metodo-chip .valor {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--gris-texto);
+    line-height: 1.35;
+  }
+
+  /* ── HALLAZGOS: TARJETAS GRANDES ── */
+  .hallazgos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .hallazgo-card {
+    border-radius: 12px;
+    padding: 1.4rem 1.3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hallazgo-card.verde {
+    background: var(--verde-campo);
+    color: var(--blanco);
+  }
+  .hallazgo-card.amarillo {
+    background: var(--amarillo-suave);
+    border: 1.5px solid var(--amarillo-maiz);
+    color: var(--gris-texto);
+  }
+  .hallazgo-card.azul {
+    background: #eef3f9;
+    border: 1.5px solid #a8c0dc;
+    color: var(--gris-texto);
+  }
+  .hallazgo-card.rojo {
+    background: #fdf0ee;
+    border: 1.5px solid #e8a89a;
+    color: var(--gris-texto);
+  }
+
+  .hallazgo-card .dato-grande {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .hallazgo-card.verde .dato-grande { color: var(--amarillo-maiz); }
+  .hallazgo-card.amarillo .dato-grande { color: #b8860b; }
+  .hallazgo-card.azul .dato-grande { color: var(--azul-dato); }
+  .hallazgo-card.rojo .dato-grande { color: var(--acento); }
+
+  .hallazgo-card .titulo-dato {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 0.5rem;
+    opacity: 0.75;
+  }
+
+  .hallazgo-card .descripcion {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ── FIGURA CONCEPTUAL ── */
+  .figura-wrapper {
+    background: var(--gris-suave);
+    border-radius: 14px;
+    padding: 1.8rem;
+    margin: 1.8rem 0;
+    border: 1px solid #e0e0d8;
+  }
+
+  .figura-titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gris-medio);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Diagrama SVG de dispersión conceptual */
+  .scatter-svg {
+    width: 100%;
+    max-width: 520px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .figura-caption {
+    font-size: 0.82rem;
+    color: var(--gris-medio);
+    text-align: center;
+    margin-top: 0.9rem;
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  /* ── DIAGRAMA MECANISMO RUE / LAI ── */
+  .mecanismo-svg {
+    width: 100%;
+    max-width: 580px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ── HALLAZGO CLAVE BANNER ── */
+  .banner-hallazgo {
+    background: var(--verde-campo);
+    color: var(--blanco);
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    margin: 1.8rem 0;
+  }
+
+  .banner-hallazgo .icono {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .banner-hallazgo .titulo-banner {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--amarillo-maiz);
+  }
+
+  .banner-hallazgo p {
+    color: rgba(255,255,255,0.88);
+    font-size: 0.97rem;
+    margin: 0;
+  }
+
+  /* ── IMPLICANCIAS ── */
+  .implicancia {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    align-items: flex-start;
+  }
+
+  .implicancia-icono {
+    flex-shrink: 0;
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .implicancia-icono.verde { background: var(--verde-suave); }
+  .implicancia-icono.amarillo { background: var(--amarillo-suave); }
+  .implicancia-icono.rojo { background: #fdf0ee; }
+  .implicancia-icono.azul { background: #eef3f9; }
+  .implicancia-icono.gris { background: var(--gris-suave); }
+
+  .implicancia-texto strong {
+    display: block;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: var(--verde-campo);
+    margin-bottom: 0.25rem;
+  }
+
+  .implicancia-texto p {
+    font-size: 0.92rem;
+    color: #444;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  /* ── FOOTER ── */
+  .footer-cita {
+    margin-top: 3.5rem;
+    padding: 1.5rem 1.8rem;
+    background: var(--gris-suave);
+    border-radius: 10px;
+    border: 1px solid #e0e0d8;
+  }
+
+  .footer-cita .label-cita {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gris-medio);
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-cita p {
+    font-size: 0.84rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--verde-suave);
+    color: var(--verde-campo);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    border: 1px solid rgba(45,90,39,0.2);
+  }
+
+  @media (max-width: 600px) {
+    .hallazgos-grid { grid-template-columns: 1fr; }
+    .metodos-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-meta">IPADS · INTA Balcarce · CONICET · UNMdP &nbsp;|&nbsp; Crop Science, 2025</div>
+    <h1>La eficiencia en el uso de la radiación en maíz no cambia con la densidad de siembra</h1>
+    <p class="header-bajada">
+      Una revisión de 11 estudios y 28 experimentos a campo confirma que la RUE se mantiene estable a través de un amplio rango de densidades — y aclara por qué algunos trabajos llegaron a conclusiones opuestas.
+    </p>
+    <div class="header-autores">
+      Gonzalez Abba, H. · Bonelli, L. · Alfonso, C. · Echarte, M. · Lewczuk, N. · Sinclair, T.R. · Echarte, L.
+    </div>
+  </div>
+</header>
+
+<div class="strip-destacado">
+  💡 La densidad afecta cuánta luz intercepta el cultivo, pero no cuán eficientemente la convierte en biomasa
+</div>
+
+<!-- ══════════════════════════════════════════
+     CONTENIDO
+══════════════════════════════════════════ -->
+<main class="contenido">
+
+  <!-- ─── SECCIÓN 1: EL PROBLEMA ─── -->
+  <section class="seccion">
+    <div class="seccion-numero">1</div>
+    <h2 class="seccion-titulo">El problema</h2>
+
+    <p>
+      El rendimiento del maíz puede analizarse a partir de dos variables clave: la cantidad de radiación solar que intercepta el canopeo (<strong>iPAR</strong>) y la eficiencia con la que esa energía se convierte en biomasa aérea (<strong>RUE</strong>, por sus siglas en inglés). La <em>RUE</em> es, en términos sencillos, cuántos gramos de materia seca produce el cultivo por cada megajoule de radiación capturada.
+    </p>
+
+    <p>
+      Se sabe bien que aumentar la densidad de siembra eleva la iPAR, principalmente al incrementar el índice de área foliar (IAF). Pero ¿qué pasa con la RUE? ¿También cambia con la densidad? Este es un punto que, sorprendentemente, no había sido analizado en detalle pese a su enorme relevancia práctica.
+    </p>
+
+    <div class="concepto-clave">
+      <p>📌 Producción de biomasa = iPAR × RUE. Si la densidad modifica solo la iPAR pero no la RUE, los modelos de cultivo y las decisiones de manejo quedan simplificados — y más robustos.</p>
+    </div>
+
+    <p>
+      La literatura existente sobre el tema era confusa y contradictoria: algunos trabajos reportaban aumentos de RUE a bajas densidades, otros reportaban disminuciones. La hipótesis teórica (Sinclair & Horie, 1989) indicaba que la RUE debería ser esencialmente estable salvo a densidades muy bajas (IAF ≤ 1.5), donde podría caer levemente (~5%) por el efecto de saturación lumínica sobre hojas expuestas. Hacía falta una revisión exhaustiva y crítica.
+    </p>
+
+  </section>
+
+  <!-- ─── SECCIÓN 2: MATERIALES Y MÉTODOS ─── -->
+  <section class="seccion">
+    <div class="seccion-numero">2</div>
+    <h2 class="seccion-titulo">Cómo se estudió · Base de datos de ensayos a campo</h2>
+
+    <p>
+      Se realizó una revisión sistemática de trabajos publicados donde la RUE fue <strong>medida directamente en el campo</strong> — con barras sensoras para la intercepción de radiación y cosechas sucesivas de biomasa aérea — en maíces cultivados bajo condiciones sin estrés hídrico ni nutricional. Solo se incluyeron experimentos con <strong>contrastes explícitos de densidad de siembra</strong> a igual distanciamiento entre hileras.
+    </p>
+
+    <div class="metodos-grid">
+      <div class="metodo-chip">
+        <span class="emoji">📚</span>
+        <span class="label">Fuentes</span>
+        <span class="valor">11 estudios publicados, 28 experimentos individuales</span>
+      </div>
+      <div class="metodo-chip">
+        <span class="emoji">🌽</span>
+        <span class="label">Densidades</span>
+        <span class="valor">3 a 24,7 plantas m⁻², amplio rango real de manejo</span>
+      </div>
+      <div class="metodo-chip">
+        <span class="emoji">☀️</span>
+        <span class="label">IAF máximo</span>
+        <span class="valor">Entre 2,5 y 7,0 según experimento</span>
+      </div>
+      <div class="metodo-chip">
+        <span class="emoji">📍</span>
+        <span class="label">Origen</span>
+        <span class="valor">Argentina, EE.UU., China · Múltiples ambientes</span>
+      </div>
+      <div class="metodo-chip">
+        <span class="emoji">📏</span>
+        <span class="label">Medición directa</span>
+        <span class="valor">iPAR con barras sensoras · Biomasa aérea por cosecha</span>
+      </div>
+      <div class="metodo-chip">
+        <span class="emoji">⏱️</span>
+        <span class="label">Períodos</span>
+        <span class="valor">Estacional, floración y llenado de granos</span>
+      </div>
+    </div>
+
+    <div class="concepto-clave">
+      <p>📌 Todos los datos provienen de mediciones reales a campo, no de estimaciones indirectas ni simulaciones. Esto garantiza que los resultados sean directamente comparables con condiciones productivas.</p>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN 3: HALLAZGOS ─── -->
+  <section class="seccion">
+    <div class="seccion-numero">3</div>
+    <h2 class="seccion-titulo">Principales hallazgos</h2>
+
+    <div class="hallazgos-grid">
+      <div class="hallazgo-card verde">
+        <span class="dato-grande">68%</span>
+        <div class="titulo-dato">Acuerdo entre densidades</div>
+        <p class="descripcion">En el 68% de los experimentos, la RUE de baja y alta densidad difirió en menos del 12%, sin tendencia sistemática hacia ninguna dirección.</p>
+      </div>
+      <div class="hallazgo-card amarillo">
+        <span class="dato-grande">73%</span>
+        <div class="titulo-dato">Sin valores atípicos</div>
+        <p class="descripcion">Excluyendo dos experimentos outliers con valores de RUE físicamente imposibles o extraordinariamente altos, el acuerdo entre densidades sube al 73%.</p>
+      </div>
+      <div class="hallazgo-card azul">
+        <span class="dato-grande">≈2,8</span>
+        <div class="titulo-dato">Pendiente RUE similar (g MJ⁻¹)</div>
+        <p class="descripcion">La relación biomasa vs. iPAR tuvo igual pendiente para alta (2,78) y baja densidad (2,70), sin diferencia estadística (p &gt; 0,05).</p>
+      </div>
+      <div class="hallazgo-card rojo">
+        <span class="dato-grande">~5%</span>
+        <div class="titulo-dato">Caída teórica a IAF bajo</div>
+        <p class="descripcion">Solo a IAF ≤ 1,5 se predice una leve caída de RUE, explicada por mayor saturación lumínica en hojas de canopeos ralos.</p>
+      </div>
+    </div>
+
+    <div class="banner-hallazgo">
+      <span class="icono">🔬</span>
+      <div class="titulo-banner">Hallazgo central del trabajo</div>
+      <p>La eficiencia en el uso de la radiación (RUE) del maíz es prácticamente insensible a la densidad de siembra dentro del rango utilizado en la práctica agrícola. Los casos que mostraron diferencias importantes entre densidades correspondieron, en su mayoría, a condiciones de estrés encubierto en los tratamientos de alta densidad, o a valores de RUE físicamente imposibles según la teoría fotosintética.</p>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN 4: IMPLICANCIAS PRÁCTICAS ─── -->
+  <section class="seccion">
+    <div class="seccion-numero">4</div>
+    <h2 class="seccion-titulo">Implicancias prácticas para el agrónomo</h2>
+
+    <div class="implicancia">
+      <div class="implicancia-icono verde">✅</div>
+      <div class="implicancia-texto">
+        <strong>La densidad actúa principalmente vía intercepción de luz, no vía eficiencia de conversión</strong>
+        <p>Cuando se evalúa el efecto de la densidad sobre el rendimiento, el foco debe estar en cuánta radiación adicional captura el cultivo (más área foliar, cierre más rápido del canopeo), no en si cambia la eficiencia fotosintética del canopeo. La RUE puede considerarse un parámetro estable en modelos y estimaciones de producción.</p>
+      </div>
+    </div>
+
+    <div class="implicancia">
+      <div class="implicancia-icono amarillo">⚠️</div>
+      <div class="implicancia-texto">
+        <strong>Si la RUE cae con la densidad, buscá el estrés encubierto</strong>
+        <p>Los experimentos donde la RUE bajó a alta densidad presentaban indicios de deficiencias nutricionales o estrés lumínico que aceleró la senescencia foliar. En producción, una RUE deprimida a alta densidad es una señal de alerta: puede indicar limitaciones de nitrógeno, agua u otro recurso que se vuelven más críticas al aumentar la competencia intraespecífica.</p>
+      </div>
+    </div>
+
+    <div class="implicancia">
+      <div class="implicancia-icono azul">📊</div>
+      <div class="implicancia-texto">
+        <strong>Los modelos de cultivo pueden asumir RUE constante con la densidad</strong>
+        <p>Este resultado tiene relevancia directa para el uso de modelos de simulación en asesoramiento agronómico (APSIM, DSSAT, etc.). La simplificación de RUE constante con la densidad es válida bajo condiciones sin estrés, lo que facilita la parametrización y mejora la confiabilidad de las proyecciones.</p>
+      </div>
+    </div>
+
+    <div class="implicancia">
+      <div class="implicancia-icono rojo">🔑</div>
+      <div class="implicancia-texto">
+        <strong>A densidades muy bajas (canopeos ralos con IAF &lt; 1,5), la RUE puede caer levemente</strong>
+        <p>Este efecto, predicho por la teoría y confirmado en algunos experimentos, se explica porque en canopeos ralos una mayor proporción de hojas queda expuesta a luz saturante, reduciendo la eficiencia fotosintética promedio. En la práctica esto ocurre solo con densidades muy por debajo de las habituales o en los primeros estadios del cultivo.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── CITA Y TAGS ─── -->
+  <div class="footer-cita">
+    <div class="label-cita">Referencia del trabajo original</div>
+    <p>Gonzalez Abba, H., Bonelli, L., Alfonso, C., Echarte, M., Lewczuk, N., Sinclair, T.R., & Echarte, L. (2025). Radiation use efficiency is largely unaffected by plant density in maize (<em>Zea mays</em> L.): A review. <em>Crop Science</em>, 65, e70146. https://doi.org/10.1002/csc2.70146</p>
+    <div class="tags">
+      <span class="tag">Maíz</span>
+      <span class="tag">Densidad de siembra</span>
+      <span class="tag">Eficiencia en el uso de la radiación</span>
+      <span class="tag">Intercepción de radiación</span>
+      <span class="tag">Biomasa</span>
+      <span class="tag">Fisiología de cultivos</span>
+      <span class="tag">Modelos de cultivo</span>
+      <span class="tag">Balcarce</span>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -9,6 +9,30 @@ title: ""
 :::: {.science-card}
 
 ::: {.science-card__meta}
+IPADS · INTA Balcarce · CONICET · UNMdP | *Crop Science*, 2025
+:::
+
+### La eficiencia en el uso de la radiación en maíz no cambia con la densidad de siembra
+
+::: {.science-card__authors}
+Gonzalez Abba, H. · Bonelli, L. · Alfonso, C. · Echarte, M. · Lewczuk, N. · Sinclair, T.R. · Echarte, L.
+:::
+
+::: {.science-card__summary}
+Una revisión de 11 estudios y 28 experimentos a campo confirma que la eficiencia en el uso de la radiación se mantiene estable a través de un amplio rango de densidades de siembra, y ayuda a explicar por qué algunos trabajos previos encontraron resultados contradictorios.
+:::
+
+::: {.science-card__highlight}
+**La densidad modifica la radiación interceptada, pero no la eficiencia con que el maíz la convierte en biomasa.**
+:::
+
+<a href="ciencia/maiz_rue_densidad.html" class="science-btn">Ver infografía</a>
+::::
+
+
+:::: {.science-card}
+
+::: {.science-card__meta}
 IPADS · INTA Balcarce · CONICET · UNMdP | *Geoderma Regional*, 2024
 :::
 
