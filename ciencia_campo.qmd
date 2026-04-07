@@ -29,6 +29,29 @@ Una revisión de 11 estudios y 28 experimentos a campo confirma que la eficienci
 <a href="ciencia/maiz_rue_densidad.html" class="science-btn">Ver infografía</a>
 ::::
 
+:::: {.science-card}
+
+::: {.science-card__meta}
+UNMdP · INTA Balcarce · CONICET · Profertil | *Agriculture, Ecosystems and Environment*, 2025
+:::
+
+### Fraccionamiento del nitrógeno y tipo de fertilizante en maíz: ¿cómo reducir pérdidas gaseosas sin sacrificar rendimiento?
+
+::: {.science-card__authors}
+Iglesias, M.P. · Wyngaard, N. · Lewczuk, N. · Sainz Rozas, H.R. · Toribio, M. · García, F.O. · Reussi Calvo, N.I.
+:::
+
+::: {.science-card__summary}
+Ensayos a campo bajo riego y secano en Balcarce muestran que la combinación de urea con inhibidor de ureasa y aplicación fraccionada reduce fuertemente la volatilización de amoníaco, sin afectar el rendimiento del maíz.
+:::
+
+::: {.science-card__highlight}
+**Es posible disminuir pérdidas gaseosas y costo ambiental de la fertilización sin resignar productividad.**
+:::
+
+<a href="ciencia/maiz_nitrogeno_fraccionado_fuente.html" class="science-btn">Ver infografía</a>
+::::
+
 
 :::: {.science-card}
 
