@@ -5,6 +5,7 @@ project:
 website:
   title: "Lab. de Agrometeorología"
   site-url: "https://agromet-lab.github.io"
+  google-analytics: "G-GL7T3H2JHS"
   navbar:
     
     left:
