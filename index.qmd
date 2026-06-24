@@ -7,18 +7,24 @@ title: ""
 ::: {=html}
 
 <section class="hero">
-<div class="hero__overlay"></div>
 
-<div class="hero__content">
-<h2>Laboratorio de Agrometeorología</h2>
-<h3>(IPADS; EEA INTA Balcarce – CONICET)</h3>
+  <video autoplay muted loop playsinline preload="auto" class="hero-video">
+    <source src="portada3.mp4" type="video/mp4">
+  </video>
 
-<div class="hero-logos">
-<img src="IPADS.png" alt="IPADS" />
+  <div class="hero__overlay"></div>
 
-</div>
-    
-<p>Agrometeorología aplicada al manejo del agua en cultivos y a las emisiones de gases con efecto invernadero.</p>
+  <div class="hero__content">
+
+  <img src="" class="hero-logo"> 
+
+  <h1>Laboratorio de Agrometeorología</h1> 
+
+  <h2>IPADS · EEA INTA Balcarce · CONICET</h2> 
+
+  <p>
+    Agrometeorología aplicada al manejo de los cultivos.
+  </p>
 
 
 <div class="hero__buttons">
@@ -30,8 +36,11 @@ title: ""
 <a href="publicaciones.html" class="hero-btn">Publicaciones</a>
 <a href="equipo.html" class="hero-btn">Equipo</a>
 <a href="contacto.html" class="hero-btn">Contacto</a>
+
 </div>
+
 </div>
+
 </section>
 
 :::

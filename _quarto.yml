@@ -6,27 +6,9 @@ website:
   title: "Lab. de Agrometeorología"
   site-url: "https://agromet-lab.github.io"
   google-analytics: "G-GL7T3H2JHS"
+  
   navbar:
-    
-    left:
-      - href: index.qmd
-        text: Inicio
-      - href: que_hacemos.qmd
-        text: Líneas de trabajo
-      - href: ciencia_campo.qmd
-        text: Ciencia en el campo
-      - href: productos.qmd
-        text: Productos
-      - href: servicios.qmd
-        text: Servicios
-      - href: novedades.qmd
-        text: Novedades
-      - href: publicaciones.qmd
-        text: Publicaciones
-      - href: equipo.qmd
-        text: Equipo
-      - href: contacto.qmd
-        text: Contacto
+    left: []
 
         
   page-footer:

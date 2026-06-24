@@ -2,38 +2,71 @@
 title: "Novedades"
 ---
 
-::::: {.nota-taller}
-::: {.hero-taller}
+::::: {.nota-cientifica}
+::: {.hero-cientifica}
         
-<img src="taller7.JPG" alt="Taller práctico sobre medición y seguimiento del agua en los cultivos" class="hero-img">
+<img src="unne_echarte.jpg" alt="Investigadores reconocidos por su trabajo sobre maíz, calor y sequía" class="hero-img">
+<p class="foto-caption">
+Reconocimiento a integrantes del equipo de investigación cuyos resultados fueron publicados en Field Crops Research.
+</p>
 
-<div class="hero-overlay">
-  <h1>Taller práctico sobre medición y seguimiento del agua en los cultivos</h1>
-  <p>Una jornada con <strong>alta convocatoria</strong>, participación activa e interés creciente por herramientas aplicadas al manejo del agua en sistemas productivos.</p>
-</div>
+
 
 :::
 
 ::: {.contenido-nota}
+
+<h2 class="titulo-nota">Identificaron qué procesos ayudan al maíz a sostener el rendimiento frente al calor y la sequía</h2>
         
-<p class="fecha-nota"><strong>Balcarce, marzo 2026</strong></p>
+<p class="fecha-nota"><strong>Junio 2026</strong></p>
 
-<p>El taller reunió a <strong>productores, asesores, técnicos y estudiantes</strong> en una jornada intensiva de formación práctica, orientada a mejorar el seguimiento del agua en el suelo y fortalecer la toma de decisiones agronómicas.</p>
 
-<p>La <strong>muy buena convocatoria</strong> y el nivel de participación durante toda la actividad reflejaron el creciente interés por esta temática, especialmente en un contexto donde la disponibilidad hídrica y su monitoreo resultan claves para el manejo de los cultivos.</p>
 
-<p>Durante el encuentro se trabajó sobre herramientas sencillas y aplicadas para estimar el estado hídrico del suelo, interpretar información útil para el manejo agronómico y utilizar planillas y recursos digitales desarrollados por el laboratorio.</p>
+<p>
+Un equipo de investigadores publicó recientemente un trabajo en la revista internacional
+<strong>Field Crops Research</strong>, donde analizaron cómo distintos
+<span class="destacado-texto">híbridos de maíz</span> responden cuando enfrentan simultáneamente
+<span class="destacado-texto">altas temperaturas</span> y
+<span class="destacado-texto">falta de agua</span>.
+</p>
 
-<p>Además del contenido técnico, uno de los aspectos más valiosos de la jornada fue el <strong>intercambio de experiencias y consultas concretas</strong> de los participantes, que enriquecieron el espacio y pusieron en evidencia la necesidad de seguir generando instancias de capacitación en este tema.</p>
+<p>
+El estudio permitió identificar procesos ecofisiológicos asociados a la capacidad de algunos materiales
+para mantener el crecimiento y la fijación de granos bajo condiciones de estrés, aportando
+<span class="destacado-texto">información valiosa para el mejoramiento genético y la adaptación de los sistemas productivos frente a escenarios climáticos cada vez más exigentes</span>.
+</p>
 
-<h3>Galería de imágenes</h3>
-
-<div class="galeria-taller">
-  <div class="foto-item"><img src="taller6.JPG" alt="Explicación práctica durante la jornada"></div>
-  <div class="foto-item"><img src="taller3.JPG" alt="Interacción con participantes durante el taller"></div>
-  <div class="foto-item"><img src="taller2.JPG" alt="Explicación práctica durante la jornada"></div>
-  <div class="foto-item"><img src="taller5.JPG" alt="Vista general de los participantes del taller"></div>
+<div class="callout-dato">
+<span class="callout-icono">🌽</span>
+<div>
+  <p class="callout-titulo">Variabilidad de rendimiento registrada</p>
+  <p class="callout-valor">64 — 10.736 kg/ha</p>
+  <p class="callout-desc">Un rango que abarca desde la pérdida casi total del cultivo hasta ambientes de alto rendimiento.</p>
 </div>
+</div>
+
+
+<div class="investigadores-box">
+  <p>Investigadores destacados</p>
+  <ul class="inv-lista">
+    <li><strong>Dra. Laura Echarte</strong> — IPADS INTA-CONICET · UNMdP</li>
+    <li><strong>Dr. Nicolás Neiff</strong> — Centro de Ecofisiología Vegetal, UNNE</li>
+    <li><strong>Ing. Sebastián Boscarino</strong> — UNNE · CONICET</li>
+    <li><strong>Dra. Belén Araceli Kettler</strong> — UNNE · CONICET</li>
+    <li><strong>Ing. Federico David Nalli Sonzogni</strong> — UNNE · CONICET</li>
+  </ul>
+</div>
+
+
+<div class="nota-link">
+  <a href="https://medios.unne.edu.ar/2026/06/24/46806-wzvwde/"
+     target="_blank"
+     class="btn-nota">
+     Leer nota completa →
+  </a>
+</div>
+
+
 
 :::
 :::::
