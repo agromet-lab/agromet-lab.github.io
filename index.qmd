@@ -1,5 +1,8 @@
 ---
 title: ""
+page-layout: full
+navbar: false
+body-class: page-index
 
 ---
 

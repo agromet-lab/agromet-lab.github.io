@@ -8,7 +8,23 @@ website:
   google-analytics: "G-GL7T3H2JHS"
   
   navbar:
-    left: []
+    left:
+      - text: "Qué hacemos"
+        href: que_hacemos.qmd
+      - text: "Ciencia en el campo"
+        href: ciencia_campo.qmd
+      - text: "Productos desarrollados"
+        href: productos.qmd
+      - text: "Servicios"
+        href: servicios.qmd
+      - text: "Novedades"
+        href: novedades.qmd
+      - text: "Publicaciones científicas"
+        href: publicaciones.qmd
+      - text: "Equipo"
+        href: equipo.qmd
+      - text: "Contacto"
+        href: contacto.qmd
 
         
   page-footer:
