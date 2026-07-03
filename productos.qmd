@@ -4,6 +4,9 @@ title: ""
 
 ## Para la zona de influencia de la EEA INTA Balcarce
 
+-	**El Niño**, análisis histórico de la frecuencia e intensidad de los aumentos de precipitación y temperatura durante los principales eventos El Niño en el sudeste bonaerense.
+👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=niño" target="_blank">Eventos El Niño</a>
+
 -	**Balance de agua** para el cultivo de maíz y soja, interactivo con fechas de siembra, densidad de plantas (maíz) y características de suelo.
 👉 <a href="https://intabalcarce.shinyapps.io/Agromet/?tab=balance" target="_blank">Balance hídrico</a>
 
