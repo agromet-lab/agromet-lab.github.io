@@ -838,6 +838,152 @@ transform: translateY(0);
   line-height: 1.45 !important;
 }
 
+.congreso-nota {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 0 18px;
+}
+
+.congreso-header {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.congreso-etiqueta,
+.actividad-tipo {
+  color: #7fd37f;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+}
+
+.congreso-header h2 {
+  color: #fff;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin: 12px 0 18px;
+}
+
+.congreso-bajada {
+  color: #cfcfcf;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+
+/* ACTIVIDADES */
+
+.actividad-congreso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px;
+  align-items: start;
+
+  margin: 45px 0;
+  padding: 28px;
+
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+}
+
+
+/* COLUMNA DE IMÁGENES */
+
+.actividad-imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* FOTO DE LA CHARLA */
+
+.actividad-foto img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 13px;
+  display: block;
+}
+
+
+/* PLACA DEL CONGRESO */
+
+.actividad-placa {
+  margin-top: 0;
+}
+
+.actividad-placa img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.12);
+
+  transition: transform .3s ease;
+}
+
+.actividad-placa img:hover {
+  transform: scale(1.02);
+}
+
+
+/* CIERRE */
+
+.congreso-cierre {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 35px;
+  padding: 20px 26px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(44,107,47,.95),
+    rgba(27,75,38,.95)
+  );
+
+  border-radius: 13px;
+}
+
+.congreso-cierre span {
+  font-size: 2rem;
+}
+
+.congreso-cierre p {
+  color: rgba(255,255,255,.9);
+  margin: 0;
+  line-height: 1.55;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .actividad-congreso {
+    grid-template-columns: 1fr;
+  }
+
+  .actividad-inversa .actividad-foto,
+  .actividad-inversa .actividad-contenido {
+    order: initial;
+  }
+
+  .actividad-foto img {
+    height: auto;
+  }
+
+  .congreso-header h2 {
+    font-size: 1.8rem;
+  }
+}
+
 .contenido-nota {
   max-width: 900px;
   margin: 0 auto;
