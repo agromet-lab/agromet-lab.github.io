@@ -13,15 +13,6 @@ Caracterización del régimen de heladas agrometeorológicas en Balcarce, incluy
 
 :::
 
-::: {.report-card}
-
-### ENSO (Niño / Niña)
-
-Análisis de la influencia de El Niño y La Niña sobre las precipitaciones, temperaturas y el riesgo agroclimático en la región de Balcarce.
-
-<a href="ENSO.pdf" target="_blank">📄 Descargar PDF</a>
-
-:::
 
 ## Publicaciones científicas
 

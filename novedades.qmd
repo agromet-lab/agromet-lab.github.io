@@ -4,6 +4,230 @@ title: "Novedades"
 
 ## Novedades
 
+
+::::: {.nota-cientifica}
+
+::: {.hero-cientifica}
+
+<img src="educoagro.png"
+     alt="Charla sobre El Niño y perspectivas para la campaña 2026/27"
+     class="hero-img">
+
+<p class="foto-caption">
+Charla sobre perspectivas climáticas para la campaña 2026/27.
+</p>
+
+:::
+
+::: {.contenido-nota}
+
+<h2 class="titulo-nota">
+El Niño: ¿qué se espera para el sudeste en la campaña 26/27?
+</h2>
+
+<p class="fecha-nota"><strong>Septiembre 2026</strong></p>
+
+<p>
+Participamos de una charla destinada a analizar las
+<span class="destacado-texto">perspectivas climáticas para la campaña 2026/27</span>
+y su importancia para la toma de decisiones en los sistemas productivos
+del sudeste bonaerense.
+</p>
+
+<p>
+Durante el encuentro se abordaron el fenómeno
+<span class="destacado-texto">El Niño</span>, los antecedentes registrados
+en la región y las herramientas de información agrometeorológica disponibles
+para interpretar los pronósticos y acompañar la planificación de la campaña.
+</p>
+
+<div class="investigadores-box">
+  <p>Disertantes</p>
+  <ul class="inv-lista">
+    <li><strong>Lic. Natalia Gattinoni</strong> — Ciencias de la Atmósfera</li>
+    <li><strong>Dra. Nuria Lewczuk</strong> — IPADS INTA-CONICET</li>
+    <li><strong>Dra. Laura Echarte</strong> — IPADS INTA-CONICET</li>
+  </ul>
+</div>
+
+::: {.hero-cientifica}
+
+<img src="educoagro2.JPEG"
+     alt="Foto grupal"
+     class="hero-img">
+
+<p class="foto-caption">
+Junto a la Dra. Laura Echarte y el Ing. Ignacio Melucci.
+</p>
+
+:::
+
+</div>
+
+:::
+:::::
+
+
+<br>
+<br>
+
+
+<!-- ========================================================= -->
+<!-- CONGRESO MAÍZ – HELADAS -->
+<!-- ========================================================= -->
+
+::::: {.nota-cientifica}
+
+::: {.hero-cientifica}
+
+<img src="poza.jpg"
+     alt="Póster sobre heladas y frío subletal en maíz"
+     class="hero-img">
+
+<p class="foto-caption">
+Trabajo presentado en el XIII Congreso Nacional de Maíz.
+</p>
+
+:::
+
+::: {.contenido-nota}
+
+<h2 class="titulo-nota">
+Heladas y frío subletal en el llenado de granos del cultivo de maíz
+</h2>
+
+<p class="fecha-nota"><strong>Septiembre 2026 · XIII Congreso Nacional de Maíz</strong></p>
+
+<p>
+Presentamos resultados de un estudio realizado en Balcarce para analizar
+<span class="destacado-texto">cómo las heladas y las temperaturas bajas
+afectan el llenado de granos del maíz</span>.
+</p>
+
+<p>
+El trabajo compara las temperaturas registradas a distintas alturas
+dentro del canopeo con las observaciones de la estación meteorológica
+convencional del INTA. Los resultados muestran que el cultivo genera
+un <span class="destacado-texto">microambiente térmico propio</span>,
+por lo que la temperatura experimentada por las plantas puede diferir
+de la registrada en la estación.
+</p>
+
+<div class="callout-dato">
+<span class="callout-icono">❄️</span>
+<div>
+  <p class="callout-titulo">Un resultado para seguir investigando</p>
+  <p class="callout-desc">
+  El cese del llenado respondería a la acción conjunta de heladas y frío
+  subletal, mientras que la formación de capa negra puede ocurrir entre
+  11 y 23 días después del cese real del llenado.
+  </p>
+</div>
+</div>
+
+<div class="investigadores-box">
+  <p>Autores</p>
+  <ul class="inv-lista">
+    <li>J. Poza</li>
+    <li>T. Roncayoli</li>
+    <li>N. Lewczuk</li>
+    <li>S. Muñoz</li>
+    <li>L. Echarte</li>
+  </ul>
+</div>
+
+<div class="nota-link">
+  <a href="Poster_POZA.pdf"
+     target="_blank"
+     class="btn-nota">
+     Ver póster completo →
+  </a>
+</div>
+
+:::
+:::::
+
+
+<br>
+<br>
+
+
+<!-- ========================================================= -->
+<!-- CONGRESO MAÍZ – HMA / N2O -->
+<!-- ========================================================= -->
+
+::::: {.nota-cientifica}
+
+::: {.hero-cientifica}
+
+<img src="roncayoli.jpg"
+     alt="Póster sobre hongos micorrícicos arbusculares y emisiones de N2O en maíz"
+     class="hero-img">
+
+<p class="foto-caption">
+Trabajo presentado en el XIII Congreso Nacional de Maíz.
+</p>
+
+:::
+
+::: {.contenido-nota}
+
+<h2 class="titulo-nota">
+Hongos micorrícicos arbusculares, fertilización nitrogenada y emisiones de N₂O en maíz
+</h2>
+
+<p class="fecha-nota"><strong>Septiembre 2026 · XIII Congreso Nacional de Maíz</strong></p>
+
+<p>
+Presentamos resultados de un experimento a campo realizado durante la
+campaña 2025/26 para evaluar la interacción entre
+<span class="destacado-texto">hongos micorrícicos arbusculares (HMA),
+fertilización nitrogenada y emisiones de óxido nitroso (N₂O)</span>
+en maíz.
+</p>
+
+<p>
+Además de las emisiones de N₂O, se evaluaron variables productivas como
+la biomasa radical y el rendimiento, buscando alternativas que permitan
+mejorar simultáneamente la productividad y el desempeño ambiental
+del cultivo.
+</p>
+
+<div class="callout-dato">
+<span class="callout-icono">🌱</span>
+<div>
+  <p class="callout-titulo">Hallazgo destacado</p>
+  <p class="callout-valor">−34 %</p>
+  <p class="callout-desc">
+  La inoculación con HMA redujo aproximadamente un 34 % la intensidad
+  de emisión de N₂O-N por tonelada de grano, sin afectar el rendimiento.
+  </p>
+</div>
+</div>
+
+<div class="investigadores-box">
+  <p>Autores</p>
+  <ul class="inv-lista">
+    <li>T. Roncayoli</li>
+    <li>J. Poza</li>
+    <li>L. Echarte</li>
+    <li>S. Muñoz</li>
+    <li>N. Lewczuk</li>
+  </ul>
+</div>
+
+<div class="nota-link">
+  <a href="Poster_RONCAYOLI.pdf"
+     target="_blank"
+     class="btn-nota">
+     Ver póster completo →
+  </a>
+</div>
+
+:::
+:::::
+
+
 ::::: {.nota-cientifica}
 ::: {.hero-cientifica}
         
