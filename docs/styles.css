@@ -706,6 +706,249 @@ transform: translateY(0);
 
 /*Novedades*/
 
+.curso-novedad {
+  max-width: 1100px;
+  margin: 75px auto;
+  padding: 0 18px;
+}
+
+.curso-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.curso-etiqueta,
+.curso-mini-etiqueta {
+  color: #7fd37f;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+}
+
+.curso-header h2 {
+  color: #fff;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin: 12px 0 18px;
+}
+
+.curso-bajada {
+  color: #cfcfcf;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+
+/* CONTENIDO */
+
+.curso-contenido {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 42px;
+  align-items: start;
+
+  padding: 30px;
+
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+}
+
+.curso-col-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.curso-flyer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 13px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.30);
+}
+
+/* FLYER */
+
+.curso-flyer img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 13px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,.30);
+
+  transition: transform .3s ease;
+}
+
+.curso-flyer img:hover {
+  transform: scale(1.015);
+}
+
+
+/* TEXTO */
+
+.curso-datos {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.curso-dato {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 16px;
+
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 10px;
+}
+
+.curso-dato-icono {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.curso-dato div {
+  display: flex;
+  flex-direction: column;
+}
+
+.curso-dato small {
+  color: #7fd37f;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  margin-bottom: 3px;
+}
+
+.curso-dato strong {
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.35;
+}
+
+.curso-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.curso-info h3 {
+  color: #fff;
+  font-size: 1.65rem;
+  line-height: 1.25;
+  margin: 10px 0 20px;
+}
+
+.curso-info > p {
+  color: #d2d2d2;
+  line-height: 1.7;
+  font-size: .98rem;
+  margin-bottom: 25px;
+}
+
+
+/* BLOQUE PRÁCTICO */
+
+.curso-practica {
+  display: flex;
+  gap: 15px;
+
+  margin: 24px 0;
+  padding: 17px 19px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(44,107,47,.85),
+    rgba(24,78,39,.85)
+  );
+
+  border-radius: 11px;
+}
+
+.curso-practica > span {
+  font-size: 1.8rem;
+}
+
+.curso-practica p {
+  margin: 0;
+  color: rgba(255,255,255,.88);
+  font-size: .88rem;
+  line-height: 1.55;
+}
+
+.curso-practica strong {
+  color: #fff;
+}
+
+
+/* DOCENTES */
+
+.curso-docentes {
+  margin: 24px 0;
+  padding-left: 15px;
+  border-left: 3px solid #7fd37f;
+}
+
+.curso-docentes span {
+  color: #7fd37f;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.curso-docentes p {
+  color: #fff;
+  margin: 6px 0 0;
+  line-height: 1.55;
+}
+
+
+/* BOTÓN */
+
+.curso-btn {
+  display: inline-block;
+
+  margin-top: 5px;
+  padding: 12px 21px;
+
+  background: #2c7a4b;
+  color: #fff !important;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: all .25s ease;
+}
+
+.curso-btn:hover {
+  background: #35965a;
+  transform: translateY(-3px);
+
+  box-shadow: 0 9px 20px rgba(0,0,0,.25);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .curso-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .curso-header h2 {
+    font-size: 1.8rem;
+  }
+
+}
+
 .nota-cientifica {
   max-width: 1100px;
    margin: 90px auto 0 auto; 

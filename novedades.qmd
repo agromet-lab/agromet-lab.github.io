@@ -4,6 +4,128 @@ title: "Novedades"
 
 ## Novedades
 
+<section class="curso-novedad"> 
+<div class="curso-header"> 
+<span class="curso-etiqueta">PRÓXIMAMENTE · CURSO DE POSGRADO</span> 
+
+<h2> 
+  Agrometeorología aplicada al manejo del agua y las emisiones de gases con efecto invernadero 
+</h2> 
+
+<p class="curso-bajada"> Una propuesta de formación que integra 
+<span class="destacado-texto">agrometeorología, manejo del agua y gases de efecto invernadero</span> 
+  con actividades prácticas a campo y herramientas para interpretar procesos relevantes en sistemas agrícolas. 
+</p> 
+</div> 
+
+<div class="curso-col-izquierda">
+
+<div class="curso-flyer">
+<img src="_Agrometeorologia.png"
+    alt="Curso de Posgrado Agrometeorología aplicada al manejo del agua y las emisiones de gases con efecto invernadero">
+</div>
+
+
+<!-- DATOS DEL CURSO -->
+<div class="curso-datos">
+
+<div class="curso-dato">
+  <span class="curso-dato-icono">📅</span>
+<div>
+  <small>FECHAS</small>
+  <strong>22 de octubre — 10 de diciembre</strong>
+</div>
+</div>
+
+<div class="curso-dato">
+  <span class="curso-dato-icono">📍</span>
+<div>
+  <small>MODALIDAD</small>
+  <strong>Presencial</strong>
+</div>
+</div>
+
+<div class="curso-dato">
+  <span class="curso-dato-icono">🌱</span>
+<div>
+  <small>ACTIVIDAD PRÁCTICA</small>
+  <strong>Seguimiento a campo de un cultivo de maíz</strong>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="curso-info">
+
+  <span class="curso-mini-etiqueta">
+    FORMACIÓN DE POSGRADO
+  </span>
+
+<h3>
+  Del monitoreo a la interpretación agronómica
+</h3>
+
+<p>
+  El curso propone capacitar en la
+  <strong>cuantificación, análisis e interpretación del uso del agua y de las emisiones de gases de efecto invernadero</strong>
+  —CO₂, N₂O y CH₄— en sistemas agrícolas, integrando ambiente, cultivo y manejo
+  desde un enfoque agrometeorológico aplicado.
+</p>
+
+
+<!-- APRENDER HACIENDO -->
+<div class="curso-practica">
+
+<span>🌽</span>
+
+<p>
+  <strong>Aprender haciendo.</strong><br>
+  El eje práctico incluye mediciones de agua en el suelo,
+  estimación de evapotranspiración por balance hídrico,
+  medición de flujos de GEI a campo y análisis e interpretación
+  agronómica de los resultados.
+</p>
+
+</div>
+
+
+<!-- DOCENTES -->
+<div class="curso-docentes">
+
+<span>DOCENTES RESPONSABLES</span>
+
+<p>
+  <strong>Dra. Laura Echarte</strong><br>
+  <strong>Dra. Nuria Lewczuk</strong>
+</p>
+</div>
+
+
+<!-- INSCRIPCIÓN -->
+    <div class="curso-inscripcion">
+
+<span>INSCRIPCIÓN Y CONSULTAS</span>
+
+<p>
+  Para información sobre inscripción y requisitos del curso:
+</p>
+
+<a href="mailto:posgradoecofcaa@mdp.edu.ar"
+    class="curso-btn">
+    Consultas e inscripción →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
 
 ::::: {.nota-cientifica}
 
@@ -398,7 +520,7 @@ para mantener el crecimiento y la fijación de granos bajo condiciones de estré
 <br>
 
 ::: {.evento-proximo}
-[Próximamente]{.destacado}<br> Curso sobre agrometeorología aplicada al manejo del agua y las emisiones de GEI.<br><br> Oportunidad de aplicación a becas para capacitarte con nosotros (contactanos)
+[Próximamente]{.destacado}<br> <br> Oportunidad de aplicación a becas para capacitarte con nosotros (contactanos)
 :::
 
 <div class="volver-inicio">
